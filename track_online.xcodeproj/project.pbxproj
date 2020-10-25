@@ -12,10 +12,8 @@
 		27147FE1249EFC810015B38B /* mypageOldQAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27147FE0249EFC810015B38B /* mypageOldQAViewController.swift */; };
 		27147FE3249EFE900015B38B /* SelectedOldQAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27147FE2249EFE900015B38B /* SelectedOldQAListViewController.swift */; };
 		2716C687237813A100712B18 /* PushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2716C686237813A100712B18 /* PushFadeSegue.swift */; };
-		2716C6892379C12200712B18 /* recViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2716C6882379C12200712B18 /* recViewController.swift */; };
 		272DCF2024701C0F0033CF4D /* QATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272DCF1F24701C0F0033CF4D /* QATableViewCell.swift */; };
 		272DCF22247953E30033CF4D /* QAAllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272DCF21247953E20033CF4D /* QAAllListViewController.swift */; };
-		273B726E2347754C00A63664 /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B726D2347754C00A63664 /* splashViewController.swift */; };
 		273B727023482A3D00A63664 /* trackColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B726F23482A3D00A63664 /* trackColor.swift */; };
 		273B727223482AAA00A63664 /* trackTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B727123482AAA00A63664 /* trackTabbarViewController.swift */; };
 		2749B2E624928D0A00A4322C /* mypage0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749B2E524928D0A00A4322C /* mypage0ViewController.swift */; };
@@ -24,29 +22,17 @@
 		2749B2EC24928D4400A4322C /* mypage3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749B2EB24928D4400A4322C /* mypage3ViewController.swift */; };
 		2749B2EE2494D92A00A4322C /* SelectedQAList2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749B2ED2494D92A00A4322C /* SelectedQAList2ViewController.swift */; };
 		274BA1FB232CC8BA0094310B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274BA1FA232CC8BA0094310B /* LaunchScreen.storyboard */; };
-		2751DEC32385B889006A3586 /* sentVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751DEC22385B889006A3586 /* sentVideoViewController.swift */; };
 		2756012B239282DC0083EBBE /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2756012A239282DB0083EBBE /* ja.lproj */; };
 		2756012D239284A40083EBBE /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756012C239284A40083EBBE /* loginViewController.swift */; };
-		2772C40324DAEF4400D504D3 /* selectedChaosMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C40224DAEF4400D504D3 /* selectedChaosMapViewController.swift */; };
-		2772C40924DB0A6900D504D3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C40824DB0A6900D504D3 /* CollectionViewCell.swift */; };
-		2772C40D24E0363E00D504D3 /* chaosMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C40C24E0363E00D504D3 /* chaosMapTableViewCell.swift */; };
-		2772C40F24E0391600D504D3 /* detailsChaosMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C40E24E0391600D504D3 /* detailsChaosMapViewController.swift */; };
-		2772C41124E0F8CC00D504D3 /* chaosMapTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41024E0F8CC00D504D3 /* chaosMapTopViewController.swift */; };
-		2772C41A24E69AF600D504D3 /* selectedAthleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41824E69AF600D504D3 /* selectedAthleteViewController.swift */; };
-		2772C41B24E69AF600D504D3 /* selectedAthleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2772C41924E69AF600D504D3 /* selectedAthleteViewController.xib */; };
 		2772C41D24EAC8AF00D504D3 /* premiumQAFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */; };
 		2772C41F24EADC9700D504D3 /* premiumQATopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */; };
 		278A65CB2393A74A00E43D7B /* appRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A65CA2393A74A00E43D7B /* appRuleViewController.swift */; };
-		279779AF2427A45600E246CF /* articleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279779AE2427A45600E246CF /* articleViewController.swift */; };
 		279A9AFF24645576006BAC80 /* profileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A9AFE24645576006BAC80 /* profileEditViewController.swift */; };
-		279A9B0124658C90006BAC80 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A9B0024658C8F006BAC80 /* testViewController.swift */; };
 		279A9B032466BA1F006BAC80 /* SelectedQAListEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A9B022466BA1E006BAC80 /* SelectedQAListEditViewController.swift */; };
 		279E26A5240378BF00C88144 /* QATopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A4240378BF00C88144 /* QATopViewController.swift */; };
 		279E26A72404203200C88144 /* QAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A62404203200C88144 /* QAListViewController.swift */; };
 		279E26A92406C5BB00C88144 /* SelectedQAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A82406C5BB00C88144 /* SelectedQAListViewController.swift */; };
 		27AA3F24247FFA180059308F /* SelectedQAAllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */; };
-		27B70122237DA42D00A57E6F /* AllVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B70121237DA42D00A57E6F /* AllVideoViewController.swift */; };
-		27B701242380F63B00A57E6F /* selectedVideolistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B701232380F63B00A57E6F /* selectedVideolistViewController.swift */; };
 		27C95072231A1EFB0043F968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C95071231A1EFB0043F968 /* AppDelegate.swift */; };
 		27C95077231A1EFB0043F968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C95075231A1EFB0043F968 /* Main.storyboard */; };
 		27C95079231A1EFD0043F968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C95078231A1EFD0043F968 /* Assets.xcassets */; };
@@ -60,7 +46,6 @@
 		27EF725C2529CE0100820FAA /* premiumSelectedMyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EF725B2529CE0100820FAA /* premiumSelectedMyPostViewController.swift */; };
 		27EF725E2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EF725D2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift */; };
 		27EF7260252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EF725F252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift */; };
-		27F5731223706CA000916C7D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5731123706CA000916C7D /* homeViewController.swift */; };
 		81A9B941770F2C606D746EE9 /* Pods_track_online.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5B88713B358DDFF58D956C /* Pods_track_online.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,10 +56,8 @@
 		27147FE0249EFC810015B38B /* mypageOldQAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypageOldQAViewController.swift; sourceTree = "<group>"; };
 		27147FE2249EFE900015B38B /* SelectedOldQAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedOldQAListViewController.swift; sourceTree = "<group>"; };
 		2716C686237813A100712B18 /* PushFadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFadeSegue.swift; sourceTree = "<group>"; };
-		2716C6882379C12200712B18 /* recViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recViewController.swift; sourceTree = "<group>"; };
 		272DCF1F24701C0F0033CF4D /* QATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATableViewCell.swift; sourceTree = "<group>"; };
 		272DCF21247953E20033CF4D /* QAAllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAAllListViewController.swift; sourceTree = "<group>"; };
-		273B726D2347754C00A63664 /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
 		273B726F23482A3D00A63664 /* trackColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackColor.swift; sourceTree = "<group>"; };
 		273B727123482AAA00A63664 /* trackTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackTabbarViewController.swift; sourceTree = "<group>"; };
 		2749B2E524928D0A00A4322C /* mypage0ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypage0ViewController.swift; sourceTree = "<group>"; };
@@ -83,30 +66,18 @@
 		2749B2EB24928D4400A4322C /* mypage3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypage3ViewController.swift; sourceTree = "<group>"; };
 		2749B2ED2494D92A00A4322C /* SelectedQAList2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAList2ViewController.swift; sourceTree = "<group>"; };
 		274BA1FA232CC8BA0094310B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2751DEC22385B889006A3586 /* sentVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentVideoViewController.swift; sourceTree = "<group>"; };
 		2756012A239282DB0083EBBE /* ja.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ja.lproj; sourceTree = SOURCE_ROOT; };
 		2756012C239284A40083EBBE /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		2772C40224DAEF4400D504D3 /* selectedChaosMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedChaosMapViewController.swift; sourceTree = "<group>"; };
-		2772C40824DB0A6900D504D3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		2772C40C24E0363E00D504D3 /* chaosMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chaosMapTableViewCell.swift; sourceTree = "<group>"; };
-		2772C40E24E0391600D504D3 /* detailsChaosMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsChaosMapViewController.swift; sourceTree = "<group>"; };
-		2772C41024E0F8CC00D504D3 /* chaosMapTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chaosMapTopViewController.swift; sourceTree = "<group>"; };
-		2772C41824E69AF600D504D3 /* selectedAthleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedAthleteViewController.swift; sourceTree = "<group>"; };
-		2772C41924E69AF600D504D3 /* selectedAthleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = selectedAthleteViewController.xib; sourceTree = "<group>"; };
 		2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumQAFormViewController.swift; sourceTree = "<group>"; };
 		2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumQATopViewController.swift; sourceTree = "<group>"; };
 		278A65CA2393A74A00E43D7B /* appRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appRuleViewController.swift; sourceTree = "<group>"; };
-		279779AE2427A45600E246CF /* articleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articleViewController.swift; sourceTree = "<group>"; };
 		279779B02439649E00E246CF /* track_online.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = track_online.entitlements; sourceTree = "<group>"; };
 		279A9AFE24645576006BAC80 /* profileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileEditViewController.swift; sourceTree = "<group>"; };
-		279A9B0024658C8F006BAC80 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		279A9B022466BA1E006BAC80 /* SelectedQAListEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAListEditViewController.swift; sourceTree = "<group>"; };
 		279E26A4240378BF00C88144 /* QATopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATopViewController.swift; sourceTree = "<group>"; };
 		279E26A62404203200C88144 /* QAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAListViewController.swift; sourceTree = "<group>"; };
 		279E26A82406C5BB00C88144 /* SelectedQAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAListViewController.swift; sourceTree = "<group>"; };
 		27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAAllListViewController.swift; sourceTree = "<group>"; };
-		27B70121237DA42D00A57E6F /* AllVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVideoViewController.swift; sourceTree = "<group>"; };
-		27B701232380F63B00A57E6F /* selectedVideolistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedVideolistViewController.swift; sourceTree = "<group>"; };
 		27C9506E231A1EFB0043F968 /* track_online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = track_online.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C95071231A1EFB0043F968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C95076231A1EFB0043F968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,7 +102,6 @@
 		27EF725B2529CE0100820FAA /* premiumSelectedMyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumSelectedMyPostViewController.swift; sourceTree = "<group>"; };
 		27EF725D2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumMyPostListTableViewCell.swift; sourceTree = "<group>"; };
 		27EF725F252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumSelectedMyPostTableViewCell.swift; sourceTree = "<group>"; };
-		27F5731123706CA000916C7D /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		44B2A6880C90ED0E85D3142D /* Pods-track_online.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-track_online.release.xcconfig"; path = "Target Support Files/Pods-track_online/Pods-track_online.release.xcconfig"; sourceTree = "<group>"; };
 		8F5B88713B358DDFF58D956C /* Pods_track_online.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_track_online.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,25 +142,19 @@
 		27C95070231A1EFB0043F968 /* track_online */ = {
 			isa = PBXGroup;
 			children = (
+				27C95075231A1EFB0043F968 /* Main.storyboard */,
 				27C95078231A1EFD0043F968 /* Assets.xcassets */,
 				279779B02439649E00E246CF /* track_online.entitlements */,
 				27C95071231A1EFB0043F968 /* AppDelegate.swift */,
 				273B727123482AAA00A63664 /* trackTabbarViewController.swift */,
 				27E32C6624C43C6800FD74EB /* PurchaseManager.swift */,
 				272DCF1F24701C0F0033CF4D /* QATableViewCell.swift */,
-				2772C40824DB0A6900D504D3 /* CollectionViewCell.swift */,
-				2772C40C24E0363E00D504D3 /* chaosMapTableViewCell.swift */,
 				27EF725D2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift */,
 				27EF725F252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift */,
-				27C95075231A1EFB0043F968 /* Main.storyboard */,
-				2772C41024E0F8CC00D504D3 /* chaosMapTopViewController.swift */,
-				2772C41824E69AF600D504D3 /* selectedAthleteViewController.swift */,
-				2772C41924E69AF600D504D3 /* selectedAthleteViewController.xib */,
-				2772C40224DAEF4400D504D3 /* selectedChaosMapViewController.swift */,
-				2772C40E24E0391600D504D3 /* detailsChaosMapViewController.swift */,
 				27E32C6424C4213200FD74EB /* trackPremiumRegisterViewController.swift */,
 				2756012C239284A40083EBBE /* loginViewController.swift */,
 				272DCF21247953E20033CF4D /* QAAllListViewController.swift */,
+				27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */,
 				279E26A4240378BF00C88144 /* QATopViewController.swift */,
 				2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */,
 				27D2798525445395003E71BD /* PopoverViewController.swift */,
@@ -204,27 +168,18 @@
 				2749B2E924928D3200A4322C /* mypage2ViewController.swift */,
 				2749B2EB24928D4400A4322C /* mypage3ViewController.swift */,
 				27147FE0249EFC810015B38B /* mypageOldQAViewController.swift */,
-				270ED06024605D350044270C /* profileViewController.swift */,
-				279A9AFE24645576006BAC80 /* profileEditViewController.swift */,
 				279E26A82406C5BB00C88144 /* SelectedQAListViewController.swift */,
 				2749B2ED2494D92A00A4322C /* SelectedQAList2ViewController.swift */,
+				27147FE2249EFE900015B38B /* SelectedOldQAListViewController.swift */,
 				279A9B022466BA1E006BAC80 /* SelectedQAListEditViewController.swift */,
 				27147FDE249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift */,
-				27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */,
-				27147FE2249EFE900015B38B /* SelectedOldQAListViewController.swift */,
-				279A9B0024658C8F006BAC80 /* testViewController.swift */,
-				279779AE2427A45600E246CF /* articleViewController.swift */,
-				27F5731123706CA000916C7D /* homeViewController.swift */,
+				270ED06024605D350044270C /* profileViewController.swift */,
+				279A9AFE24645576006BAC80 /* profileEditViewController.swift */,
 				278A65CA2393A74A00E43D7B /* appRuleViewController.swift */,
-				2751DEC22385B889006A3586 /* sentVideoViewController.swift */,
-				27B701232380F63B00A57E6F /* selectedVideolistViewController.swift */,
-				2716C6882379C12200712B18 /* recViewController.swift */,
-				27B70121237DA42D00A57E6F /* AllVideoViewController.swift */,
 				2716C686237813A100712B18 /* PushFadeSegue.swift */,
 				273B726F23482A3D00A63664 /* trackColor.swift */,
 				27C9507D231A1EFD0043F968 /* Info.plist */,
 				274BA1FA232CC8BA0094310B /* LaunchScreen.storyboard */,
-				273B726D2347754C00A63664 /* splashViewController.swift */,
 			);
 			path = track_online;
 			sourceTree = "<group>";
@@ -321,7 +276,6 @@
 				27D085F42352EDD7005A0D39 /* GoogleService-Info.plist in Resources */,
 				27C95079231A1EFD0043F968 /* Assets.xcassets in Resources */,
 				274BA1FB232CC8BA0094310B /* LaunchScreen.storyboard in Resources */,
-				2772C41B24E69AF600D504D3 /* selectedAthleteViewController.xib in Resources */,
 				2756012B239282DC0083EBBE /* ja.lproj in Resources */,
 				27C95077231A1EFB0043F968 /* Main.storyboard in Resources */,
 			);
@@ -393,34 +347,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2751DEC32385B889006A3586 /* sentVideoViewController.swift in Sources */,
 				279E26A72404203200C88144 /* QAListViewController.swift in Sources */,
-				2772C40924DB0A6900D504D3 /* CollectionViewCell.swift in Sources */,
 				2772C41D24EAC8AF00D504D3 /* premiumQAFormViewController.swift in Sources */,
 				2756012D239284A40083EBBE /* loginViewController.swift in Sources */,
 				2749B2EC24928D4400A4322C /* mypage3ViewController.swift in Sources */,
-				2772C41A24E69AF600D504D3 /* selectedAthleteViewController.swift in Sources */,
-				279779AF2427A45600E246CF /* articleViewController.swift in Sources */,
 				273B727223482AAA00A63664 /* trackTabbarViewController.swift in Sources */,
 				278A65CB2393A74A00E43D7B /* appRuleViewController.swift in Sources */,
-				2772C40F24E0391600D504D3 /* detailsChaosMapViewController.swift in Sources */,
 				27147FDF249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift in Sources */,
 				27AA3F24247FFA180059308F /* SelectedQAAllListViewController.swift in Sources */,
 				2716C687237813A100712B18 /* PushFadeSegue.swift in Sources */,
 				2749B2EA24928D3200A4322C /* mypage2ViewController.swift in Sources */,
 				279A9AFF24645576006BAC80 /* profileEditViewController.swift in Sources */,
-				27B70122237DA42D00A57E6F /* AllVideoViewController.swift in Sources */,
 				270ED06124605D350044270C /* profileViewController.swift in Sources */,
-				273B726E2347754C00A63664 /* splashViewController.swift in Sources */,
 				2772C41F24EADC9700D504D3 /* premiumQATopViewController.swift in Sources */,
 				272DCF22247953E30033CF4D /* QAAllListViewController.swift in Sources */,
 				2749B2EE2494D92A00A4322C /* SelectedQAList2ViewController.swift in Sources */,
-				2716C6892379C12200712B18 /* recViewController.swift in Sources */,
 				2749B2E824928D1E00A4322C /* mypage1ViewController.swift in Sources */,
-				27B701242380F63B00A57E6F /* selectedVideolistViewController.swift in Sources */,
-				2772C41124E0F8CC00D504D3 /* chaosMapTopViewController.swift in Sources */,
 				27147FE3249EFE900015B38B /* SelectedOldQAListViewController.swift in Sources */,
-				2772C40D24E0363E00D504D3 /* chaosMapTableViewCell.swift in Sources */,
 				279A9B032466BA1F006BAC80 /* SelectedQAListEditViewController.swift in Sources */,
 				27E32C6524C4213200FD74EB /* trackPremiumRegisterViewController.swift in Sources */,
 				27EF725C2529CE0100820FAA /* premiumSelectedMyPostViewController.swift in Sources */,
@@ -429,13 +372,10 @@
 				27E32C6724C43C6800FD74EB /* PurchaseManager.swift in Sources */,
 				27EF725E2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift in Sources */,
 				27EF7260252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift in Sources */,
-				2772C40324DAEF4400D504D3 /* selectedChaosMapViewController.swift in Sources */,
 				27C95072231A1EFB0043F968 /* AppDelegate.swift in Sources */,
-				27F5731223706CA000916C7D /* homeViewController.swift in Sources */,
 				279E26A5240378BF00C88144 /* QATopViewController.swift in Sources */,
 				279E26A92406C5BB00C88144 /* SelectedQAListViewController.swift in Sources */,
 				2749B2E624928D0A00A4322C /* mypage0ViewController.swift in Sources */,
-				279A9B0124658C90006BAC80 /* testViewController.swift in Sources */,
 				27147FE1249EFC810015B38B /* mypageOldQAViewController.swift in Sources */,
 				273B727023482A3D00A63664 /* trackColor.swift in Sources */,
 				272DCF2024701C0F0033CF4D /* QATableViewCell.swift in Sources */,

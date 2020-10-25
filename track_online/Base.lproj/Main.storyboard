@@ -7875,7 +7875,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="sendVideo:" destination="xi7-AB-ryV" eventType="touchUpInside" id="dOf-SV-dDh"/>
+                                                    <action selector="sendVideo:" destination="xi7-AB-ryV" eventType="touchUpInside" id="SWz-xW-D2e"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレミアム質問では、送った動画に対してSPOTECHからアドバイスをもらえます。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g9-ke-q8s">
@@ -8435,7 +8435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emt-cb-mEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="2306.8965517241381"/>
+            <point key="canvasLocation" x="2678" y="2468"/>
         </scene>
         <!--利用規約-->
         <scene sceneID="P2A-GZ-lFG">
@@ -8487,9 +8487,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Gwn-ER-JJ4"/>
                                                 </constraints>
-                                                <state key="normal" title="質問フォームへ進む">
-                                                    <color key="titleColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
+                                                <state key="normal" title="質問フォームへ進む"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

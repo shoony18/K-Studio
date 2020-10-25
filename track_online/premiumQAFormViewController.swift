@@ -15,8 +15,12 @@ import FirebaseMessaging
 import Photos
 import MobileCoreServices
 import AssetsLibrary
+import StoreKit
 
-class premiumQAFormViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate, UIScrollViewDelegate, UITextViewDelegate,UIPopoverPresentationControllerDelegate {
+
+class premiumQAFormViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate, UIScrollViewDelegate, UITextViewDelegate,UIPopoverPresentationControllerDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver {
+
+    var myProduct:SKProduct?
 
     let imagePickerController = UIImagePickerController()
     var videoURL: URL?
@@ -123,6 +127,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         label.lineBreakMode = .byWordWrapping
         self.PlayButton.isHidden = true
 
+        fetchProducts()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -281,23 +286,27 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         }
     }
     override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        // "popoverVC"はポップアップ用のVCに後ほど設定
-        let vc = storyboard.instantiateViewController(withIdentifier: "popoverVC") as! PopoverViewController
-//        vc.delegate = self
-        vc.modalPresentationStyle = UIModalPresentationStyle.popover
-
-        let popover: UIPopoverPresentationController = vc.popoverPresentationController!
-        popover.delegate = self
-
-        if sender != nil {
-            if let button = sender {
-                // UIButtonからポップアップが出るように設定
-                popover.sourceRect = (button as! UIButton).bounds
-                popover.sourceView = (sender as! UIView)
+        if (segue.identifier == "ResultView") {
+            
+        }else{
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+                    // "popoverVC"はポップアップ用のVCに後ほど設定
+            let vc = storyboard.instantiateViewController(withIdentifier: "popoverVC") as! PopoverViewController
+            //        vc.delegate = self
+            vc.modalPresentationStyle = UIModalPresentationStyle.popover
+            let popover: UIPopoverPresentationController = vc.popoverPresentationController!
+            popover.delegate = self
+            if sender != nil {
+                if let button = sender {
+                            // UIButtonからポップアップが出るように設定
+                    popover.sourceRect = (button as! UIButton).bounds
+                    popover.sourceView = (sender as! UIView)
+                }
             }
+            self.present(vc, animated: true, completion:nil)
         }
-        self.present(vc, animated: true, completion:nil)
+
     }
 
     // 表示スタイルの設定
@@ -305,6 +314,49 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         // .noneを設定することで、設定したサイズでポップアップされる
         return .none
     }
+    
+    func fetchProducts(){
+        let productIdentifier:Set = ["com.trackOnline.consumable.1"] // 製品ID
+        let productsRequest: SKProductsRequest = SKProductsRequest.init(productIdentifiers: productIdentifier)
+        productsRequest.delegate = self
+        productsRequest.start()
+    }
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        
+        for transaction in transactions {
+            switch transaction.transactionState {
+            case .failed:
+                queue.finishTransaction(transaction)
+                print("Transaction Failed \(transaction)")
+            case .purchased, .restored:
+//                receiptValidation(url: "https://buy.itunes.apple.com/verifyReceipt")
+                queue.finishTransaction(transaction)
+                print("Transaction purchased or restored: \(transaction)")
+            case .deferred, .purchasing:
+                print("Transaction in progress: \(transaction)")
+            @unknown default:
+                break
+            }
+        }
+    }
+
+    @IBAction func didTapBuy(_ sender: Any) {
+        guard  let myProduct = myProduct else {
+            return
+        }
+        if SKPaymentQueue.canMakePayments(){
+            let payment = SKPayment(product: myProduct)
+            SKPaymentQueue.default().add(self)
+            SKPaymentQueue.default().add(payment)
+        }
+    }
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        if let product = response.products.first{
+            myProduct = product
+            print(product)
+        }
+    }
+
     @IBAction func sendVideo(_ sender: Any) {
         textValidate.isHidden = true
 

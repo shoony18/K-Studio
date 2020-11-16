@@ -332,6 +332,94 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
 //                receiptValidation(url: "https://buy.itunes.apple.com/verifyReceipt")
                 queue.finishTransaction(transaction)
                 print("Transaction purchased or restored: \(transaction)")
+
+                let now = NSDate()
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy_MM_dd_HH_mm_ss"
+                let timenow = formatter.string(from: now as Date)
+                let date1 = Date()
+                let formatter1 = DateFormatter()
+                formatter1.dateStyle = .short
+                let date = formatter1.string(from: date1)
+                let date2 = Date()
+                let formatter2 = DateFormatter()
+                formatter2.setLocalizedDateFormatFromTemplate("jm")
+                let time = formatter2.string(from: date2)
+
+                            //ここから動画DB格納定義
+                if self.videoURL != nil{
+                    self.segueNumber = 1
+                    let storageReference = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).mp4")
+                    let temporaryDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
+                                    /// create a temporary file for us to copy the video to.
+                    let temporaryFileURL = temporaryDirectoryURL.appendingPathComponent(self.videoURL!.lastPathComponent )
+                                    /// Attempt the copy.
+                    do {
+                        try FileManager().copyItem(at: self.videoURL!.absoluteURL, to: temporaryFileURL)
+                    } catch {
+                        print("There was an error copying the video file to the temporary location.")
+                    }
+                                    print("\(temporaryFileURL)")
+                    storageReference.putFile(from: temporaryFileURL, metadata: nil) { metadata, error in
+                        guard let metadata = metadata else {
+                                        // Uh-oh, an error occurred!
+                                            print("error")
+                            return
+
+                        }
+                                      // Metadata contains file metadata such as size, content-type.
+                        _ = metadata.size
+                                      // You can also access to download URL after upload.
+                        storageReference.downloadURL { (url, error) in
+                            guard url != nil else {
+                                          // Uh-oh, an error occurred!
+                                return
+                            }
+                        }
+                    }
+                    let storageReferenceImage = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).png")
+                    storageReferenceImage.putData(self.data!, metadata: nil) { metadata, error in
+                        guard let metadata = metadata else {
+                                        // Uh-oh, an error occurred!
+                            print("error")
+                            return
+                        }
+                                      // Metadata contains file metadata such as size, content-type.
+                        _ = metadata.size
+                                      // You can also access to download URL after upload.
+                        storageReference.downloadURL { (url, error) in
+                            guard url != nil else {
+                                          // Uh-oh, an error occurred!
+                                return
+                            }
+                        }
+                    }
+                }else{
+                    self.segueNumber = 0
+                }
+                if self.memo.text == ""{
+                    self.memo.text = "コメントなし"
+                }
+                let postData = ["postID":"\(timenow)"+"_"+"\(self.nameLabel.text!)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","height":"\(self.height.text!)","weight":"\(self.weight.text!)","event":"\(self.event.text!)","PB":"\(self.PB.text!)","memo":"\(self.memo.text!)","answerFlag":"0","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)" as Any] as [String : Any]
+                let userData = ["uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","status":"1"]
+                let ref0 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
+                let ref1 = self.Ref.child("purchase").child("premium").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
+                let ref2 = self.Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
+
+                ref0.setValue(postData)
+                ref1.setValue(postData)
+                ref2.updateChildValues(userData)
+                self.textValidate.isHidden = true
+                //            self.event.text = ""
+                //            self.PB.text = ""
+                //            self.height.text = ""
+                //            self.weight.text = ""
+                //            self.memo.text = ""
+                //            self.videoURL = nil
+                //            self.imageView.image = UIImage(named: "斜線re.png")
+                            print("OK")
+                //            self.performSegue(withIdentifier: "ResultView", sender: true)
+                self.performSegue(withIdentifier: "ResultView", sender: true)
             case .deferred, .purchasing:
                 print("Transaction in progress: \(transaction)")
             @unknown default:
@@ -382,98 +470,18 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             return
         }
 
-        let now = NSDate()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy_MM_dd_HH_mm_ss"
-        let timenow = formatter.string(from: now as Date)
-        let date1 = Date()
-        let formatter1 = DateFormatter()
-        formatter1.dateStyle = .short
-        let date = formatter1.string(from: date1)
-        let date2 = Date()
-        let formatter2 = DateFormatter()
-        formatter2.setLocalizedDateFormatFromTemplate("jm")
-        let time = formatter2.string(from: date2)
-
         let alert: UIAlertController = UIAlertController(title: "確認", message: "この内容で送信します。一度送信すると内容を修正できません。よろしいですか？", preferredStyle:  UIAlertController.Style.alert)
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
-            //ここから動画DB格納定義
-            if self.videoURL != nil{
-                    self.segueNumber = 1
-                let storageReference = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).mp4")
-                let temporaryDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
-                    /// create a temporary file for us to copy the video to.
-                let temporaryFileURL = temporaryDirectoryURL.appendingPathComponent(self.videoURL!.lastPathComponent )
-                    /// Attempt the copy.
-                    do {
-                        try FileManager().copyItem(at: self.videoURL!.absoluteURL, to: temporaryFileURL)
-                    } catch {
-                        print("There was an error copying the video file to the temporary location.")
-                    }
-                    print("\(temporaryFileURL)")
-                    storageReference.putFile(from: temporaryFileURL, metadata: nil) { metadata, error in
-                        guard let metadata = metadata else {
-                        // Uh-oh, an error occurred!
-                            print("error")
-                            return
-                        }
-                      // Metadata contains file metadata such as size, content-type.
-                        _ = metadata.size
-                      // You can also access to download URL after upload.
-                        storageReference.downloadURL { (url, error) in
-                            guard url != nil else {
-                          // Uh-oh, an error occurred!
-                                return
-                            }
-                        }
-                }
-                let storageReferenceImage = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).png")
-                storageReferenceImage.putData(self.data!, metadata: nil) { metadata, error in
-                        guard let metadata = metadata else {
-                        // Uh-oh, an error occurred!
-                            print("error")
-                            return
-                        }
-                      // Metadata contains file metadata such as size, content-type.
-                        _ = metadata.size
-                      // You can also access to download URL after upload.
-                        storageReference.downloadURL { (url, error) in
-                            guard url != nil else {
-                          // Uh-oh, an error occurred!
-                                return
-                            }
-                        }
-                }
-            }else{
-                    self.segueNumber = 0
+            guard  let myProduct = self.myProduct else {
+                return
             }
+            if SKPaymentQueue.canMakePayments(){
+                let payment = SKPayment(product: myProduct)
+                SKPaymentQueue.default().add(self)
+                SKPaymentQueue.default().add(payment)
 
-            if self.memo.text == ""{
-                self.memo.text = "コメントなし"
             }
-            let postData = ["postID":"\(timenow)"+"_"+"\(self.nameLabel.text!)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","height":"\(self.height.text!)","weight":"\(self.weight.text!)","event":"\(self.event.text!)","PB":"\(self.PB.text!)","memo":"\(self.memo.text!)","answerFlag":"0","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)" as Any] as [String : Any]
-            let userData = ["uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","status":"1"]
-
-            let ref0 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
-            let ref1 = self.Ref.child("purchase").child("premium").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
-            let ref2 = self.Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
-
-            ref0.setValue(postData)
-            ref1.setValue(postData)
-            ref2.updateChildValues(userData)
-
-            self.textValidate.isHidden = true
-            self.event.text = ""
-            self.PB.text = ""
-            self.height.text = ""
-            self.weight.text = ""
-            self.memo.text = ""
-            self.videoURL = nil
-            self.imageView.image = UIImage(named: "斜線re.png")
-            print("OK")
-            self.performSegue(withIdentifier: "ResultView", sender: true)
-
         })
 
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
@@ -484,7 +492,10 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             alert.addAction(cancelAction)
             alert.addAction(defaultAction)
             present(alert, animated: true, completion: nil)
-        }
+
+    }
+    
+    
     
     
 }

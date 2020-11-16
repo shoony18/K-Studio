@@ -1,0 +1,6 @@
+framework module Pods_track_online {
+  umbrella header "Pods-track_online-umbrella.h"
+
+  export *
+  module * { export * }
+}

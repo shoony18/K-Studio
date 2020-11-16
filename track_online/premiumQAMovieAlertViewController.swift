@@ -1,8 +1,8 @@
 //
-//  premiumQAUserRuleViewController.swift
+//  premiumQAMovieAlertViewController.swift
 //  track_online
 //
-//  Created by 刈田修平 on 2020/10/24.
+//  Created by 刈田修平 on 2020/11/16.
 //  Copyright © 2020 刈田修平. All rights reserved.
 //
 
@@ -17,9 +17,7 @@ import MobileCoreServices
 import AssetsLibrary
 
 
-class premiumQAUserRuleViewController: UIViewController {
-
-    @IBOutlet var ruleText: UILabel!
+class premiumQAMovieAlertViewController: UIViewController {
     @IBOutlet var approveFlagButton: UIButton!
     @IBOutlet var goToButton: UIButton!
     
@@ -34,11 +32,6 @@ class premiumQAUserRuleViewController: UIViewController {
     }
     func loadRuleText(){
         let ref1 = Ref.child("purchase").child("premium").child("setting").child("userRule")
-        ref1.observeSingleEvent(of: .value, with: { (snapshot) in
-          let value = snapshot.value as? NSDictionary
-            let key = value?["ruleText"] as? String ?? ""
-            self.ruleText.text = key
-        })
 
     }
     @IBAction func tapApproveFlagButton(_ sender: Any) {
@@ -59,18 +52,8 @@ class premiumQAUserRuleViewController: UIViewController {
         }
     }
     
-    @IBAction func goToMovieAlert(_ sender: Any) {
-        performSegue(withIdentifier: "goToMovieAlert", sender: nil)
+    @IBAction func goToPremiumQAForm(_ sender: Any) {
+        performSegue(withIdentifier: "goToPremiumQAForm", sender: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

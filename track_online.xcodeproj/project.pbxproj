@@ -27,6 +27,7 @@
 		2772C41D24EAC8AF00D504D3 /* premiumQAFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */; };
 		2772C41F24EADC9700D504D3 /* premiumQATopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */; };
 		278A65CB2393A74A00E43D7B /* appRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A65CA2393A74A00E43D7B /* appRuleViewController.swift */; };
+		2791E2642562C6BC0010630B /* premiumQAMovieAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791E2632562C6BC0010630B /* premiumQAMovieAlertViewController.swift */; };
 		279A9AFF24645576006BAC80 /* profileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A9AFE24645576006BAC80 /* profileEditViewController.swift */; };
 		279A9B032466BA1F006BAC80 /* SelectedQAListEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A9B022466BA1E006BAC80 /* SelectedQAListEditViewController.swift */; };
 		279E26A5240378BF00C88144 /* QATopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A4240378BF00C88144 /* QATopViewController.swift */; };
@@ -71,6 +72,7 @@
 		2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumQAFormViewController.swift; sourceTree = "<group>"; };
 		2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumQATopViewController.swift; sourceTree = "<group>"; };
 		278A65CA2393A74A00E43D7B /* appRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appRuleViewController.swift; sourceTree = "<group>"; };
+		2791E2632562C6BC0010630B /* premiumQAMovieAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumQAMovieAlertViewController.swift; sourceTree = "<group>"; };
 		279779B02439649E00E246CF /* track_online.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = track_online.entitlements; sourceTree = "<group>"; };
 		279A9AFE24645576006BAC80 /* profileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileEditViewController.swift; sourceTree = "<group>"; };
 		279A9B022466BA1E006BAC80 /* SelectedQAListEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAListEditViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */,
 				27D2798525445395003E71BD /* PopoverViewController.swift */,
 				27D27983254421C2003E71BD /* premiumQAUserRuleViewController.swift */,
+				2791E2632562C6BC0010630B /* premiumQAMovieAlertViewController.swift */,
 				2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */,
 				27EF72592529CDE300820FAA /* premiumMyPostListViewController.swift */,
 				27EF725B2529CE0100820FAA /* premiumSelectedMyPostViewController.swift */,
@@ -355,6 +358,7 @@
 				278A65CB2393A74A00E43D7B /* appRuleViewController.swift in Sources */,
 				27147FDF249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift in Sources */,
 				27AA3F24247FFA180059308F /* SelectedQAAllListViewController.swift in Sources */,
+				2791E2642562C6BC0010630B /* premiumQAMovieAlertViewController.swift in Sources */,
 				2716C687237813A100712B18 /* PushFadeSegue.swift in Sources */,
 				2749B2EA24928D3200A4322C /* mypage2ViewController.swift in Sources */,
 				279A9AFF24645576006BAC80 /* profileEditViewController.swift in Sources */,

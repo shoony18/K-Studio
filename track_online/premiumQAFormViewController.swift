@@ -419,7 +419,8 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 //            self.imageView.image = UIImage(named: "斜線re.png")
                             print("OK")
                 //            self.performSegue(withIdentifier: "ResultView", sender: true)
-                self.performSegue(withIdentifier: "ResultView", sender: true)
+                self.dismiss(animated: true, completion: nil)
+//                self.performSegue(withIdentifier: "ResultView", sender: true)
             case .deferred, .purchasing:
                 print("Transaction in progress: \(transaction)")
             @unknown default:

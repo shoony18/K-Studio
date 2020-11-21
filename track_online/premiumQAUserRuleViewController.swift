@@ -62,6 +62,10 @@ class premiumQAUserRuleViewController: UIViewController {
     @IBAction func goToMovieAlert(_ sender: Any) {
         performSegue(withIdentifier: "goToMovieAlert", sender: nil)
     }
+    @IBAction func closePage(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
     
     /*
     // MARK: - Navigation

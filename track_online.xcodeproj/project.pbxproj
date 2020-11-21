@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		270135ED2569558B0041902C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270135EC2569558A0041902C /* MenuViewController.swift */; };
+		270135F025695BE40041902C /* menuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270135EF25695BE40041902C /* menuTableViewCell.swift */; };
 		270ED06124605D350044270C /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270ED06024605D350044270C /* profileViewController.swift */; };
 		27147FDF249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27147FDE249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift */; };
 		27147FE1249EFC810015B38B /* mypageOldQAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27147FE0249EFC810015B38B /* mypageOldQAViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		06BE019C4E9A10917B585468 /* Pods-track_online.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-track_online.debug.xcconfig"; path = "Target Support Files/Pods-track_online/Pods-track_online.debug.xcconfig"; sourceTree = "<group>"; };
 		270135EC2569558A0041902C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		270135EF25695BE40041902C /* menuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuTableViewCell.swift; sourceTree = "<group>"; };
 		270ED06024605D350044270C /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		27147FDE249DC2FC0015B38B /* SelectedQAListEdit2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAListEdit2ViewController.swift; sourceTree = "<group>"; };
 		27147FE0249EFC810015B38B /* mypageOldQAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypageOldQAViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				272DCF1F24701C0F0033CF4D /* QATableViewCell.swift */,
 				27EF725D2529CE6C00820FAA /* premiumMyPostListTableViewCell.swift */,
 				27EF725F252A0D2500820FAA /* premiumSelectedMyPostTableViewCell.swift */,
+				270135EF25695BE40041902C /* menuTableViewCell.swift */,
 				27E32C6424C4213200FD74EB /* trackPremiumRegisterViewController.swift */,
 				2756012C239284A40083EBBE /* loginViewController.swift */,
 				272DCF21247953E20033CF4D /* QAAllListViewController.swift */,
@@ -387,6 +390,7 @@
 				270135ED2569558B0041902C /* MenuViewController.swift in Sources */,
 				273B727023482A3D00A63664 /* trackColor.swift in Sources */,
 				272DCF2024701C0F0033CF4D /* QATableViewCell.swift in Sources */,
+				270135F025695BE40041902C /* menuTableViewCell.swift in Sources */,
 				27EF725A2529CDE300820FAA /* premiumMyPostListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

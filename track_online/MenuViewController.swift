@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
+import Firebase
+import FirebaseStorage
+import FirebaseMessaging
+import Photos
+import MobileCoreServices
+import AssetsLibrary
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    var menuArray = ["プロフィール情報","QA（質問）","QA（回答）","プレミアム質問","利用規約"]
+
 
     @IBOutlet var menuView: UIView!
-    
+    @IBOutlet var TableView: UITableView!
+
+    let currentUid:String = Auth.auth().currentUser!.uid
+    let currentUserName:String = Auth.auth().currentUser!.displayName!
+    let Ref = Database.database().reference()
+
     override func viewDidLoad() {
+        TableView.dataSource = self
+        TableView.delegate = self
+        self.TableView.reloadData()
+
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -35,6 +55,36 @@ class MenuViewController: UIViewController {
             completion: { bool in
         })
         
+    }
+    func numberOfSections(in myTableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuArray.count
+    }
+                
+       
+    func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        let cell = self.TableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as? menuTableViewCell
+        cell!.menu.text = self.menuArray[indexPath.row]
+        return cell!
+    }
+        
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "selectedPost", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "selectedPost") {
+//            if #available(iOS 13.0, *) {
+//                    let nextData: premiumSelectedMyPostViewController = segue.destination as! premiumSelectedMyPostViewController
+//                } else {
+//                // Fallback on earlier versions
+//            }
+//        }
     }
 
     // メニューエリア以外タップ時の処理

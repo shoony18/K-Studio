@@ -23,39 +23,45 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var menuView: UIView!
     @IBOutlet var TableView: UITableView!
-
+    @IBOutlet var userName: UILabel!
+    
     let currentUid:String = Auth.auth().currentUser!.uid
     let currentUserName:String = Auth.auth().currentUser!.displayName!
     let Ref = Database.database().reference()
 
     override func viewDidLoad() {
+        loadData()
         TableView.dataSource = self
         TableView.delegate = self
-        self.TableView.reloadData()
-
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.TableView.reloadData()
         super.viewWillAppear(animated)
-        // メニューの位置を取得する
-        let menuPos = self.menuView.layer.position
-        // 初期位置を画面の外側にするため、メニューの幅の分だけマイナスする
-        self.menuView.layer.position.x = -self.menuView.frame.width
-        // 表示時のアニメーションを作成する
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0,
-            options: .curveEaseOut,
-            animations: {
-                self.menuView.layer.position.x = menuPos.x
-        },
-            completion: { bool in
-        })
+//        // メニューの位置を取得する
+//        let menuPos = self.menuView.layer.position
+//        // 初期位置を画面の外側にするため、メニューの幅の分だけマイナスする
+//        self.menuView.layer.position.x = -self.menuView.frame.width
+//        // 表示時のアニメーションを作成する
+//        UIView.animate(
+//            withDuration: 0.5,
+//            delay: 0,
+//            options: .curveEaseOut,
+//            animations: {
+//                self.menuView.layer.position.x = menuPos.x
+//        },
+//            completion: { bool in
+//        })
         
     }
+    
+    func loadData(){
+        userName.text = "ようこそ、 "+"\(currentUserName)"+" さん"
+    }
+    
     func numberOfSections(in myTableView: UITableView) -> Int {
         return 1
     }
@@ -74,17 +80,20 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "selectedPost", sender: nil)
+        if indexPath.row == 0{
+            performSegue(withIdentifier: "myProfile", sender: nil)
+        }else if indexPath.row == 1{
+            performSegue(withIdentifier: "mypage1", sender: nil)
+        }else if indexPath.row == 2{
+            performSegue(withIdentifier: "mypage3", sender: nil)
+        }else if indexPath.row == 3{
+            performSegue(withIdentifier: "premiumQA", sender: nil)
+        }else if indexPath.row == 4{
+            performSegue(withIdentifier: "appRule", sender: nil)
+        }
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if (segue.identifier == "selectedPost") {
-//            if #available(iOS 13.0, *) {
-//                    let nextData: premiumSelectedMyPostViewController = segue.destination as! premiumSelectedMyPostViewController
-//                } else {
-//                // Fallback on earlier versions
-//            }
-//        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
     }
 
     // メニューエリア以外タップ時の処理

@@ -25,6 +25,8 @@ class premiumSelectedMyPostTableViewCell: UITableViewCell {
     @IBOutlet var answerLabel: UILabel!
     @IBOutlet var comment: UILabel!
     @IBOutlet var recommendTrainigLabel: UILabel!
+    @IBOutlet var adviseText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

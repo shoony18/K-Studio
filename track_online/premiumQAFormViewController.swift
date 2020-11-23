@@ -33,6 +33,10 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     var currentTextField = UITextField()
     var currentTextView = UITextView()
     var selectedEvent:[String] = []
+    var selectedPB1:[String] = []
+    var selectedPB2:[String] = []
+    var selectedHeight:[String] = []
+    var selectedWeight:[String] = []
     var selectedRange:[String] = []
     var segueNumber: Int?
     var QAStatusArray = [String]()
@@ -46,7 +50,6 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     var PublicOrPrivate:String?
     var firstLogin:String?
 
-
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var shadowView0: UIView!
     @IBOutlet weak var shadowView1: UIView!
@@ -57,7 +60,8 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameHidden: UIButton!
     @IBOutlet weak var event: UITextField!
-    @IBOutlet weak var PB: UITextField!
+    @IBOutlet weak var PB1: UITextField!
+    @IBOutlet weak var PB2: UITextField!
     @IBOutlet weak var height: UITextField!
     @IBOutlet weak var weight: UITextField!
     @IBOutlet weak var memo: UITextView!
@@ -68,14 +72,16 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     @IBOutlet weak var PlayButton: UIButton!
     
     override func viewDidLoad() {
-        nameLabel.text = currentUserName
-        memo.delegate = self
-        selectedEvent = ["","短距離（100m）","短距離（200m）","短距離（400m）","跳躍（走幅跳）","跳躍（三段跳）"]
-//        selectedRange = ["","track指定コーチに限定公開（プレミアム質問）"]
-        textValidate.isHidden = true
-        pickerview.delegate = self
-        pickerview.dataSource = self
-        pickerview.showsSelectionIndicator = true
+        loadData()
+        fetchProducts()
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    func layout(){
         // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
         shadowView0.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         shadowView1.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
@@ -100,40 +106,6 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         shadowView2.layer.shadowRadius = 4
         shadowView3.layer.shadowRadius = 4
         shadowView4.layer.shadowRadius = 4
-        // 決定バーの生成
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
-        let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
-        toolbar.setItems([spacelItem, doneItem], animated: true)
-
-        let toolbar0 = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
-        let spacelItem0 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        let doneItem0 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done0))
-        toolbar0.setItems([spacelItem0, doneItem0], animated: true)
-
-        event.inputView = pickerview
-        event.inputAccessoryView = toolbar
-        memo.inputAccessoryView = toolbar0
-
-//        self.contentView.addSubview(imageView)
-//        self.contentView.sendSubviewToBack(imageView);
-        
-//        refreshControl.addTarget(self, action: #selector(premiumQAFormViewController.refreshControlValueChanged(sender:)), for: .valueChanged)
-//        contentView.addSubview(refreshControl)
-
-//        fcmAuth()
-
-        let label = UILabel(frame: .zero)
-        label.lineBreakMode = .byWordWrapping
-        self.PlayButton.isHidden = true
-
-        fetchProducts()
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
 //    func fcmAuth(){
 //        UNUserNotificationCenter.current().getNotificationSettings(completionHandler: {setting in
@@ -170,14 +142,61 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
 //        self.textValidateQAKoukaiRange.isHidden = true
 //    }
 
-    @IBAction func inputPB(_ sender: Any) {
-        PB.text = (sender as AnyObject).text
-    }
-    @IBAction func inputHeight(_ sender: Any) {
-        height.text = (sender as AnyObject).text
-    }
-    @IBAction func inputWeight(_ sender: Any) {
-        weight.text = (sender as AnyObject).text
+//    @IBAction func inputPB(_ sender: Any) {
+//        PB.text = (sender as AnyObject).text
+//    }
+//    @IBAction func inputHeight(_ sender: Any) {
+//        height.text = (sender as AnyObject).text
+//    }
+//    @IBAction func inputWeight(_ sender: Any) {
+//        weight.text = (sender as AnyObject).text
+//    }
+    func loadData(){
+        selectedEvent = ["","短距離（100m）","短距離（200m）","短距離（400m）","跳躍（走幅跳）","跳躍（三段跳）"]
+        for key in 0...99{
+            selectedPB1.append(String(key))
+            selectedPB2.append(String(key))
+        }
+        for key in 130...200{
+            selectedHeight.append(String(key))
+        }
+        for key in 30...150{
+            selectedWeight.append(String(key))
+        }
+        nameLabel.text = currentUserName
+        memo.delegate = self
+        textValidate.isHidden = true
+        pickerview.delegate = self
+        pickerview.dataSource = self
+        pickerview.showsSelectionIndicator = true
+        // 決定バーの生成
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+        let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        toolbar.setItems([spacelItem, doneItem], animated: true)
+
+        let toolbar0 = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+        let spacelItem0 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let doneItem0 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done0))
+        toolbar0.setItems([spacelItem0, doneItem0], animated: true)
+
+        event.inputView = pickerview
+        event.inputAccessoryView = toolbar
+        PB1.inputView = pickerview
+        PB1.inputAccessoryView = toolbar
+        PB2.inputView = pickerview
+        PB2.inputAccessoryView = toolbar
+        height.inputView = pickerview
+        height.inputAccessoryView = toolbar
+        weight.inputView = pickerview
+        weight.inputAccessoryView = toolbar
+        
+        memo.inputAccessoryView = toolbar0
+
+        let label = UILabel(frame: .zero)
+        label.lineBreakMode = .byWordWrapping
+        self.PlayButton.isHidden = true
+
     }
     func textViewDidChange(_ textView: UITextView) {
         let beforeStr: String = memo.text // 文字列をあらかじめ取得しておく
@@ -195,6 +214,18 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         if currentTextField == event{
             event.endEditing(true)
             event.text = "\(selectedEvent[pickerview.selectedRow(inComponent: 0)])"
+        }else if currentTextField == PB1{
+            PB1.endEditing(true)
+            PB1.text = "\(selectedPB1[pickerview.selectedRow(inComponent: 0)])"
+        }else if currentTextField == PB2{
+            PB2.endEditing(true)
+            PB2.text = "\(selectedPB2[pickerview.selectedRow(inComponent: 0)])"
+        }else if currentTextField == height{
+            height.endEditing(true)
+            height.text = "\(selectedHeight[pickerview.selectedRow(inComponent: 0)])"
+        }else if currentTextField == weight{
+            weight.endEditing(true)
+            weight.text = "\(selectedWeight[pickerview.selectedRow(inComponent: 0)])"
         }
     }
     @objc func done0() {
@@ -209,7 +240,15 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if currentTextField == event {
             return selectedEvent.count
-        }else {
+        }else if currentTextField == PB1{
+            return selectedPB1.count
+        }else if currentTextField == PB2{
+            return selectedPB2.count
+        }else if currentTextField == height{
+            return selectedHeight.count
+        }else if currentTextField == weight{
+            return selectedWeight.count
+        }else{
             return 0
         }
     }
@@ -217,8 +256,15 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if currentTextField == event {
             return selectedEvent[row]
-        }else {
-            print("nil")
+        }else if currentTextField == PB1{
+            return selectedPB1[row]
+        }else if currentTextField == PB2{
+            return selectedPB2[row]
+        }else if currentTextField == height{
+            return selectedHeight[row]
+        }else if currentTextField == weight{
+            return selectedWeight[row]
+        }else{
             return ""
         }
     }
@@ -226,11 +272,24 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         self.pickerview.delegate = self
         self.pickerview.dataSource = self
         currentTextField = textField
-        if currentTextField == event{
+//        if currentTextField == event{
+//            currentTextField.inputView = pickerview
+//        }else{
+//            print("nil")
+//        }
+        if currentTextField == event {
+            currentTextField.inputView = pickerview
+        }else if currentTextField == PB1{
+            currentTextField.inputView = pickerview
+        }else if currentTextField == PB2{
+            currentTextField.inputView = pickerview
+        }else if currentTextField == height{
+            currentTextField.inputView = pickerview
+        }else if currentTextField == weight{
             currentTextField.inputView = pickerview
         }else{
-            print("nil")
         }
+
     }
 
     @IBAction func selectedImage(_ sender: Any) {
@@ -400,7 +459,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 if self.memo.text == ""{
                     self.memo.text = "コメントなし"
                 }
-                let postData = ["postID":"\(timenow)"+"_"+"\(self.nameLabel.text!)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","height":"\(self.height.text!)","weight":"\(self.weight.text!)","event":"\(self.event.text!)","PB":"\(self.PB.text!)","memo":"\(self.memo.text!)","answerFlag":"0","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)" as Any] as [String : Any]
+                let postData = ["postID":"\(timenow)"+"_"+"\(self.nameLabel.text!)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","height":"\(self.height.text!)","weight":"\(self.weight.text!)","event":"\(self.event.text!)","PB1":"\(self.PB1.text!)","PB2":"\(self.PB2.text!)","memo":"\(self.memo.text!)","answerFlag":"0","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)" as Any] as [String : Any]
                 let userData = ["uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","status":"1"]
                 let ref0 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
                 let ref1 = self.Ref.child("purchase").child("premium").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
@@ -453,7 +512,11 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             textValidate.isHidden = false
             textValidate.text = "専門種目を選択してください"
             return
-        }else if PB.text?.count == 0 {
+        }else if PB1.text?.count == 0 {
+            textValidate.isHidden = false
+            textValidate.text = "自己ベストを入力してください"
+            return
+        }else if PB2.text?.count == 0 {
             textValidate.isHidden = false
             textValidate.text = "自己ベストを入力してください"
             return

@@ -247,7 +247,7 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
             if goodTagNameArray_re.isEmpty == false{
                 cell!.adviseText.text = "track専属コーチからのアドバイス"
             }else{
-                cell!.adviseText.text = "アドバイスがまだ届いておりません"
+                cell!.adviseText.text = "アドバイスはまだ届いておりません"
             }
 
             return cell!

@@ -689,7 +689,7 @@ track専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zO8-4h-iCv" customClass="TPKeyboardAvoidingScrollView">
-                                    <rect key="frame" x="0.0" y="713" width="414" height="122"/>
+                                    <rect key="frame" x="0.0" y="696.66666793823242" width="414" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-vD-7NR">
@@ -744,12 +744,29 @@ track専属コーチから
                                 </scrollView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPost" id="bF5-o4-yfn" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="517"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="497"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bF5-o4-yfn" id="EzY-OZ-EbE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="517"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="497"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-I4-fdS">
+                                                    <rect key="frame" x="10" y="231" width="394" height="212"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="212" id="2yu-YM-XSq"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXv-rd-d2b">
                                                     <rect key="frame" x="10" y="42" width="394" height="164"/>
                                                     <userDefinedRuntimeAttributes>
@@ -871,14 +888,14 @@ track専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-6b-vNI">
-                                                    <rect key="frame" x="26" y="466" width="362" height="1"/>
+                                                    <rect key="frame" x="26" y="476" width="362" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="yjt-lt-DGc"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-dQ-MIS">
-                                                    <rect key="frame" x="203" y="455.66666666666669" width="8.3333333333333428" height="22"/>
+                                                    <rect key="frame" x="203" y="465.66666666666669" width="8.3333333333333428" height="22"/>
                                                     <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -902,36 +919,22 @@ track専属コーチから
                                                     <color key="textColor" red="0.36389593910000001" green="0.36389593910000001" blue="0.36389593910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送信動画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-Wg-VYb">
-                                                    <rect key="frame" x="172" y="221" width="70" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送信動画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-Wg-VYb">
+                                                    <rect key="frame" x="167" y="221" width="80" height="21"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="OYS-DM-fM0"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="0.36389593910000001" green="0.36389593910000001" blue="0.36389593910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-I4-fdS">
-                                                    <rect key="frame" x="10" y="231" width="394" height="212"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="212" id="2yu-YM-XSq"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Lqz-Ba-LsT" firstAttribute="top" secondItem="w04-8x-9hZ" secondAttribute="bottom" constant="5" id="1kC-Aw-sBf"/>
                                                 <constraint firstItem="NKl-Wg-VYb" firstAttribute="top" secondItem="hXv-rd-d2b" secondAttribute="bottom" constant="15" id="3gS-eo-CIR"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="f8h-Ti-X7Z" secondAttribute="trailing" constant="20" id="4Mu-Zb-rRA"/>
-                                                <constraint firstItem="Bde-6b-vNI" firstAttribute="top" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="40" id="6rg-Zz-Trv"/>
+                                                <constraint firstItem="Bde-6b-vNI" firstAttribute="top" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="50" id="6rg-Zz-Trv"/>
                                                 <constraint firstItem="bOZ-XK-z4e" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" id="7Vn-Pb-9Za"/>
                                                 <constraint firstItem="iwt-4Z-FAD" firstAttribute="centerY" secondItem="bOZ-XK-z4e" secondAttribute="centerY" id="9Gz-E5-Y45"/>
                                                 <constraint firstItem="YH1-I4-fdS" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leading" constant="10" id="AAz-AQ-FSg"/>
@@ -961,7 +964,7 @@ track専属コーチから
                                                 <constraint firstItem="w04-8x-9hZ" firstAttribute="trailing" secondItem="EzY-OZ-EbE" secondAttribute="trailingMargin" constant="10" id="dNF-9O-lGi"/>
                                                 <constraint firstItem="xZk-tD-fA4" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" constant="10" id="eKS-m3-qiw"/>
                                                 <constraint firstItem="f8h-Ti-X7Z" firstAttribute="top" secondItem="hXv-rd-d2b" secondAttribute="bottom" constant="40" id="eVm-Eh-bIv"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="80" id="gb4-6u-bHG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="60" id="gb4-6u-bHG"/>
                                                 <constraint firstItem="lEf-dQ-MIS" firstAttribute="centerX" secondItem="EzY-OZ-EbE" secondAttribute="centerX" id="mDD-hA-L7d"/>
                                                 <constraint firstItem="ISd-dg-v7Y" firstAttribute="leading" secondItem="9qc-VT-0CT" secondAttribute="trailing" id="mLR-zA-Al8"/>
                                                 <constraint firstItem="Lqz-Ba-LsT" firstAttribute="leading" secondItem="xZk-tD-fA4" secondAttribute="trailing" constant="9.9999999999999858" id="mqX-uD-xAc"/>
@@ -995,7 +998,7 @@ track専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellLabel1" rowHeight="50" id="syn-4I-aWI" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="545" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="525" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="syn-4I-aWI" id="gcY-r0-IXe">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1028,15 +1031,15 @@ track専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnswer1" id="F24-cP-Mef" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="595" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="575" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F24-cP-Mef" id="lZb-nt-usr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="力が抜けていてリラックスできている" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-1J-F1W">
-                                                    <rect key="frame" x="20" y="11" width="378" height="18"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="378" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1053,15 +1056,15 @@ track専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPractice" rowHeight="50" id="eSu-de-1S3" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="635" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="618.66666793823242" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eSu-de-1S3" id="G6d-Qg-ND8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-4Y-fJG">
-                                                    <rect key="frame" x="175" y="13" width="223" height="14.333333333333336"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <rect key="frame" x="175" y="11" width="223" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -6430,10 +6433,10 @@ track専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-bp-Cof">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="483"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="563"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-DR-KEI">
-                                                <rect key="frame" x="20" y="413" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="493" width="374" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="YgH-O2-idx"/>
@@ -6455,13 +6458,13 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上記、確認いたしました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCN-Xx-Pt4">
-                                                <rect key="frame" x="111.66666666666667" y="362" width="190.66666666666663" height="21"/>
+                                                <rect key="frame" x="111.66666666666667" y="442" width="190.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-AN-Yux">
-                                                <rect key="frame" x="81.666666666666671" y="360" width="25" height="25"/>
+                                                <rect key="frame" x="81.666666666666671" y="440" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="8SV-gC-mfI"/>
                                                     <constraint firstAttribute="height" constant="25" id="E6h-N3-bIN"/>
@@ -6472,7 +6475,7 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-i9-OIF">
-                                                <rect key="frame" x="20" y="30" width="374" height="300"/>
+                                                <rect key="frame" x="20" y="30" width="374" height="380"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLF-iC-hFd">
                                                         <rect key="frame" x="20" y="20.000000000000007" width="334" height="107.66666666666669"/>
@@ -6490,13 +6493,13 @@ track専属コーチから
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="斜線re" translatesAutoresizingMaskIntoConstraints="NO" id="0j8-k4-wLu">
-                                                        <rect key="frame" x="32.666666666666657" y="167" width="309" height="100"/>
+                                                        <rect key="frame" x="32.666666666666657" y="167" width="309" height="180"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="3OT-Lj-0dG"/>
+                                                            <constraint firstAttribute="height" constant="180" id="3OT-Lj-0dG"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-C5-eUm">
-                                                        <rect key="frame" x="175.33333333333334" y="207" width="23.666666666666657" height="20"/>
+                                                        <rect key="frame" x="175.33333333333334" y="247" width="23.666666666666657" height="20"/>
                                                         <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6512,7 +6515,7 @@ track専属コーチから
                                                     <constraint firstItem="mLF-iC-hFd" firstAttribute="centerX" secondItem="Frg-i9-OIF" secondAttribute="centerX" id="Ddn-2i-JSW"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="centerX" secondItem="mLF-iC-hFd" secondAttribute="centerX" id="IsZ-Q0-88v"/>
                                                     <constraint firstItem="Z0Q-2F-JTR" firstAttribute="top" secondItem="mLF-iC-hFd" secondAttribute="bottom" constant="13.333333333333314" id="Sdz-8j-xlU"/>
-                                                    <constraint firstAttribute="height" constant="300" id="T1U-J3-IaY"/>
+                                                    <constraint firstAttribute="height" constant="380" id="T1U-J3-IaY"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="top" secondItem="Z0Q-2F-JTR" secondAttribute="bottom" constant="8" id="XYK-N2-V2d"/>
                                                     <constraint firstItem="mLF-iC-hFd" firstAttribute="top" secondItem="Frg-i9-OIF" secondAttribute="top" constant="20" id="Yxm-VA-kai"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="width" secondItem="mLF-iC-hFd" secondAttribute="width" multiplier="0.92515" id="cHN-Mm-BHM"/>
@@ -6561,8 +6564,10 @@ track専属コーチから
                     <navigationItem key="navigationItem" title="動画の注意点" id="EV8-He-ehI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ImageView" destination="0j8-k4-wLu" id="IHm-R3-upa"/>
                         <outlet property="approveFlagButton" destination="VOA-AN-Yux" id="LB9-U3-SUd"/>
                         <outlet property="goToButton" destination="XNL-DR-KEI" id="Btb-PY-9S0"/>
+                        <outlet property="playVideo" destination="f1d-C5-eUm" id="sBa-SM-JxQ"/>
                         <segue destination="xi7-AB-ryV" kind="show" identifier="goToPremiumQAForm" id="1Dw-Gm-GXh"/>
                     </connections>
                 </viewController>

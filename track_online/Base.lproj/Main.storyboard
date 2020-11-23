@@ -23,7 +23,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-Y2-qL6">
                                 <rect key="frame" x="61" y="631" width="253" height="66"/>
-                                <color key="backgroundColor" red="0.76985231164383561" green="0.23069107995205482" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="Hj0-ZK-ZAr"/>
                                     <constraint firstAttribute="height" constant="66" id="WeD-R5-TBX"/>
@@ -35,6 +35,15 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -127,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="-235" y="-607"/>
         </scene>
-        <!--QA-->
+        <!--コミュニティ-->
         <scene sceneID="jOg-Bh-QeH">
             <objects>
                 <viewController id="Xv8-Bc-aoP" customClass="QAAllListViewController" customModule="track_online" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,8 +269,8 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="QA" image="quote.bubble" catalog="system" id="bZD-j8-uQS"/>
-                    <navigationItem key="navigationItem" title="QA" id="kSL-8l-cXc">
+                    <tabBarItem key="tabBarItem" title="コミュニティ" image="quote.bubble" catalog="system" id="bZD-j8-uQS"/>
+                    <navigationItem key="navigationItem" title="コミュニティ" id="kSL-8l-cXc">
                         <barButtonItem key="leftBarButtonItem" image="ellipsis.rectangle" catalog="system" id="DBd-wC-tQD">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -293,11 +302,11 @@
             </objects>
             <point key="canvasLocation" x="450" y="183"/>
         </scene>
-        <!--QA-->
+        <!--コミュニティ-->
         <scene sceneID="mq8-Ff-gS4">
             <objects>
                 <navigationController id="tFC-vS-Xc1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="QA" image="quote.bubble" catalog="system" selectedImage="quote.bubble" id="zpC-30-UAc">
+                    <tabBarItem key="tabBarItem" title="コミュニティ" image="quote.bubble" catalog="system" selectedImage="quote.bubble" id="zpC-30-UAc">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hU0-DN-Vrx">
@@ -367,7 +376,7 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-jh-1mQ">
-                                                <rect key="frame" x="40" y="820" width="334" height="50"/>
+                                                <rect key="frame" x="40" y="780" width="334" height="50"/>
                                                 <color key="backgroundColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="xDc-cK-pyz"/>
@@ -400,13 +409,13 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="980円/回" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b40-eO-mzR">
-                                                <rect key="frame" x="170.66666666666666" y="880" width="72.666666666666657" height="21"/>
+                                                <rect key="frame" x="170.66666666666666" y="840" width="72.666666666666657" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGw-7t-FRM">
-                                                <rect key="frame" x="40" y="931" width="334" height="50"/>
+                                                <rect key="frame" x="40" y="891" width="334" height="50"/>
                                                 <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LkX-kN-k58"/>
@@ -438,15 +447,15 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMs-Pa-s2I">
-                                                <rect key="frame" x="30" y="340" width="354" height="210"/>
+                                                <rect key="frame" x="30" y="340" width="354" height="190"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しゅーにー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-jZ-hLh">
-                                                        <rect key="frame" x="138.66666666666666" y="20" width="77" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-jZ-hLh">
+                                                        <rect key="frame" x="171.33333333333334" y="20" width="11.333333333333343" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="AYx-Ah-QYl"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -456,9 +465,12 @@ track専属コーチから
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10種競技専門。茨城県出身。慶應義塾大学卒。高校3年時インターハイ8種競技出場。関東インカレ入賞。指導者をつけず、自らの思考と行動のみで独自の運動理論を作り上げるそのスタイル。「再現性のあるアウトプット」をテーマに中高生の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsS-Mh-2Mq">
-                                                        <rect key="frame" x="20" y="58" width="314" height="132"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スポーツバイオメカニクス専攻大学院卒。神奈川県出身。主に走り幅跳び・短距離を研究。YouTubeチャンネルSPOTECH運営。力学的な観点からの動作分析やビッグデータを活用した統計分析を通じて、多くのアマチュア陸上選手の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsS-Mh-2Mq">
+                                                        <rect key="frame" x="20" y="38" width="314" height="130"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="sfh-3v-UO4"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -473,9 +485,8 @@ track専属コーチから
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="PsS-Mh-2Mq" secondAttribute="trailing" constant="20" id="6pb-ro-KHv"/>
-                                                    <constraint firstAttribute="height" constant="210" id="FzI-wK-2BL"/>
-                                                    <constraint firstItem="PsS-Mh-2Mq" firstAttribute="top" secondItem="Qif-jZ-hLh" secondAttribute="bottom" constant="20" id="KiV-4E-9KZ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="PsS-Mh-2Mq" secondAttribute="bottom" constant="20" id="Rd4-FW-t5P"/>
+                                                    <constraint firstAttribute="height" constant="190" id="FzI-wK-2BL"/>
+                                                    <constraint firstItem="PsS-Mh-2Mq" firstAttribute="top" secondItem="Qif-jZ-hLh" secondAttribute="bottom" id="KiV-4E-9KZ"/>
                                                     <constraint firstItem="PsS-Mh-2Mq" firstAttribute="leading" secondItem="xMs-Pa-s2I" secondAttribute="leading" constant="20" id="gVG-DK-Ng6"/>
                                                     <constraint firstItem="Qif-jZ-hLh" firstAttribute="centerX" secondItem="xMs-Pa-s2I" secondAttribute="centerX" id="iPC-rH-RWZ"/>
                                                     <constraint firstItem="Qif-jZ-hLh" firstAttribute="top" secondItem="xMs-Pa-s2I" secondAttribute="top" constant="20" id="kPI-b6-fCx"/>
@@ -546,11 +557,14 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thv-bp-bou">
-                                                <rect key="frame" x="30" y="570" width="354" height="210"/>
+                                                <rect key="frame" x="30" y="550" width="354" height="190"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10種競技専門。茨城県出身。慶應義塾大学卒。高校3年時インターハイ8種競技出場。関東インカレ入賞。特徴は、指導者をつけず、自らの思考と行動のみで独自の運動理論を作り上げるスタイルが特徴。「再現性のあるアウトプット」をテーマに中高生の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-Hi-FPQ">
-                                                        <rect key="frame" x="20" y="58" width="314" height="132"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍専門。茨城県出身。慶應義塾大学卒。インターハイ出場。関東インカレ入賞。指導者のいない希有な環境下において、自らの思考と行動のみで独自の運動理論を作り上げてきた。「再現性のあるアウトプット」をテーマに中高生の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-Hi-FPQ">
+                                                        <rect key="frame" x="20" y="38" width="314" height="130"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="K6K-Ck-G1p"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -561,13 +575,13 @@ track専属コーチから
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しゅーにー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-N1-cWr">
-                                                        <rect key="frame" x="138.66666666666666" y="20" width="77" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しゅうへい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-N1-cWr">
+                                                        <rect key="frame" x="131" y="20" width="92" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="b7A-RJ-gck"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -580,12 +594,11 @@ track専属コーチから
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="WIW-Hi-FPQ" secondAttribute="bottom" constant="20" id="8PL-sV-Ql6"/>
                                                     <constraint firstItem="WIW-Hi-FPQ" firstAttribute="leading" secondItem="thv-bp-bou" secondAttribute="leading" constant="20" id="Pkj-Vr-wco"/>
-                                                    <constraint firstAttribute="height" constant="210" id="RYK-gy-7le"/>
+                                                    <constraint firstAttribute="height" constant="190" id="RYK-gy-7le"/>
                                                     <constraint firstItem="yu8-N1-cWr" firstAttribute="top" secondItem="thv-bp-bou" secondAttribute="top" constant="20" id="ilZ-RY-gbS"/>
                                                     <constraint firstAttribute="trailing" secondItem="WIW-Hi-FPQ" secondAttribute="trailing" constant="20" id="rvf-aV-ij5"/>
-                                                    <constraint firstItem="WIW-Hi-FPQ" firstAttribute="top" secondItem="yu8-N1-cWr" secondAttribute="bottom" constant="20" id="wUY-eC-tqJ"/>
+                                                    <constraint firstItem="WIW-Hi-FPQ" firstAttribute="top" secondItem="yu8-N1-cWr" secondAttribute="bottom" id="wUY-eC-tqJ"/>
                                                     <constraint firstItem="yu8-N1-cWr" firstAttribute="centerX" secondItem="thv-bp-bou" secondAttribute="centerX" id="xfc-Wl-vKW"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -657,7 +670,7 @@ track専属コーチから
                             <constraint firstItem="7zq-Ws-Bg5" firstAttribute="top" secondItem="KgB-6p-fyb" secondAttribute="bottom" constant="8" id="zDW-6S-m0b"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SPETECHプレミアム" id="x6U-Yt-81a"/>
+                    <tabBarItem key="tabBarItem" title="プレミアム質問" id="x6U-Yt-81a"/>
                     <navigationItem key="navigationItem" title="プレミアム質問" id="Vgm-do-BsH">
                         <barButtonItem key="leftBarButtonItem" image="ellipsis.rectangle" catalog="system" id="jqZ-cN-AHA">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1275,7 +1288,7 @@ track専属コーチから
                                 </constraints>
                                 <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="ログアウト">
-                                    <color key="titleColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1283,7 +1296,7 @@ track専属コーチから
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -1330,7 +1343,7 @@ track専属コーチから
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-2N-4t7">
                                 <rect key="frame" x="20" y="85.666666666666671" width="25" height="22.333333333333329"/>
-                                <color key="tintColor" red="0.94901960784313721" green="0.49803921568627452" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="4m8-t8-Bu0"/>
                                     <constraint firstAttribute="height" constant="25" id="Yxh-XY-AT1"/>
@@ -1338,7 +1351,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HRW-25-K5d">
                                 <rect key="frame" x="20" y="151.33333333333334" width="25" height="21.000000000000014"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="3Rs-0L-VcK"/>
                                     <constraint firstAttribute="height" constant="25" id="k2B-wi-Acj"/>
@@ -1346,7 +1359,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0BQ-9Y-u59">
                                 <rect key="frame" x="20" y="278.33333333333331" width="25" height="23.666666666666686"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="M9d-Hj-xbl"/>
                                     <constraint firstAttribute="width" constant="25" id="ius-lo-lRe"/>
@@ -1354,7 +1367,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-WB-U7M">
                                 <rect key="frame" x="20" y="342.33333333333331" width="25" height="22.666666666666686"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="TIE-EC-rts"/>
                                     <constraint firstAttribute="height" constant="25" id="XbB-Zv-39g"/>
@@ -1362,7 +1375,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.diamond" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6UI-AW-yqs">
                                 <rect key="frame" x="20" y="214" width="25" height="23.666666666666671"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="e5x-Hh-hob"/>
                                     <constraint firstAttribute="height" constant="25" id="rEa-xi-8hc"/>
@@ -1513,7 +1526,7 @@ track専属コーチから
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ9-IN-k83">
                                                         <rect key="frame" x="290" y="50" width="50" height="25"/>
-                                                        <color key="backgroundColor" red="0.92156862745098034" green="0.57647058823529407" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="25" id="uCE-hZ-5Ns"/>
                                                             <constraint firstAttribute="width" constant="50" id="wof-ha-rtA"/>
@@ -1778,7 +1791,7 @@ track専属コーチから
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnz-3K-8YA">
                                                 <rect key="frame" x="82" y="993" width="250" height="50"/>
-                                                <color key="backgroundColor" red="0.92156862745098034" green="0.57647058823529407" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="8cB-5m-p0d"/>
                                                     <constraint firstAttribute="height" constant="50" id="NPL-Lj-MCw"/>
@@ -2420,7 +2433,7 @@ track専属コーチから
                                 </constraints>
                                 <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="保存">
-                                    <color key="titleColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2428,7 +2441,7 @@ track専属コーチから
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -2475,7 +2488,7 @@ track専属コーチから
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-W9-nbn">
                                 <rect key="frame" x="20" y="85.666666666666671" width="25" height="22.333333333333329"/>
-                                <color key="tintColor" red="0.94901960780000005" green="0.49803921569999998" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Kjf-qQ-g89"/>
                                     <constraint firstAttribute="height" constant="25" id="zVA-MQ-zxu"/>
@@ -2483,7 +2496,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DYE-zU-ICm">
                                 <rect key="frame" x="20" y="151.33333333333334" width="25" height="21.000000000000014"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Fld-Tt-cVh"/>
                                     <constraint firstAttribute="width" constant="25" id="R2O-d8-y9Y"/>
@@ -2491,7 +2504,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-2Y-Rij">
                                 <rect key="frame" x="20" y="274.33333333333331" width="25" height="23.666666666666686"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="mn9-8z-BhV"/>
                                     <constraint firstAttribute="height" constant="25" id="uyx-uO-kOF"/>
@@ -2499,7 +2512,7 @@ track専属コーチから
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="z58-jJ-eci">
                                 <rect key="frame" x="20" y="341.33333333333331" width="25" height="22.666666666666686"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="cpg-dK-kyo"/>
                                     <constraint firstAttribute="height" constant="25" id="wh2-zk-hQS"/>
@@ -2523,7 +2536,7 @@ track専属コーチから
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.diamond" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G4A-Bt-s7o">
                                 <rect key="frame" x="20" y="214" width="25" height="23.666666666666671"/>
-                                <color key="tintColor" red="0.94860406090000005" green="0.49963338229999998" blue="0.088861830860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="W14-8N-CM7"/>
                                     <constraint firstAttribute="height" constant="25" id="vR1-k6-50u"/>

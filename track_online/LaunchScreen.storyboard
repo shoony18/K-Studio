@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cwb-rH-4cl">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cwb-rH-4cl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,16 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="crk-L5-rmh">
-                                <rect key="frame" x="-49" y="192" width="512" height="512"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SPOTECHロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="crk-L5-rmh">
+                                <rect key="frame" x="30" y="378" width="354" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="if5-yr-BeS"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="KoN-1o-9KQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerX" secondItem="eok-w3-vVm" secondAttribute="centerX" id="9zl-81-zcQ"/>
-                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerY" secondItem="eok-w3-vVm" secondAttribute="centerY" id="Rru-Lb-LRq"/>
+                            <constraint firstItem="crk-L5-rmh" firstAttribute="leading" secondItem="KoN-1o-9KQ" secondAttribute="leading" constant="30" id="12a-gV-uPL"/>
+                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerX" secondItem="KoN-1o-9KQ" secondAttribute="centerX" id="TTV-zV-Uz6"/>
+                            <constraint firstItem="KoN-1o-9KQ" firstAttribute="trailing" secondItem="crk-L5-rmh" secondAttribute="trailing" constant="30" id="Umq-FL-1UY"/>
+                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerY" secondItem="KoN-1o-9KQ" secondAttribute="centerY" id="tC4-Er-a5c"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="KoN-1o-9KQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkX-tF-FFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashImage" width="512" height="512"/>
+        <image name="SPOTECHロゴ" width="1333" height="500"/>
     </resources>
 </document>

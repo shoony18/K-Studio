@@ -17,45 +17,47 @@ import MobileCoreServices
 import AssetsLibrary
 
 class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    
     @IBOutlet var TableView: UITableView!
-
+    
     var postIDArray = [String]()
     var dateArray = [String]()
     var timeArray = [String]()
     var eventArray = [String]()
     var answerFlagArray = [String]()
     var memoArray = [String]()
-
+    
     var postIDArray_re = [String]()
     var dateArray_re = [String]()
     var timeArray_re = [String]()
     var eventArray_re = [String]()
     var answerFlagArray_re = [String]()
     var memoArray_re = [String]()
-
+    
     var selectedPostID: String?
-
+    
     let imagePickerController = UIImagePickerController()
     var cache: String?
     var videoURL: URL?
     var data:Data?
     var pickerview: UIPickerView = UIPickerView()
-
+    
     let currentUid:String = Auth.auth().currentUser!.uid
     let currentUserName:String = Auth.auth().currentUser!.displayName!
     let Ref = Database.database().reference()
-
+    
     override func viewDidLoad() {
         TableView.dataSource = self
         TableView.delegate = self
-
+        
         loadData()
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.TableView.reloadData()
+    }
     func loadData(){
         postIDArray.removeAll()
         dateArray.removeAll()
@@ -63,14 +65,14 @@ class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITa
         eventArray.removeAll()
         answerFlagArray.removeAll()
         memoArray.removeAll()
-
+        
         postIDArray_re.removeAll()
         dateArray_re.removeAll()
         timeArray_re.removeAll()
         eventArray_re.removeAll()
         answerFlagArray_re.removeAll()
         memoArray_re.removeAll()
-
+        
         Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").observeSingleEvent(of: .value, with: {(snapshot) in
             if let snapdata = snapshot.value as? [String:NSDictionary]{
                 for key in snapdata.keys.sorted(){
@@ -124,19 +126,19 @@ class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITa
             }
         })
     }
-
+    
     func numberOfSections(in myTableView: UITableView) -> Int {
         return 1
     }
-
+    
     func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postIDArray_re.count
     }
-                
-       
+    
+    
     func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(postIDArray_re)
-    
+        
         let cell = self.TableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as? premiumMyPostListTableViewCell
         cell!.title.text = self.memoArray_re[indexPath.row]
         cell!.date.text = self.dateArray_re[indexPath.row]
@@ -155,19 +157,19 @@ class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITa
         cell!.ImageView.sd_setImage(with: refImage, placeholderImage: nil)
         return cell!
     }
-        
-
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedPostID = postIDArray_re[indexPath.row]
         performSegue(withIdentifier: "selectedPost", sender: nil)
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "selectedPost") {
             if #available(iOS 13.0, *) {
-                    let nextData: premiumSelectedMyPostViewController = segue.destination as! premiumSelectedMyPostViewController
-                    nextData.selectedPostID = self.selectedPostID!
-                } else {
+                let nextData: premiumSelectedMyPostViewController = segue.destination as! premiumSelectedMyPostViewController
+                nextData.selectedPostID = self.selectedPostID!
+            } else {
                 // Fallback on earlier versions
             }
         }

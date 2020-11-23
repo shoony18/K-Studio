@@ -21,7 +21,7 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
     var QAList = [String]()
     var PointArray = [String]()
     var AllCountAnswerArray = [String]()
-
+    
     var countAnswerArray = [String]()
     var QANameArray = [String]()
     var QAContentArray = [String]()
@@ -34,7 +34,7 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
     var QASpecialityArray = [String]()
     var TimeArray = [String]()
     var DateArray = [String]()
-
+    
     var countAnswerArray0 = [String]()
     var QANameArray0 = [String]()
     var QAContentArray0 = [String]()
@@ -59,8 +59,8 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
     var settingIndex = Int()
     var firstLogin:String?
     let refreshControl = UIRefreshControl()
-
-
+    
+    
     struct data {
         let TitleMenu = ["最新","短距離","中距離","長距離","跳躍","投擲","混成","その他"]
         var index = 0
@@ -73,158 +73,158 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
     }
     var Data = data()
-
+    
     @IBOutlet var myTableView: UITableView!
-//    fileprivate let refreshCtl = UIRefreshControl()
-//    var bilibili = true
-
+    //    fileprivate let refreshCtl = UIRefreshControl()
+    //    var bilibili = true
+    
     override func viewDidLoad() {
         firstLoginChecked()
         loadData_Firebase(selectedIndex:settingIndex)
-//        createHeaderView()
+        //        createHeaderView()
         myTableView.dataSource = self
         myTableView.delegate = self
-//        myTableView.contentInset.top = 30 //ヘッダーの高さ分下げる
-//        scrollView.delegate = self as UIScrollViewDelegate
-//        myTableView.refreshControl = refreshControl
-//        refreshControl.addTarget(self, action: #selector(QAAllListViewController.refreshControlValueChanged(sender:)), for: .valueChanged)
-//        myTableView.addSubview(refreshControl)
+        //        myTableView.contentInset.top = 30 //ヘッダーの高さ分下げる
+        //        scrollView.delegate = self as UIScrollViewDelegate
+        //        myTableView.refreshControl = refreshControl
+        //        refreshControl.addTarget(self, action: #selector(QAAllListViewController.refreshControlValueChanged(sender:)), for: .valueChanged)
+        //        myTableView.addSubview(refreshControl)
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         firstLoginChecked()
         self.myTableView.reloadData()
-//       loadData_Firebase(selectedIndex:settingIndex)
-       super.viewWillAppear(animated)
+        //       loadData_Firebase(selectedIndex:settingIndex)
+        super.viewWillAppear(animated)
     }
-//    @objc func refreshControlValueChanged(sender: UIRefreshControl) {
-//        print(settingIndex)
-//        loadData_Firebase(selectedIndex:settingIndex)
-//
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-//            self.myTableView.reloadData()
-//            self.refreshControl.endRefreshing()
-//        }
-//    }
+    //    @objc func refreshControlValueChanged(sender: UIRefreshControl) {
+    //        print(settingIndex)
+    //        loadData_Firebase(selectedIndex:settingIndex)
+    //
+    //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+    //            self.myTableView.reloadData()
+    //            self.refreshControl.endRefreshing()
+    //        }
+    //    }
     @IBAction func refreshControl(_ sender: Any) {
         loadData_Firebase(selectedIndex:settingIndex)
     }
     func loadData_Firebase(selectedIndex:Int) {
-            QANameArray.removeAll()
-            countAnswerArray.removeAll()
-            QAContentArray.removeAll()
-            QAStatusArray.removeAll()
-            DateArray.removeAll()
-            TimeArray.removeAll()
-            QASpecialityArray.removeAll()
-            userNameArray.removeAll()
-            uuidArray.removeAll()
-            QANameArray0.removeAll()
-            countAnswerArray0.removeAll()
-            QAContentArray0.removeAll()
-            QAStatusArray0.removeAll()
-            DateArray0.removeAll()
-            TimeArray0.removeAll()
-            QASpecialityArray0.removeAll()
-            userNameArray0.removeAll()
-            uuidArray0.removeAll()
-
+        QANameArray.removeAll()
+        countAnswerArray.removeAll()
+        QAContentArray.removeAll()
+        QAStatusArray.removeAll()
+        DateArray.removeAll()
+        TimeArray.removeAll()
+        QASpecialityArray.removeAll()
+        userNameArray.removeAll()
+        uuidArray.removeAll()
+        QANameArray0.removeAll()
+        countAnswerArray0.removeAll()
+        QAContentArray0.removeAll()
+        QAStatusArray0.removeAll()
+        DateArray0.removeAll()
+        TimeArray0.removeAll()
+        QASpecialityArray0.removeAll()
+        userNameArray0.removeAll()
+        uuidArray0.removeAll()
+        
         var title = Data.TitleMenu[selectedIndex]
         if Data.TitleMenu[selectedIndex] == "最新"{
-           title = "全て"
+            title = "全て"
         }
         ref.child("QA").child("public").child("\(title)").observeSingleEvent(of: .value, with: {
-                (snapshot) in
-           
-            if let snapdata = snapshot.value as? [String:NSDictionary]{
+            (snapshot) in
             
+            if let snapdata = snapshot.value as? [String:NSDictionary]{
+                
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let QAName = snap!["QAName"] as? String {
                         self.QANameArray.append(QAName)
-//                        self.QANameArray0 = self.QANameArray.reversed()
-//                        if self.QANameArray.count >= number{
-//                            break
-//                        }
+                        //                        self.QANameArray0 = self.QANameArray.reversed()
+                        //                        if self.QANameArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let QAContent = snap!["QAContent"] as? String {
                         self.QAContentArray.append(QAContent)
-//                        self.QAContentArray0 = self.QAContentArray.reversed()
-//                        if self.QAContentArray.count >= number{
-//                            break
-//                        }
-
+                        //                        self.QAContentArray0 = self.QAContentArray.reversed()
+                        //                        if self.QAContentArray.count >= number{
+                        //                            break
+                        //                        }
+                        
                     }
                 }
-//                for key in snapdata.keys.sorted(){
-//                    let snap = snapdata[key]
-//                    if let QAStatus = snap!["QAStatus"] as? String {
-//                        self.QAStatusArray.append(QAStatus)
-//                        self.QAStatusArray.append(QAStatus)
-//                    }
-//                }
+                //                for key in snapdata.keys.sorted(){
+                //                    let snap = snapdata[key]
+                //                    if let QAStatus = snap!["QAStatus"] as? String {
+                //                        self.QAStatusArray.append(QAStatus)
+                //                        self.QAStatusArray.append(QAStatus)
+                //                    }
+                //                }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let date = snap!["date"] as? String {
                         self.DateArray.append(date)
-//                        self.DateArray0 = self.DateArray.reversed()
-//                        if self.DateArray.count >= number{
-//                            break
-//                        }
+                        //                        self.DateArray0 = self.DateArray.reversed()
+                        //                        if self.DateArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let time = snap!["time"] as? String {
                         self.TimeArray.append(time)
-//                        self.TimeArray0 = self.TimeArray.reversed()
-//                        if self.TimeArray.count >= number{
-//                            break
-//                        }
-
+                        //                        self.TimeArray0 = self.TimeArray.reversed()
+                        //                        if self.TimeArray.count >= number{
+                        //                            break
+                        //                        }
+                        
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let speciality = snap!["QASpeciality"] as? String {
                         self.QASpecialityArray.append(speciality)
-//                        self.QASpecialityArray0 = self.QASpecialityArray.reversed()
-//                        if self.QASpecialityArray.count >= number{
-//                            break
-//                        }
+                        //                        self.QASpecialityArray0 = self.QASpecialityArray.reversed()
+                        //                        if self.QASpecialityArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let userName = snap!["userName"] as? String {
                         self.userNameArray.append(userName)
-//                        self.userNameArray0 = self.userNameArray.reversed()
-//                        if self.userNameArray.count >= number{
-//                            break
-//                        }
+                        //                        self.userNameArray0 = self.userNameArray.reversed()
+                        //                        if self.userNameArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let countAnswer = snap!["countAnswer"] as? String {
                         self.countAnswerArray.append(countAnswer)
-//                        self.countAnswerArray0 = self.countAnswerArray.reversed()
-//                        if self.countAnswerArray.count >= number{
-//                            break
-//                        }
+                        //                        self.countAnswerArray0 = self.countAnswerArray.reversed()
+                        //                        if self.countAnswerArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
                 for key in snapdata.keys.sorted(){
                     let snap = snapdata[key]
                     if let uuid = snap!["uuid"] as? String {
                         self.uuidArray.append(uuid)
-//                        self.uuidArray0 = self.uuidArray.reversed()
-//                        if self.uuidArray.count >= number{
-//                            break
-//                        }
+                        //                        self.uuidArray0 = self.uuidArray.reversed()
+                        //                        if self.uuidArray.count >= number{
+                        //                            break
+                        //                        }
                     }
                 }
             }
@@ -255,23 +255,23 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         
     }
-
+    
     
     func numberOfSections(in myTableView: UITableView) -> Int {
         return 1
     }
-
+    
     func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        QANameArray.count
-//        return QANameArray.count
-
+        //        QANameArray.count
+        //        return QANameArray.count
+        
         if QANameArray.count > 11{
             return 11
         }else{
             return QANameArray.count
         }
     }
-            
+    
     func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "TableViewCell1", for: indexPath as IndexPath) as? QATableViewCell
         cell!.QAContent1.text = self.QAContentArray0[indexPath.row] //①
@@ -295,29 +295,29 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
         selectedSpeciality = QASpecialityArray0[indexPath.row]
         selectedUserNameQuestion = userNameArray0[indexPath.row]
         selectedUid = uuidArray0[indexPath.row]
-//        ref.child("QA").child("public").child("\(selectedText!)").observe(.value) { (snap: DataSnapshot) in
-//            //処理したい内容
-//
-//            print((snap.value! as AnyObject).description as Any)
-//            if ((snap.value! as AnyObject).description as String) == "QAStatus1.png"{
-//                let data = ["QAStatus": "QAStatus2.png"]
-//                self.ref.child("QA").child(self.currentUid).child("\(self.selectedText!)").updateChildValues(data)
-//                print("QAStatus変わったよ！")
-//                UIApplication.shared.applicationIconBadgeNumber = 0
-//            }
-//        }
+        //        ref.child("QA").child("public").child("\(selectedText!)").observe(.value) { (snap: DataSnapshot) in
+        //            //処理したい内容
+        //
+        //            print((snap.value! as AnyObject).description as Any)
+        //            if ((snap.value! as AnyObject).description as String) == "QAStatus1.png"{
+        //                let data = ["QAStatus": "QAStatus2.png"]
+        //                self.ref.child("QA").child(self.currentUid).child("\(self.selectedText!)").updateChildValues(data)
+        //                print("QAStatus変わったよ！")
+        //                UIApplication.shared.applicationIconBadgeNumber = 0
+        //            }
+        //        }
         performSegue(withIdentifier: "selectedQAAllList", sender: nil)
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "selectedQAAllList") {
             if #available(iOS 13.0, *) {
@@ -339,22 +339,22 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
     func firstLoginChecked(){
         let ref = Database.database().reference().child("QA").child("uuid").child(self.currentUid)
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
-        // Get user value
+            // Get user value
             let value = snapshot.value as? NSDictionary
             let key = value?["firstLogin"] as? String ?? ""
             self.firstLogin = key
-          }) { (error) in
-              print(error.localizedDescription)
+        }) { (error) in
+            print(error.localizedDescription)
         }
         print("ぷよぷよ!!")
-
+        
     }
     @IBAction func moveToQAPage(_ sender: Any) {
         
         if self.firstLogin != "1"{
             let alert: UIAlertController = UIAlertController(title: "確認", message: "初回会員登録ボーナスとして300Pが贈呈されます。", preferredStyle:  UIAlertController.Style.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
-            (action: UIAlertAction!) -> Void in
+                (action: UIAlertAction!) -> Void in
                 let data=["firstLogin":"1","point":"300"]
                 let ref = Database.database().reference().child("QA").child("uuid").child(self.currentUid)
                 ref.updateChildValues(data)
@@ -373,8 +373,8 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
             self.navigationController?.pushViewController(QAForm, animated: true)
         }
     }
-
-
+    
+    
 }
 //extension QAAllListViewController {
 //    private func createHeaderView() {

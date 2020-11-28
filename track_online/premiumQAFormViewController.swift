@@ -462,25 +462,17 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 }
                 let postData = ["postID":"\(timenow)"+"_"+"\(self.nameLabel.text!)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","height":"\(self.height.text!)","weight":"\(self.weight.text!)","event":"\(self.event.text!)","PB1":"\(self.PB1.text!)","PB2":"\(self.PB2.text!)","memo":"\(self.memo.text!)","answerFlag":"0","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)" as Any] as [String : Any]
                 let userData = ["uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","status":"1"]
+                let fcmData = ["fcmTrigger":"0"]
                 let ref0 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
                 let ref1 = self.Ref.child("purchase").child("premium").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
                 let ref2 = self.Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
-                
+                let ref3 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("fcmTrigger")
+
                 ref0.setValue(postData)
                 ref1.setValue(postData)
                 ref2.updateChildValues(userData)
-                self.textValidate.isHidden = true
-                //            self.event.text = ""
-                //            self.PB.text = ""
-                //            self.height.text = ""
-                //            self.weight.text = ""
-                //            self.memo.text = ""
-                //            self.videoURL = nil
-                //            self.imageView.image = UIImage(named: "斜線re.png")
-                print("OK")
-                //            self.performSegue(withIdentifier: "ResultView", sender: true)
-                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-            //                self.performSegue(withIdentifier: "ResultView", sender: true)
+                ref3.updateChildValues(fcmData)
+                self.dismiss(animated: true, completion: nil)
             case .deferred, .purchasing:
                 print("Transaction in progress: \(transaction)")
             @unknown default:

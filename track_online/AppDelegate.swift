@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SKPaymentTransactionObser
 
     
         override init() {
+//            UIApplication.shared.applicationIconBadgeNumber = 0
+
 //            super.init()
             FirebaseApp.configure()
 

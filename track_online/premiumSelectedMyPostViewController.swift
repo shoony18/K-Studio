@@ -64,6 +64,7 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
     let Ref = Database.database().reference()
     
     override func viewDidLoad() {
+        UIApplication.shared.applicationIconBadgeNumber = 0
         loadDataPost()
         download()
         loadDataAnswer()

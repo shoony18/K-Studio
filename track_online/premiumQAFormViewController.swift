@@ -553,6 +553,6 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     }
     
     @IBAction func closePage(_ sender: Any) {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

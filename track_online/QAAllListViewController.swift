@@ -219,8 +219,8 @@ class QAAllListViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if QANameArray.count > 11{
-            return 11
+        if QANameArray.count > 25{
+            return 25
         }else{
             return QANameArray.count
         }

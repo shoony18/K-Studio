@@ -22,11 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-Y2-qL6">
-                                <rect key="frame" x="61" y="631" width="253" height="66"/>
+                                <rect key="frame" x="36" y="698" width="303" height="50"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="253" id="Hj0-ZK-ZAr"/>
-                                    <constraint firstAttribute="height" constant="66" id="WeD-R5-TBX"/>
+                                    <constraint firstAttribute="height" constant="50" id="WeD-R5-TBX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <state key="normal" title="ログイン/新規登録">
@@ -48,40 +47,42 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-NI-mvG">
-                                <rect key="frame" x="67.666666666666686" y="252" width="240" height="128"/>
+                                <rect key="frame" x="67.666666666666686" y="302" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Jyq-Xy-je5"/>
                                     <constraint firstAttribute="width" constant="240" id="bCH-vD-8Ya"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-FO-X6y">
-                                <rect key="frame" x="86" y="169" width="203" height="34"/>
-                                <string key="text">パフォーマンスを上げたい
-アスリートに捧ぐ</string>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="75.333333333333329" y="162" width="224.33333333333337" height="48"/>
+                                <string key="text">最先端のアプローチで
+パフォーマンスをあげる</string>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfZ-hR-8R3">
-                                <rect key="frame" x="111.66666666666667" y="430.66666666666669" width="151.66666666666663" height="51"/>
+                                <rect key="frame" x="95.666666666666671" y="502.33333333333331" width="183.66666666666663" height="95.666666666666686"/>
                                 <string key="text">陸上選手のための
 オンラインスクール
+
 K-Studio</string>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nfZ-hR-8R3" firstAttribute="centerY" secondItem="cm6-j2-9Zz" secondAttribute="centerY" constant="50" id="1IN-DW-TuZ"/>
                             <constraint firstItem="RdP-FO-X6y" firstAttribute="centerX" secondItem="cm6-j2-9Zz" secondAttribute="centerX" id="3mr-4V-oK6"/>
-                            <constraint firstItem="mhf-Y2-qL6" firstAttribute="centerY" secondItem="cm6-j2-9Zz" secondAttribute="centerY" constant="258" id="Ew9-ev-4f9"/>
-                            <constraint firstItem="Os2-NI-mvG" firstAttribute="centerY" secondItem="cm6-j2-9Zz" secondAttribute="centerY" constant="-90" id="H5x-fm-hxJ"/>
+                            <constraint firstItem="Os2-NI-mvG" firstAttribute="centerY" secondItem="cm6-j2-9Zz" secondAttribute="centerY" constant="-40" id="H5x-fm-hxJ"/>
+                            <constraint firstItem="mhf-Y2-qL6" firstAttribute="top" secondItem="nfZ-hR-8R3" secondAttribute="bottom" constant="100" id="P6g-GA-sGN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mhf-Y2-qL6" secondAttribute="trailing" constant="20" id="UGJ-aM-43P"/>
                             <constraint firstItem="nfZ-hR-8R3" firstAttribute="centerX" secondItem="cm6-j2-9Zz" secondAttribute="centerX" id="X3t-h7-UoS"/>
-                            <constraint firstItem="mhf-Y2-qL6" firstAttribute="centerX" secondItem="cm6-j2-9Zz" secondAttribute="centerX" id="Z0W-0G-QvY"/>
                             <constraint firstItem="RdP-FO-X6y" firstAttribute="centerY" secondItem="cm6-j2-9Zz" secondAttribute="centerY" constant="-220" id="aQx-Dt-he2"/>
+                            <constraint firstItem="mhf-Y2-qL6" firstAttribute="leading" secondItem="cm6-j2-9Zz" secondAttribute="leadingMargin" constant="20" id="isk-sZ-FcY"/>
                             <constraint firstItem="Os2-NI-mvG" firstAttribute="centerX" secondItem="cm6-j2-9Zz" secondAttribute="centerX" id="lM0-Fs-fcu"/>
+                            <constraint firstItem="aWK-Z3-BJo" firstAttribute="top" secondItem="mhf-Y2-qL6" secondAttribute="bottom" constant="30" id="pWj-Jz-Cih"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME" id="FIv-EA-laS"/>
@@ -691,7 +692,7 @@ K-Studio専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zO8-4h-iCv" customClass="TPKeyboardAvoidingScrollView">
-                                    <rect key="frame" x="0.0" y="697" width="414" height="122"/>
+                                    <rect key="frame" x="0.0" y="685" width="414" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-vD-7NR">
@@ -746,14 +747,14 @@ K-Studio専属コーチから
                                 </scrollView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPost" id="bF5-o4-yfn" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="497"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="485"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bF5-o4-yfn" id="EzY-OZ-EbE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="497"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="485"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-I4-fdS">
-                                                    <rect key="frame" x="10" y="231" width="394" height="212"/>
+                                                    <rect key="frame" x="10" y="219" width="394" height="212"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="212" id="2yu-YM-XSq"/>
                                                     </constraints>
@@ -770,7 +771,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXv-rd-d2b">
-                                                    <rect key="frame" x="10" y="42" width="394" height="164"/>
+                                                    <rect key="frame" x="10" y="30" width="394" height="164"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                             <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -784,7 +785,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-tD-fA4">
-                                                    <rect key="frame" x="26" y="120" width="66" height="17"/>
+                                                    <rect key="frame" x="26" y="108" width="66" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="mXb-d9-Wsc"/>
                                                     </constraints>
@@ -793,19 +794,19 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w04-8x-9hZ">
-                                                    <rect key="frame" x="26" y="92" width="382" height="18"/>
+                                                    <rect key="frame" x="26" y="80" width="362" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqz-Ba-LsT">
-                                                    <rect key="frame" x="102" y="115" width="30.333333333333343" height="27"/>
+                                                    <rect key="frame" x="102" y="103" width="30.333333333333343" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8h-Ti-X7Z">
-                                                    <rect key="frame" x="36" y="246" width="342" height="180"/>
+                                                    <rect key="frame" x="36" y="234" width="342" height="180"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="180" id="xtr-VT-ovB"/>
                                                     </constraints>
@@ -816,7 +817,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnF-gk-eRB">
-                                                    <rect key="frame" x="194.66666666666666" y="325" width="25" height="22"/>
+                                                    <rect key="frame" x="194.66666666666666" y="313" width="25" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="Jy7-Xt-LCh"/>
                                                         <constraint firstAttribute="height" constant="22" id="f9v-yU-LaD"/>
@@ -825,13 +826,13 @@ K-Studio専属コーチから
                                                     <state key="normal" title="Button" image="play.rectangle" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwt-4Z-FAD">
-                                                    <rect key="frame" x="61" y="60.666666666666657" width="37.666666666666657" height="18"/>
+                                                    <rect key="frame" x="61" y="48.666666666666664" width="37.666666666666657" height="17.999999999999993"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bOZ-XK-z4e">
-                                                    <rect key="frame" x="16" y="53.000000000000007" width="35" height="33.666666666666664"/>
+                                                    <rect key="frame" x="16" y="41" width="35" height="33.666666666666671"/>
                                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="Kti-w2-hOx"/>
@@ -839,13 +840,13 @@ K-Studio専属コーチから
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-ed-2hZ">
-                                                    <rect key="frame" x="69" y="169" width="28.666666666666671" height="17"/>
+                                                    <rect key="frame" x="69" y="157" width="28.666666666666671" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身長：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qc-VT-0CT">
-                                                    <rect key="frame" x="26" y="147" width="43" height="17"/>
+                                                    <rect key="frame" x="26" y="135" width="43" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="htz-5G-O5g"/>
                                                     </constraints>
@@ -854,50 +855,50 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-dg-v7Y">
-                                                    <rect key="frame" x="69" y="147" width="43.666666666666657" height="17"/>
+                                                    <rect key="frame" x="69" y="135" width="43.666666666666657" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-nz-cVO">
-                                                    <rect key="frame" x="122.66666666666669" y="147" width="43" height="17"/>
+                                                    <rect key="frame" x="122.66666666666669" y="135" width="43" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-Dz-n35">
-                                                    <rect key="frame" x="165.66666666666666" y="147" width="32.666666666666657" height="17"/>
+                                                    <rect key="frame" x="165.66666666666666" y="135" width="32.666666666666657" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己ベスト：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-wX-rRX">
-                                                    <rect key="frame" x="120.66666666666669" y="169" width="86" height="17"/>
+                                                    <rect key="frame" x="120.66666666666669" y="157" width="86" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="種目：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8t-nZ-jg8">
-                                                    <rect key="frame" x="26" y="169" width="43" height="17"/>
+                                                    <rect key="frame" x="26" y="157" width="43" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6m00cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB4-p4-hEQ">
-                                                    <rect key="frame" x="206.66666666666666" y="169" width="57.999999999999972" height="17"/>
+                                                    <rect key="frame" x="206.66666666666666" y="157" width="57.999999999999972" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-6b-vNI">
-                                                    <rect key="frame" x="26" y="476" width="362" height="1"/>
+                                                    <rect key="frame" x="26" y="464" width="362" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="yjt-lt-DGc"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-dQ-MIS">
-                                                    <rect key="frame" x="203" y="465.66666666666669" width="8.3333333333333428" height="22"/>
+                                                    <rect key="frame" x="203" y="453.66666666666669" width="8.3333333333333428" height="22"/>
                                                     <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -912,7 +913,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送信情報" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-8l-F7L">
-                                                    <rect key="frame" x="167" y="31" width="80" height="21"/>
+                                                    <rect key="frame" x="167" y="19" width="80" height="21"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="nmw-BO-4De"/>
@@ -922,7 +923,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送信動画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-Wg-VYb">
-                                                    <rect key="frame" x="167" y="221" width="80" height="21"/>
+                                                    <rect key="frame" x="167" y="209" width="80" height="21"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="OYS-DM-fM0"/>
@@ -936,6 +937,7 @@ K-Studio専属コーチから
                                                 <constraint firstItem="Lqz-Ba-LsT" firstAttribute="top" secondItem="w04-8x-9hZ" secondAttribute="bottom" constant="5" id="1kC-Aw-sBf"/>
                                                 <constraint firstItem="NKl-Wg-VYb" firstAttribute="top" secondItem="hXv-rd-d2b" secondAttribute="bottom" constant="15" id="3gS-eo-CIR"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="f8h-Ti-X7Z" secondAttribute="trailing" constant="20" id="4Mu-Zb-rRA"/>
+                                                <constraint firstItem="w04-8x-9hZ" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" constant="10" id="6fB-pe-kJf"/>
                                                 <constraint firstItem="Bde-6b-vNI" firstAttribute="top" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="50" id="6rg-Zz-Trv"/>
                                                 <constraint firstItem="bOZ-XK-z4e" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" id="7Vn-Pb-9Za"/>
                                                 <constraint firstItem="iwt-4Z-FAD" firstAttribute="centerY" secondItem="bOZ-XK-z4e" secondAttribute="centerY" id="9Gz-E5-Y45"/>
@@ -956,14 +958,12 @@ K-Studio専属コーチから
                                                 <constraint firstItem="Lqz-Ba-LsT" firstAttribute="centerY" secondItem="xZk-tD-fA4" secondAttribute="centerY" id="T50-2I-Ufe"/>
                                                 <constraint firstItem="SVK-nz-cVO" firstAttribute="centerY" secondItem="ISd-dg-v7Y" secondAttribute="centerY" id="TBd-JL-OjL"/>
                                                 <constraint firstItem="NKl-Wg-VYb" firstAttribute="centerX" secondItem="EzY-OZ-EbE" secondAttribute="centerX" id="TJz-5A-cAa"/>
-                                                <constraint firstItem="0NO-8l-F7L" firstAttribute="top" secondItem="EzY-OZ-EbE" secondAttribute="topMargin" constant="20" id="V9s-iQ-tuF"/>
+                                                <constraint firstItem="0NO-8l-F7L" firstAttribute="top" secondItem="EzY-OZ-EbE" secondAttribute="topMargin" constant="8" id="V9s-iQ-tuF"/>
                                                 <constraint firstAttribute="trailing" secondItem="hXv-rd-d2b" secondAttribute="trailing" constant="10" id="Vyd-Cl-ZVD"/>
                                                 <constraint firstItem="eB4-p4-hEQ" firstAttribute="leading" secondItem="ehN-wX-rRX" secondAttribute="trailing" id="YpX-37-YfX"/>
-                                                <constraint firstItem="w04-8x-9hZ" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" constant="10" id="ah2-FS-364"/>
                                                 <constraint firstItem="eB4-p4-hEQ" firstAttribute="centerY" secondItem="ehN-wX-rRX" secondAttribute="centerY" id="b9w-0Q-CVE"/>
                                                 <constraint firstItem="ehN-wX-rRX" firstAttribute="centerY" secondItem="bdC-ed-2hZ" secondAttribute="centerY" id="bQX-Xy-zkn"/>
                                                 <constraint firstItem="9qc-VT-0CT" firstAttribute="top" secondItem="xZk-tD-fA4" secondAttribute="bottom" constant="10" id="c5F-ye-rbj"/>
-                                                <constraint firstItem="w04-8x-9hZ" firstAttribute="trailing" secondItem="EzY-OZ-EbE" secondAttribute="trailingMargin" constant="10" id="dNF-9O-lGi"/>
                                                 <constraint firstItem="xZk-tD-fA4" firstAttribute="leading" secondItem="EzY-OZ-EbE" secondAttribute="leadingMargin" constant="10" id="eKS-m3-qiw"/>
                                                 <constraint firstItem="f8h-Ti-X7Z" firstAttribute="top" secondItem="hXv-rd-d2b" secondAttribute="bottom" constant="40" id="eVm-Eh-bIv"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="f8h-Ti-X7Z" secondAttribute="bottom" constant="60" id="gb4-6u-bHG"/>
@@ -973,10 +973,11 @@ K-Studio専属コーチから
                                                 <constraint firstAttribute="trailing" secondItem="YH1-I4-fdS" secondAttribute="trailing" constant="10" id="n4H-u3-cnf"/>
                                                 <constraint firstItem="xZk-tD-fA4" firstAttribute="top" secondItem="w04-8x-9hZ" secondAttribute="bottom" constant="10" id="nDY-4q-qv5"/>
                                                 <constraint firstItem="ISd-dg-v7Y" firstAttribute="centerY" secondItem="9qc-VT-0CT" secondAttribute="centerY" id="nHj-Pt-I31"/>
+                                                <constraint firstItem="w04-8x-9hZ" firstAttribute="trailing" secondItem="EzY-OZ-EbE" secondAttribute="trailingMargin" constant="-10" id="o7g-Od-Spl"/>
                                                 <constraint firstItem="P8t-nZ-jg8" firstAttribute="top" secondItem="9qc-VT-0CT" secondAttribute="bottom" constant="5" id="oxX-3e-8Ee"/>
                                                 <constraint firstItem="w04-8x-9hZ" firstAttribute="top" secondItem="bOZ-XK-z4e" secondAttribute="bottom" constant="5" id="rG5-Wj-QJR"/>
                                                 <constraint firstItem="jmt-Dz-n35" firstAttribute="centerY" secondItem="SVK-nz-cVO" secondAttribute="centerY" id="sm2-H4-7T2"/>
-                                                <constraint firstItem="hXv-rd-d2b" firstAttribute="top" secondItem="EzY-OZ-EbE" secondAttribute="top" constant="42" id="srX-sT-1ye"/>
+                                                <constraint firstItem="hXv-rd-d2b" firstAttribute="top" secondItem="EzY-OZ-EbE" secondAttribute="top" constant="30" id="srX-sT-1ye"/>
                                                 <constraint firstItem="0NO-8l-F7L" firstAttribute="centerX" secondItem="EzY-OZ-EbE" secondAttribute="centerX" id="ubf-Ii-zER"/>
                                                 <constraint firstItem="bOZ-XK-z4e" firstAttribute="top" secondItem="0NO-8l-F7L" secondAttribute="bottom" id="vek-8i-nua"/>
                                                 <constraint firstItem="YH1-I4-fdS" firstAttribute="top" secondItem="hXv-rd-d2b" secondAttribute="bottom" constant="25" id="wLJ-gp-sn5"/>
@@ -1000,7 +1001,7 @@ K-Studio専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellLabel1" rowHeight="50" id="syn-4I-aWI" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="525" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="513" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="syn-4I-aWI" id="gcY-r0-IXe">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1033,7 +1034,7 @@ K-Studio専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnswer1" id="F24-cP-Mef" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="575" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="563" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F24-cP-Mef" id="lZb-nt-usr">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -1058,23 +1059,23 @@ K-Studio専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPractice" rowHeight="50" id="eSu-de-1S3" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="619" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="607" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eSu-de-1S3" id="G6d-Qg-ND8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-4Y-fJG">
-                                                    <rect key="frame" x="175" y="11" width="223" height="18"/>
+                                                    <rect key="frame" x="195" y="11" width="203" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オススメトレ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHT-HY-6dE">
-                                                    <rect key="frame" x="40" y="10" width="130" height="20"/>
+                                                    <rect key="frame" x="40" y="10" width="150" height="20"/>
                                                     <color key="backgroundColor" red="0.50980392159999999" green="0.61568627450000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="130" id="Osw-Bn-v0G"/>
+                                                        <constraint firstAttribute="width" constant="150" id="Osw-Bn-v0G"/>
                                                         <constraint firstAttribute="height" constant="20" id="hgk-Ed-fGw"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1137,45 +1138,7 @@ K-Studio専属コーチから
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2f-2S-A9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="4091"/>
-        </scene>
-        <!--利用規約-->
-        <scene sceneID="1wh-nW-dLf">
-            <objects>
-                <viewController id="I3I-xo-N63" customClass="appRuleViewController" customModule="track_online" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fqc-tj-6R8"/>
-                        <viewControllerLayoutGuide type="bottom" id="CMT-jG-hNw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h8S-lP-EOR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdb-VH-p4g">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bdb-VH-p4g" secondAttribute="trailing" id="4TK-Qy-ks1"/>
-                            <constraint firstItem="bdb-VH-p4g" firstAttribute="leading" secondItem="h8S-lP-EOR" secondAttribute="leading" id="D5T-UD-fml"/>
-                            <constraint firstItem="bdb-VH-p4g" firstAttribute="top" secondItem="Fqc-tj-6R8" secondAttribute="bottom" id="EV3-Xp-Kbj"/>
-                            <constraint firstItem="CMT-jG-hNw" firstAttribute="top" secondItem="bdb-VH-p4g" secondAttribute="bottom" id="nej-Si-aye"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="利用規約" id="GVD-z5-9to"/>
-                    <connections>
-                        <outlet property="appRuleView" destination="bdb-VH-p4g" id="JAV-q6-EKj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tgW-Br-m17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1808" y="883"/>
+            <point key="canvasLocation" x="612.79999999999995" y="4090.6403940886703"/>
         </scene>
         <!--プロフィール情報-->
         <scene sceneID="zgS-fU-diM">
@@ -5178,7 +5141,7 @@ K-Studio専属コーチから
                         <segue destination="tuS-8P-4cL" kind="show" identifier="mypage1" id="gFS-HF-DRJ"/>
                         <segue destination="Ddm-ZV-Ezr" kind="show" identifier="mypage3" id="Nqj-bh-bcu"/>
                         <segue destination="dpd-6j-QZX" kind="show" identifier="premiumQA" id="DaX-z7-k68"/>
-                        <segue destination="I3I-xo-N63" kind="show" identifier="appRule" id="3Di-BK-gZR"/>
+                        <segue destination="SC6-oI-mTw" kind="show" identifier="appRule" id="Eia-t8-EWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbe-u6-dux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5614,6 +5577,373 @@ K-Studio専属コーチから
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPT-nO-BAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3236" y="1730"/>
+        </scene>
+        <!--利用規約（プレミアム質問）-->
+        <scene sceneID="aaZ-Ou-ihe">
+            <objects>
+                <viewController id="pSc-iO-krX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPG-z6-zJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="zpa-SB-YVI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n6G-xK-kmW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uko-iw-wbN" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmB-64-U8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3594.3333333333335"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bab-30-ofp">
+                                                <rect key="frame" x="20" y="20" width="374" height="3544.3333333333335"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.9790933034" green="1" blue="0.97209443849999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" none="YES"/>
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <string key="text">この利用規約（以下「本規約」と言います。）は、K-Studio（以下、当社または本アプリ）のコーチングサービス「プレミアム質問」（以下、本サービス）の利用条件を定めるものです。本サービスをご利用いただくためには、本規約に同意いただくことが必要です。
+
+第１条（適用）
+本規約は、本サービスの利用に関する、利用者と当社との間のあらゆる関係に適用されるものとし、利用者は、本サービスを利用するにあたり、自己の責任において本規約を誠実に遵守するものとします。
+
+第2条（本サービスの内容及び利用上の注意）
+1. 本サービスは、登録コーチが会員からの送信される動画及びそれに付随する会員情報をもとにアドバイスを提供することを目的とするサービスです。本サービスを利用して当社のアドバイスを受ける者（以下、利用者）のパフォーマンス記録の向上およびその他一切の問題解決について保証をするものではありません。
+2. 利用者は、本サービスを利用するにあたり、所定の条件（角度、サイズ、輝度、時間など）を満たした動画を当社に送信するものとし、また動画に付随する利用者の情報についてはその時点で正しい情報であることを表明し、保証します。
+3. 当社は、利用者からの送信情報が本条第２項に違反していると判明した場合、アドバイスを提供する義務を負いません。またその場合において当社が利用者にアドバイスを提供した場合でも、当該アドバイスの品質（アドバイスが送信されるまでの所要時間を含む）について、当社は一切責任を負いません。
+4. 利用者は、当社が本条第２項に基づき利用者に提供したアドバイスの品質（アドバイスが送信されるまでの所要時間を含む）について、当社の故意及び重過失がない限りにおいて、一切、異議を申立てることができず、第3条で定める利用料金の返金を求めることができません。
+5. 当社は、理由の如何を問わず、会員に事前の通知・催告をすることなく、本サービスに関して、内容の全部または一部の変更、休止、廃止をすることができるものとします。
+
+第3条（利用料金・決済方法）
+1. 本サービスの利用料金は、別途当社が定め、本アプリに表示する価格とします。
+2. 会員は、前項の会員サービスの利用料金を本アプリ内の課金機能により支払うものとする。
+
+第4条（同意事項）
+1. 利用者は、本サービスの利用に際し、下記の事項について同意します。
+1) 当社が推奨するOS環境、端末で本アプリを使用すること
+2) 利用者のOS環境、端末によって、会員サービスの一部を閲覧または利用できない可能性があること
+3) 会員サービスはすべて日本語で提供されるということ
+4) 会員サービスの利用料金と決済方法を理解し支払うこと
+
+第5条（表明保証および申込拒否事由）
+1. 利用者は、下記の本サービス申込拒否事由各号に該当しないことを表明し、保証します。
+1) 成年被後見人、被保佐人または被補助人のいずれかであり、法定代理人、後見人、補佐人または補助人の同意等を得ていなかい者
+2) 反社会的勢力等（暴力団、暴力団員、右翼団体、反社会的勢力、その他これに準ずる者を意味します。以下同じ。）である、または資金提供その他を通じて反社会的勢力等を維持、運営もしくは経営に協力もしくは関与する等反社会的勢力等との何らかの交流もしくは関与を行っていると当社が判断した者
+3) 過去に当社との契約に違反した者またはその関係者であると当社が判断した場合
+4) その他、本サービスを提供するに当社が不適切と判断する者
+2. 本条第1項に該当することが判明した場合、当社は事前の通知なく利用者からの本サービスの申込を拒否することがあります。
+3. 本条第2項に基づき、当社が申込を拒否した場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+
+ 第6条（申請内容の変更・キャンセルおよび返金ルール等）
+1. 利用者は、申込完了後であっても、当社からのアドバイスが提供されていない間においては、申請情報を変更することができます。
+2. 利用者は、申込完了後において、いかなる理由があっても、キャンセルすることができません。ただし、当社に重過失があった場合を除きます。キャンセル等、苦情受付窓口は以下の通りです。
+
+宛先：Kスタお客様窓口
+メール：ksta.online.app@gmail.com
+
+第7条（除名等）
+1. 当社は、利用者が以下のいずれかの事由に該当する場合、またはその恐れがあると当社が判断した場合、事前に通告・催告することなく、かつ承諾を得ることなく、当社の裁量により直ちに、本サービスの全部または一部の利用停止、除名処分、その他当社が適切と判断する措置を執ることができるものとします。
+1) 本規約に違反した場合
+2)第5条（登録拒否事由に関する表明保証および会員登録拒否事由）に反する事実が判明した場合または反する可能性がある場合
+3) 登録情報に虚偽または過誤がある場合
+4) 本サービスに関する情報を改ざんする行為
+5) 登録された電子メールアドレスが機能していないと判断される場合
+6) 第三者になりすまして本サービスを利用した場合
+7) 第三者に本サービスを利用させる行為
+8) 他の利用者、第三者または当社に迷惑、不利益、もしくは損害を与える行為、またはそれらのおそれのある行為
+9) 当社を誹謗中傷する行為
+10) 本サービスの運営を妨げ、その他本サービスに支障をきたすおそれのある行為
+11) 会員が死亡した場合
+12) 公序良俗に反する行為その他法令に違反する行為、またはそれらのおそれのある行為
+13) その他、当社が会員として不適切と判断した場合
+2. 除名の場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+3. 本条の場合において、当社が何らかの損害を被った場合、利用者は当社に対して当該損害を賠償するものとします。
+
+ 第8条（損害賠償）
+1. 当社は、利用者が本サービスをご利用になれなかったことにより発生した一切の損害について、当社の故意または重過失の場合は除き、いかなる責任も負わないものとします。
+2. 当社が損害賠償義務を負う場合、損害賠償額は、当社が利用者から受領した金額を上限とします。
+
+ 第9条（本サービスの一時的な中断）
+1. 当社は､本サービスの稼動状況を良好に保つために、以下各号の場合利用者に事前に通知を行うことなく本サービスの提供の全部あるいは一部を中止、もしくは一時中断できるものとします｡
+1) 本サービスの提供に必要な設備の故障等により緊急保守を行う場合
+2) 火災、停電、第三者による妨害行為等不可抗力により本サービスを提供できない場合
+3) その他､運用上または技術上の理由でやむを得ない場合
+2.  当社は､前項の他､本サービスの提供に必要な設備の定期保守を行うため､利用者に事前通知のうえ､本サービスを一時的に中断できるものとします｡
+
+ 第10条（サービスの廃止）
+1. 当社は､次のいずれかに該当する場合、本サービスを廃止するものとし､すべての利用者へのサービスを終了するものとします｡
+1) 30日前までに利用者に通知した場合
+2) 不可抗力により本サービスの提供が不可能となった場合
+
+ 第11条（権利譲渡の禁止）
+1. 利用者は､あらかじめ当社の書面による承諾がない限り､本規約上の権利もしくは義務の全部または一部を他に譲渡してはならないものとします。
+
+ 第12条（個人情報・プライバシーの保護）
+1. 本サービスの利用に関連して当社が知り得た利用者の個人情報について、当社が別途定める｢プライバシーポリシー｣に基づき､適切に取り扱うものとします｡
+
+ 第13条（本規約の改訂）
+1. 当社は、利用者の一般の利益に適合する場合、または、契約の目的に反せず、かつ合理的な改訂である場合、あらかじめ利用者の承諾を得ることなく、本規約を改訂することができるものとします。
+2. 前項にかかわらず、法令等により、本規約の改訂につき、利用者の承諾が必要な場合、当社は利用者の個別に承諾を得るものとします。
+
+ 第14条（協議解決）
+1. 本サービスのご利用に関して、本規約または当社の指導により解決できない問題が生じた場合、当社と利用者との間で双方誠意をもって協議し、解決を図るものとします。
+
+第15条（管轄裁判所）
+1. 本規約に関する一切の訴訟その他の紛争については、東京地方裁判所または東京簡易裁判所を第１審の専属的合意管轄裁判所とするものとします。
+
+第16条（準拠法）
+1. 本規約は、日本法に準拠し、日本法に従って解釈されるものとします。
+
+2020年12月1日施行
+
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="5" height="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bab-30-ofp" firstAttribute="leading" secondItem="hmB-64-U8x" secondAttribute="leading" constant="20" id="3BK-hP-zK6"/>
+                                            <constraint firstItem="bab-30-ofp" firstAttribute="top" secondItem="hmB-64-U8x" secondAttribute="top" constant="20" id="R54-h9-Evm"/>
+                                            <constraint firstAttribute="bottom" secondItem="bab-30-ofp" secondAttribute="bottom" constant="30" id="WTc-MM-1a9"/>
+                                            <constraint firstAttribute="trailing" secondItem="bab-30-ofp" secondAttribute="trailing" constant="20" id="deN-j3-vyg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hmB-64-U8x" secondAttribute="bottom" id="IS3-nw-fS9"/>
+                                    <constraint firstAttribute="trailing" secondItem="hmB-64-U8x" secondAttribute="trailing" id="Sfp-pE-kUH"/>
+                                    <constraint firstItem="hmB-64-U8x" firstAttribute="width" secondItem="Uko-iw-wbN" secondAttribute="width" id="Ym1-Ox-eru"/>
+                                    <constraint firstItem="hmB-64-U8x" firstAttribute="leading" secondItem="Uko-iw-wbN" secondAttribute="leading" id="e2q-tR-zKI"/>
+                                    <constraint firstItem="hmB-64-U8x" firstAttribute="top" secondItem="Uko-iw-wbN" secondAttribute="top" id="gOS-I8-4o7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uko-iw-wbN" firstAttribute="top" secondItem="cPG-z6-zJY" secondAttribute="bottom" id="4hr-ou-6lD"/>
+                            <constraint firstItem="zpa-SB-YVI" firstAttribute="top" secondItem="Uko-iw-wbN" secondAttribute="bottom" id="51e-8E-SJy"/>
+                            <constraint firstItem="Uko-iw-wbN" firstAttribute="leading" secondItem="n6G-xK-kmW" secondAttribute="leading" id="8O1-Gx-lKl"/>
+                            <constraint firstAttribute="trailing" secondItem="Uko-iw-wbN" secondAttribute="trailing" id="Lnc-XQ-R8W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用規約（プレミアム質問）" id="9QL-Il-OFx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9d-ut-PI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="641"/>
+        </scene>
+        <!--利用規約（一般）-->
+        <scene sceneID="nMs-c0-Lfv">
+            <objects>
+                <viewController id="SC6-oI-mTw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9v-qd-M7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="rs4-Mf-OdO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ox5-e2-aKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-Nf-rhK" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-Ty-4TH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3010"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TU-le-C90">
+                                                <rect key="frame" x="20" y="20" width="374" height="2900"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.9790933034" green="1" blue="0.97209443849999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" none="YES"/>
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <string key="text">この利用規約（以下「本規約」と言います。）は、K-Studio（以下、当社または本アプリ）内のサービス（以下、本サービス）の利用条件を定めるものです。本サービスをご利用いただくためには、本規約に同意いただくことが必要です。
+
+第１条（適用）
+本規約は、本サービスの利用に関する、利用者と当社との間のあらゆる関係に適用されるものとし、利用者は、本サービスを利用するにあたり、自己の責任において本規約を誠実に遵守するものとします。
+
+第2条（本サービスの内容及び利用上の注意）
+1.本サービスはパフォーマンス記録の向上およびその他一切の問題解決について保証をするものではありません。
+2. 当社は、理由の如何を問わず、会員に事前の通知・催告をすることなく、本サービスに関して、内容の全部または一部の変更、休止、廃止をすることができるものとします。
+
+第3条（同意事項）
+1. 利用者は、本サービスの利用に際し、下記の事項について同意します。
+1) 当社が推奨するOS環境、端末で本アプリを使用すること
+2) 利用者のOS環境、端末によって、会員サービスの一部を閲覧または利用できない可能性があること
+3) 会員サービスはすべて日本語で提供されるということ
+
+第4条（表明保証および申込拒否事由）
+1. 利用者は、下記の本サービス申込拒否事由各号に該当しないことを表明し、保証します。
+1) 成年被後見人、被保佐人または被補助人のいずれかであり、法定代理人、後見人、補佐人または補助人の同意等を得ていなかい者
+2) 反社会的勢力等（暴力団、暴力団員、右翼団体、反社会的勢力、その他これに準ずる者を意味します。以下同じ。）である、または資金提供その他を通じて反社会的勢力等を維持、運営もしくは経営に協力もしくは関与する等反社会的勢力等との何らかの交流もしくは関与を行っていると当社が判断した者
+3) 過去に当社との契約に違反した者またはその関係者であると当社が判断した場合
+4) その他、本サービスを提供するに当社が不適切と判断する者
+2. 本条第1項に該当することが判明した場合、当社は事前の通知なく利用者からの本サービスの利用を拒否することがあります。
+3. 本条第2項に基づき、当社が申込を拒否した場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+
+ 第5条（苦情受付窓口）
+1.　苦情受付窓口は以下の通りです。
+
+宛先：Kスタお客様窓口
+メール：ksta.online.app@gmail.com
+
+第6条（除名等）
+1. 当社は、利用者が以下のいずれかの事由に該当する場合、またはその恐れがあると当社が判断した場合、事前に通告・催告することなく、かつ承諾を得ることなく、当社の裁量により直ちに、本サービスの全部または一部の利用停止、除名処分、その他当社が適切と判断する措置を執ることができるものとします。
+1) 本規約に違反した場合
+2)第4条（登録拒否事由に関する表明保証および会員登録拒否事由）に反する事実が判明した場合または反する可能性がある場合
+3) 登録情報に虚偽または過誤がある場合
+4) 本サービスに関する情報を改ざんする行為
+5) 登録された電子メールアドレスが機能していないと判断される場合
+6) 第三者になりすまして本サービスを利用した場合
+7) 第三者に本サービスを利用させる行為
+8) 他の利用者、第三者または当社に迷惑、不利益、もしくは損害を与える行為、またはそれらのおそれのある行為
+9) 当社を誹謗中傷する行為
+10) 本サービスの運営を妨げ、その他本サービスに支障をきたすおそれのある行為
+11) 会員が死亡した場合
+12) 公序良俗に反する行為その他法令に違反する行為、またはそれらのおそれのある行為
+13) その他、当社が会員として不適切と判断した場合
+2. 除名の場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+3. 本条の場合において、当社が何らかの損害を被った場合、利用者は当社に対して当該損害を賠償するものとします。
+
+ 第7条（損害賠償）
+1. 当社は、利用者が本サービスをご利用になれなかったことにより発生した一切の損害について、当社の故意または重過失の場合は除き、いかなる責任も負わないものとします。
+2. 当社が損害賠償義務を負う場合、損害賠償額は、当社が利用者から受領した金額を上限とします。
+
+ 第8条（本サービスの一時的な中断）
+1. 当社は､本サービスの稼動状況を良好に保つために、以下各号の場合利用者に事前に通知を行うことなく本サービスの提供の全部あるいは一部を中止、もしくは一時中断できるものとします｡
+1) 本サービスの提供に必要な設備の故障等により緊急保守を行う場合
+2) 火災、停電、第三者による妨害行為等不可抗力により本サービスを提供できない場合
+3) その他､運用上または技術上の理由でやむを得ない場合
+2.  当社は､前項の他､本サービスの提供に必要な設備の定期保守を行うため､利用者に事前通知のうえ､本サービスを一時的に中断できるものとします｡
+
+ 第9条（サービスの廃止）
+1. 当社は､次のいずれかに該当する場合、本サービスを廃止するものとし､すべての利用者へのサービスを終了するものとします｡
+1) 30日前までに利用者に通知した場合
+2) 不可抗力により本サービスの提供が不可能となった場合
+
+ 第10条（権利譲渡の禁止）
+1. 利用者は､あらかじめ当社の書面による承諾がない限り､本規約上の権利もしくは義務の全部または一部を他に譲渡してはならないものとします。
+
+ 第11条（個人情報・プライバシーの保護）
+1. 本サービスの利用に関連して当社が知り得た利用者の個人情報について、当社が別途定める｢プライバシーポリシー｣に基づき､適切に取り扱うものとします｡
+
+ 第12条（本規約の改訂）
+1. 当社は、利用者の一般の利益に適合する場合、または、契約の目的に反せず、かつ合理的な改訂である場合、あらかじめ利用者の承諾を得ることなく、本規約を改訂することができるものとします。
+2. 前項にかかわらず、法令等により、本規約の改訂につき、利用者の承諾が必要な場合、当社は利用者の個別に承諾を得るものとします。
+
+ 第13条（協議解決）
+1. 本サービスのご利用に関して、本規約または当社の指導により解決できない問題が生じた場合、当社と利用者との間で双方誠意をもって協議し、解決を図るものとします。
+
+第14条（管轄裁判所）
+1. 本規約に関する一切の訴訟その他の紛争については、東京地方裁判所または東京簡易裁判所を第１審の専属的合意管轄裁判所とするものとします。
+
+第15条（準拠法）
+1. 本規約は、日本法に準拠し、日本法に従って解釈されるものとします。
+
+2020年12月1日施行
+
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="5" height="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-Lq-LKF">
+                                                <rect key="frame" x="20" y="2940" width="374" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Fx3-Yx-yWG"/>
+                                                </constraints>
+                                                <state key="normal" title="プレミアム質問の利用規約はこちら">
+                                                    <color key="titleColor" red="0.36470588240000001" green="0.687544033" blue="0.68983978430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="pSc-iO-krX" kind="show" id="tod-kA-4wJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Iks-Lq-LKF" firstAttribute="top" secondItem="8TU-le-C90" secondAttribute="bottom" constant="20" id="3j2-Kw-ASd"/>
+                                            <constraint firstAttribute="trailing" secondItem="8TU-le-C90" secondAttribute="trailing" constant="20" id="5fU-1p-2IG"/>
+                                            <constraint firstItem="8TU-le-C90" firstAttribute="top" secondItem="tvE-Ty-4TH" secondAttribute="top" constant="20" id="8IT-Bu-AUH"/>
+                                            <constraint firstItem="Iks-Lq-LKF" firstAttribute="leading" secondItem="tvE-Ty-4TH" secondAttribute="leading" constant="20" id="CUQ-gZ-BTC"/>
+                                            <constraint firstItem="8TU-le-C90" firstAttribute="leading" secondItem="tvE-Ty-4TH" secondAttribute="leading" constant="20" id="agd-e2-zpX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Iks-Lq-LKF" secondAttribute="trailing" constant="20" id="kiv-ki-LXZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Iks-Lq-LKF" secondAttribute="bottom" constant="30" id="uOh-lb-rjo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tvE-Ty-4TH" secondAttribute="trailing" id="0rN-8i-Igc"/>
+                                    <constraint firstItem="tvE-Ty-4TH" firstAttribute="top" secondItem="Xqf-Nf-rhK" secondAttribute="top" id="3VO-2U-2jg"/>
+                                    <constraint firstItem="tvE-Ty-4TH" firstAttribute="width" secondItem="Xqf-Nf-rhK" secondAttribute="width" id="MyT-Ns-yJP"/>
+                                    <constraint firstAttribute="bottom" secondItem="tvE-Ty-4TH" secondAttribute="bottom" id="czb-2w-qIB"/>
+                                    <constraint firstItem="tvE-Ty-4TH" firstAttribute="leading" secondItem="Xqf-Nf-rhK" secondAttribute="leading" id="oAp-97-en1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqf-Nf-rhK" firstAttribute="top" secondItem="n9v-qd-M7L" secondAttribute="bottom" id="3l5-md-DSC"/>
+                            <constraint firstAttribute="trailing" secondItem="Xqf-Nf-rhK" secondAttribute="trailing" id="5Uu-to-Ifl"/>
+                            <constraint firstItem="rs4-Mf-OdO" firstAttribute="top" secondItem="Xqf-Nf-rhK" secondAttribute="bottom" id="H0e-Zj-W1n"/>
+                            <constraint firstItem="Xqf-Nf-rhK" firstAttribute="leading" secondItem="Ox5-e2-aKb" secondAttribute="leading" id="KEt-DR-uju"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用規約（一般）" id="oDl-C4-Mc4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acj-V9-24w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="ZOJ-VC-uGH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="Ygf-cH-alO"/>
+                    </items>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="1006" y="641"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

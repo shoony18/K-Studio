@@ -31,6 +31,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     let Ref = Database.database().reference()
 
     override func viewDidLoad() {
+        UIApplication.shared.applicationIconBadgeNumber = 0
         loadData()
         TableView.dataSource = self
         TableView.delegate = self
@@ -47,18 +48,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func loadData(){
         userName.text = "ようこそ、 "+"\(currentUserName)"+" さん"
-        Ref.child("QA").child("uuid").child("\(currentUid)").observeSingleEvent(of: .value, with: { (snapshot) in
-          // Get user value
-          let value = snapshot.value as? NSDictionary
-          let key = value?["point"] as? String ?? ""
-            if key.isEmpty{
-                self.pointText.text = "-"
-            }else{
-                self.pointText.text = "現在の保有ポイントは　" + key + "　ptです"
-            }
-          }) { (error) in
-            print(error.localizedDescription)
-        }
+
     }
     
     func numberOfSections(in myTableView: UITableView) -> Int {

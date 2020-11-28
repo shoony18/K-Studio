@@ -75,30 +75,7 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         pickerview.delegate = self
         pickerview.dataSource = self
         pickerview.showsSelectionIndicator = true
-        // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
-        //        shadowView0.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //        shadowView1.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //        shadowView2.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //        shadowView3.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //        shadowView4.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //        // 影の色
-        //        shadowView0.layer.shadowColor = UIColor.black.cgColor
-        //        shadowView1.layer.shadowColor = UIColor.black.cgColor
-        //        shadowView2.layer.shadowColor = UIColor.black.cgColor
-        //        shadowView3.layer.shadowColor = UIColor.black.cgColor
-        //        shadowView4.layer.shadowColor = UIColor.black.cgColor
-        //        // 影の濃さ
-        //        shadowView0.layer.shadowOpacity = 0.3
-        //        shadowView1.layer.shadowOpacity = 0.3
-        //        shadowView2.layer.shadowOpacity = 0.3
-        //        shadowView3.layer.shadowOpacity = 0.3
-        //        shadowView4.layer.shadowOpacity = 0.3
-        //        // 影をぼかし
-        //        shadowView0.layer.shadowRadius = 4
-        //        shadowView1.layer.shadowRadius = 4
-        //        shadowView2.layer.shadowRadius = 4
-        //        shadowView3.layer.shadowRadius = 4
-        //        shadowView4.layer.shadowRadius = 4
+
         // 決定バーの生成
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
         let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -113,9 +90,6 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         QASpeciality.inputView = pickerview
         QASpeciality.inputAccessoryView = toolbar
         QAContent.inputAccessoryView = toolbar0
-        
-//        self.contentView.addSubview(imageView)
-//        self.contentView.sendSubviewToBack(imageView);
         
         self.QARef.child(currentUid).observeSingleEvent(of: .value, with: {
             (snapshot) in
@@ -136,39 +110,12 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         refreshControl.addTarget(self, action: #selector(QATopViewController.refreshControlValueChanged(sender:)), for: .valueChanged)
         contentView.addSubview(refreshControl)
         
-        //        let data = Messaging.messaging().apnsToken
-        //        print("data:\(String(describing: data))")
-        fcmAuth()
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byWordWrapping
-//        self.PlayButton.isHidden = true
-        
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    }
-    func fcmAuth(){
-        UNUserNotificationCenter.current().getNotificationSettings(completionHandler: {setting in
-            if setting.authorizationStatus == .authorized {
-                let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"1" as AnyObject,"firstLogin":"1" as AnyObject]
-                self.postToken(Token: token)
-                print("許可")
-            }
-            else {
-                let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"0" as AnyObject]
-                self.postToken(Token: token)
-                print("未許可")
-            }
-        })
-    }
-    func postToken(Token:[String: AnyObject]){
-        print("FCM Token:\(Token)")
-        let currentUid:String = Auth.auth().currentUser!.uid
-        let dbRef = Database.database().reference()
-        dbRef.child("fcmToken").child(currentUid).setValue(Token)
     }
     
     @objc func refreshControlValueChanged(sender: UIRefreshControl) {
@@ -251,7 +198,6 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         if currentTextField == QASpeciality {
             return selectedGenre[row]
         }else {
-            print("nil")
             return ""
         }
     }
@@ -262,7 +208,6 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         if currentTextField == QASpeciality{
             currentTextField.inputView = pickerview
         }else{
-            print("nil")
         }
     }
     
@@ -275,10 +220,8 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         //画像だけ
         //imagePickerController.mediaTypes = ["public.image"]
         present(imagePickerController, animated: true, completion: nil)
-        print("選択できた！")
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("yes！")
         self.PlayButton.isHidden = false
         videoURL = info[UIImagePickerController.InfoKey.mediaURL] as? URL
         imageView.image = previewImageFromVideo(videoURL!)!
@@ -319,10 +262,6 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         }
     }
     @IBAction func sendVideo(_ sender: Any) {
-        print("プリ")
-        print(self.countPoint)
-        
-        let countPoint0 = self.countPoint * -1
         
         textValidateQASpeciality.isHidden = true
         textValidateQAContent.isHidden = true
@@ -330,25 +269,16 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         
         print(self.CountQAStatusArray)
         
-        if (CountQAStatusArray >= 5){
-            textValidateQANumber.isHidden = false
-            textValidateQANumber.text = "回答待ちの質問がたくさんあります。\nしばらくお待ちください。"
-            QAStatusArray.removeAll()
-            return
-        }else if QASpeciality.text?.count == 0 {
+
+        if QASpeciality.text?.count == 0 {
             textValidateQASpeciality.isHidden = false
             textValidateQASpeciality.text = "専門種目を選択してください"
-            return
-        }else if self.countPoint < 0{
-            textValidateQANumber.isHidden = false
-            textValidateQANumber.text = "trackポイントが\(countPoint0)pt不足してます。\n他のユーザーの質問に答えてポイントを貯めよう。"
             return
         }else if QAContent.text?.count == 0 {
             textValidateQAContent.isHidden = false
             textValidateQAContent.text = "質問文を入力してください"
             return
         }
-        self.pointExpense = "10"
         
         let now = NSDate()
         let formatter = DateFormatter()
@@ -366,63 +296,11 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         let time = formatter2.string(from: date2)
         print("\(time)")
         
-        let alert: UIAlertController = UIAlertController(title: "確認", message: "この質問を送信するとtrackポイントが"+"\(pointExpense!)pt"+"消費されます。よろしいですか？", preferredStyle:  UIAlertController.Style.alert)
+        let alert: UIAlertController = UIAlertController(title: "確認", message: "この質問を送信します。よろしいですか？", preferredStyle:  UIAlertController.Style.alert)
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
-            //ここから動画DB格納定義
-            if self.videoURL != nil{
-                self.segueNumber = 1
-                let storageReference = Storage.storage().reference().child("QA").child("\(self.currentUid)").child("private").child("\(timenow)\(self.currentUid)").child("\(timenow)\(self.currentUid).mp4")
-                let temporaryDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
-                /// create a temporary file for us to copy the video to.
-                let temporaryFileURL = temporaryDirectoryURL.appendingPathComponent(self.videoURL!.lastPathComponent )
-                /// Attempt the copy.
-                do {
-                    try FileManager().copyItem(at: self.videoURL!.absoluteURL, to: temporaryFileURL)
-                } catch {
-                    print("There was an error copying the video file to the temporary location.")
-                }
-                print("\(temporaryFileURL)")
-                storageReference.putFile(from: temporaryFileURL, metadata: nil) { metadata, error in
-                    guard let metadata = metadata else {
-                        // Uh-oh, an error occurred!
-                        print("error")
-                        return
-                    }
-                    // Metadata contains file metadata such as size, content-type.
-                    _ = metadata.size
-                    // You can also access to download URL after upload.
-                    storageReference.downloadURL { (url, error) in
-                        guard url != nil else {
-                            // Uh-oh, an error occurred!
-                            return
-                        }
-                    }
-                }
-                let storageReferenceImage = Storage.storage().reference().child("QA").child("\(self.currentUid)").child("private").child("\(timenow)\(self.currentUid)").child("\(timenow)\(self.currentUid).png")
-                storageReferenceImage.putData(self.data!, metadata: nil) { metadata, error in
-                    guard let metadata = metadata else {
-                        // Uh-oh, an error occurred!
-                        print("error")
-                        return
-                    }
-                    // Metadata contains file metadata such as size, content-type.
-                    _ = metadata.size
-                    // You can also access to download URL after upload.
-                    storageReference.downloadURL { (url, error) in
-                        guard url != nil else {
-                            // Uh-oh, an error occurred!
-                            return
-                        }
-                    }
-                }
-            }else{
-                self.segueNumber = 0
-            }
-            //ここまで動画DB格納定義
             
             let fcmData = ["fcmTrigger":"1"]
-            //                let rangeData = "1"
             let QAdata = ["QAName":"\(timenow)\(self.currentUid)","trackAnswer":"まだコメントはありません","QASpeciality":"\(self.QASpeciality.text!)","QAContent":"\(self.QAContent.text!)","QAStatus":"QAStatus0.png","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)","uuid":"\(self.currentUid)","userName":"\(self.nameLabel.text!)","registeredUserName":"\(self.currentUserName)","countAnswer":"0" as Any] as [String : Any]
             let answerdata = ["uuid":"\(self.currentUid)" as Any] as [String : Any]
             let QARef0 = self.QARef.child("\(self.currentUid)").child("public").child("\(timenow)\(self.currentUid)")
@@ -442,27 +320,12 @@ class QATopViewController: UIViewController,UIImagePickerControllerDelegate,UINa
             let uuidData = ["uuid":"\(self.currentUid)","uuidQAStatus":"QAStatus0.png"]
             self.QARef.child("uuid").child("\(self.currentUid)").updateChildValues(uuidData)
             
-            self.QAStatusArray0.removeAll()
-            let QARef6 = self.QARef.child("uuid").child("\(self.currentUid)")
-            QARef6.observeSingleEvent(of: .value, with: { (snapshot) in
-                // Get user value
-                let value = snapshot.value as? NSDictionary
-                let key = value?["point"] as? String ?? ""
-                self.countPoint = Int(key)! - Int(self.pointExpense!)!
-                let data = ["point":String(self.countPoint)]
-                QARef6.updateChildValues(data)
-            }) { (error) in
-                print(error.localizedDescription)
-            }
-            
-            
             self.textValidateQASpeciality.isHidden = true
             self.textValidateQAContent.isHidden = true
             self.textValidateQAVideo.isHidden = true
             self.textValidateQANumber.isHidden = true
             self.QASpeciality.text = ""
             self.QAContent.text = ""
-//self.navigationController?.popViewController(animated: true)
             self.dismiss(animated: true, completion: nil)
 //
 //            self.performSegue(withIdentifier: "ResultView", sender: true)

@@ -69,7 +69,7 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
     var DateArray_r = [String]()
     var sankouURLArray_r = [String]()
     var goodButtonArray_r = [String]()
-
+    
     var pickerview: UIPickerView = UIPickerView()
     var countAnswer:Int?
     var answerData: String?
@@ -77,8 +77,8 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
     var pointEaring:String?
     var Qdate:String?
     var Qtime:String?
-
-
+    
+    
     override func viewDidLoad() {
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byWordWrapping
@@ -91,10 +91,10 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
         // インプットビュー設定
         answerTextView.inputAccessoryView = toolbar
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-        
+    
     override func viewWillAppear(_ animated: Bool) {
         userNameAnswerArray.removeAll()
         answerArray.removeAll()
@@ -109,269 +109,198 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
     @objc func done() {
         self.view.endEditing(true)
     }
-
+    
     func textView(_ textView: UITextView,
-                      shouldInteractWith URL: URL,
-                      in characterRange: NSRange,
-                      interaction: UITextItemInteraction) -> Bool {
+                  shouldInteractWith URL: URL,
+                  in characterRange: NSRange,
+                  interaction: UITextItemInteraction) -> Bool {
         UIApplication.shared.open(URL)
         return false
     }
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        if answerTextView.text == "質問に回答する（1文字〜100字）" {
-//            textView.text = ""
-//            textView.textColor = UIColor.black
-//        }
-//    }
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        if textView.text.isEmpty {
-//            textView.text = "質問に回答する（1文字〜100字）"
-//            textView.textColor = UIColor.lightGray
-//        }
-//    }
+    
     func numberOfSections(in myTableView: UITableView) -> Int {
         return 1
     }
-
-        
+    
+    
     func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return userNameAnswerArray.count
+        return userNameAnswerArray.count
     }
-                
-        
+    
+    
     func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.QAmuraUserAnswerTableView.dequeueReusableCell(withIdentifier: "TableViewCell2", for: indexPath as IndexPath) as? QATableViewCell
         cell!.userNameAnswer1_2.text = self.userNameAnswerArray_r[indexPath.row] //①
         cell!.answer1_2.text = self.answerArray_r[indexPath.row]
         cell!.date1_2.text = self.DateArray_r[indexPath.row] //①
         cell!.time1_2.text = self.TimeArray_r[indexPath.row] //①
-//        cell!.sankouURL1_2.text = self.sankouURLArray[indexPath.row] //①
-//        cell!.goodButton1_2.setImage(UIImage(named: "goodButton\(goodButtonArray_r[indexPath.row])"), for: .normal)
+        //        cell!.sankouURL1_2.text = self.sankouURLArray[indexPath.row] //①
+        //        cell!.goodButton1_2.setImage(UIImage(named: "goodButton\(goodButtonArray_r[indexPath.row])"), for: .normal)
         cell?.flag1_2.addTarget(self, action: #selector(tapCellButton(_:)), for: .touchUpInside)
         //タグを設定
-//        cell!.goodButton1_2.tag = indexPath.row
+        //        cell!.goodButton1_2.tag = indexPath.row
         return cell!
     }
     @objc func tapCellButton(_ sender: UIButton) {
         let alert: UIAlertController = UIAlertController(title: "確認", message: "この回答は問題があるとして報告しますか？", preferredStyle:  UIAlertController.Style.alert)
-
-                        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
-                            (action: UIAlertAction!) -> Void in
-                            let ref0 = Database.database().reference().child("QA").child("public").child("\(self.selectedSpeciality!)").child("\(self.text!)").child("trackAnswer").child("\(self.fromUidArray_r[sender.tag])")
-                            let ref1 = Database.database().reference().child("QA").child("public").child("全て").child("\(self.text!)").child("trackAnswer").child("\(self.fromUidArray_r[sender.tag])")
-                            let ref2 = Database.database().reference().child("QA").child("\(self.fromUidArray_r[sender.tag])").child("warningFlag").child("\(self.currentUid)").childByAutoId()
-                            let ref3 = Database.database().reference().child("QA").child("warningFlag").child("\(self.text!)").child("\(self.currentUid)").childByAutoId()
-                            let ref4 = Database.database().reference().child("QA").child("\(self.fromUidArray_r[sender.tag])").child("public").child("answer").child("\(self.text!)")
-                            let data1 = ["warningFlag":"1"];
-                            ref0.updateChildValues(data1)
-                            ref1.updateChildValues(data1)
-                            ref2.updateChildValues(data1)
-                            ref3.updateChildValues(data1)
-                            ref4.updateChildValues(data1)
-                        })
+        
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            let ref0 = Database.database().reference().child("QA").child("public").child("\(self.selectedSpeciality!)").child("\(self.text!)").child("trackAnswer").child("\(self.fromUidArray_r[sender.tag])")
+            let ref1 = Database.database().reference().child("QA").child("public").child("全て").child("\(self.text!)").child("trackAnswer").child("\(self.fromUidArray_r[sender.tag])")
+            let ref2 = Database.database().reference().child("QA").child("\(self.fromUidArray_r[sender.tag])").child("warningFlag").child("\(self.currentUid)").childByAutoId()
+            let ref3 = Database.database().reference().child("QA").child("warningFlag").child("\(self.text!)").child("\(self.currentUid)").childByAutoId()
+            let ref4 = Database.database().reference().child("QA").child("\(self.fromUidArray_r[sender.tag])").child("public").child("answer").child("\(self.text!)")
+            let data1 = ["warningFlag":"1"];
+            ref0.updateChildValues(data1)
+            ref1.updateChildValues(data1)
+            ref2.updateChildValues(data1)
+            ref3.updateChildValues(data1)
+            ref4.updateChildValues(data1)
+        })
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-                            (action: UIAlertAction!) -> Void in
-                            print("Cancel")
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
         })
         alert.addAction(cancelAction)
         alert.addAction(defaultAction)
         present(alert, animated: true, completion: nil)
-
-
-
-//        ref0.observeSingleEvent(of: .value, with: {(snapshot) in
-//            let value = snapshot.value as? NSDictionary
-//            let key = value?["goodButton"] as? String ?? ""
-//            self.goodButtonValue = key
-//            print("\(self.goodButtonValue!)")
-//            if self.goodButtonValue == "0"{
-//                let data1 = ["goodButton":"1","badButton":"0"];
-//                ref0.updateChildValues(data1)
-//                ref1.updateChildValues(data1)
-//                ref2.updateChildValues(data1)
-//                self.userNameAnswerArray.removeAll()
-//                self.answerArray.removeAll()
-//                self.DateArray.removeAll()
-//                self.TimeArray.removeAll()
-//                self.sankouURLArray.removeAll()
-//                self.userQuestion()
-//                self.userAnswer()
-//            }
-//            else if self.goodButtonValue == "1"{
-//                let data0 = ["goodButton":"0"];
-//                ref0.updateChildValues(data0)
-//                ref1.updateChildValues(data0)
-//                ref2.updateChildValues(data0)
-//                self.userNameAnswerArray.removeAll()
-//                self.answerArray.removeAll()
-//                self.DateArray.removeAll()
-//                self.TimeArray.removeAll()
-//                self.sankouURLArray.removeAll()
-//                self.userQuestion()
-//                self.userAnswer()
-//            }
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
-            
-            
+        
     }
-
+    
     
     func userAnswer(){
         let ref0 = Database.database().reference().child("QA").child("public").child("\(selectedSpeciality!)").child("\(text!)").child("trackAnswer")
         ref0.observeSingleEvent(of: .value, with: {
             (snapshot) in
             if let snapdata = snapshot.value as? [String:NSDictionary]{
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let fromUid = snap!["fromUid"] as? String {
-                    self.fromUidArray.append(fromUid)
-                    self.fromUidArray_r = self.fromUidArray.reversed()
-                    if fromUid == self.currentUid{
-                        self.makeAnswer.backgroundColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
-                        self.answerTextView.textColor = UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
-                        self.makeAnswer.isEnabled = false
-                        self.nameLabel.textColor = UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
-                        self.nameHidden.isEnabled = false
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let fromUid = snap!["fromUid"] as? String {
+                        self.fromUidArray.append(fromUid)
+                        self.fromUidArray_r = self.fromUidArray.reversed()
+                        if fromUid == self.currentUid{
+                            self.makeAnswer.backgroundColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
+                            self.answerTextView.textColor = UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
+                            self.makeAnswer.isEnabled = false
+                            self.nameLabel.textColor = UIColor(red: 176/255, green: 176/255, blue: 176/255, alpha: 1)
+                            self.nameHidden.isEnabled = false
+                        }
                     }
-            }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let userNameAnswer = snap!["fromUserName"] as? String {
-                    self.userNameAnswerArray.append(userNameAnswer)
-                    self.userNameAnswerArray_r = self.userNameAnswerArray.reversed()
-            }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let answer = snap!["answer"] as? String {
-                    self.answerArray.append(answer)
-                    self.answerArray_r = self.answerArray.reversed()
-            }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let date = snap!["date"] as? String {
-                    self.DateArray.append(date)
-                    self.DateArray_r = self.DateArray.reversed()
                 }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let time = snap!["time"] as? String {
-                    self.TimeArray.append(time)
-                    self.TimeArray_r = self.TimeArray.reversed()
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let userNameAnswer = snap!["fromUserName"] as? String {
+                        self.userNameAnswerArray.append(userNameAnswer)
+                        self.userNameAnswerArray_r = self.userNameAnswerArray.reversed()
+                    }
                 }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let sankouURL = snap!["sankouURL"] as? String {
-                    self.sankouURLArray.append(sankouURL)
-                    self.sankouURLArray_r = self.sankouURLArray.reversed()
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let answer = snap!["answer"] as? String {
+                        self.answerArray.append(answer)
+                        self.answerArray_r = self.answerArray.reversed()
+                    }
                 }
-            }
-            for key in snapdata.keys.sorted(){
-                let snap = snapdata[key]
-                if let goodButton = snap!["goodButton"] as? String {
-                    self.goodButtonArray.append(goodButton)
-                    self.goodButtonArray_r = self.goodButtonArray.reversed()
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let date = snap!["date"] as? String {
+                        self.DateArray.append(date)
+                        self.DateArray_r = self.DateArray.reversed()
+                    }
                 }
-            }
-            self.QAmuraUserAnswerTableView.reloadData()
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let time = snap!["time"] as? String {
+                        self.TimeArray.append(time)
+                        self.TimeArray_r = self.TimeArray.reversed()
+                    }
+                }
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let sankouURL = snap!["sankouURL"] as? String {
+                        self.sankouURLArray.append(sankouURL)
+                        self.sankouURLArray_r = self.sankouURLArray.reversed()
+                    }
+                }
+                for key in snapdata.keys.sorted(){
+                    let snap = snapdata[key]
+                    if let goodButton = snap!["goodButton"] as? String {
+                        self.goodButtonArray.append(goodButton)
+                        self.goodButtonArray_r = self.goodButtonArray.reversed()
+                    }
+                }
+                self.QAmuraUserAnswerTableView.reloadData()
             }
         }
         )
-
+        
     }
-        func userQuestion(){
-            date.text = selectedDate
-            time.text = selectedTime
-            speciality.text = selectedSpeciality
-            userNameQuestion.text = selectedUserNameQuestion
-
-//            let good_picture0 = UIImage(named: "hand.thumbsup")
-//            self.goodButton.setImage(good_picture0, for: .normal)
-//            let bad_picture0 = UIImage(named: "hand.thumbsdown")
-//            self.badButton.setImage(bad_picture0, for: .normal)
-
-            let ref0 = Database.database().reference().child("QA").child("public").child("\(selectedSpeciality!)").child("\(text!)")
-            ref0.observeSingleEvent(of: .value, with: { (snapshot) in
-              // Get user value
-              let value = snapshot.value as? NSDictionary
-              let key = value?["QAContent"] as? String ?? ""
-              self.userQAText.text = key
-
-              // ...
-              }) { (error) in
-                print(error.localizedDescription)
-            }
-            ref0.observeSingleEvent(of: .value, with: { (snapshot) in
-              // Get user value
-              let value = snapshot.value as? NSDictionary
-              let key = value?["trackAnswer"] as? String ?? ""
-              self.trackAnswer.text = key
-              // ...
-              }) { (error) in
-                print(error.localizedDescription)
-            }
-
-//            ref0.observeSingleEvent(of: .value, with: { (snapshot) in
-//              // Get user value
-//                let value = snapshot.value as? NSDictionary
-//                let key = value?["sankouURL"] as? String ?? ""
-//    //          self.trackAnswer.text = key
-//    //            let baseString = "これは設定アプリへのリンクを含む文章です。\n\nこちらのリンクはGoogle検索です"
-//                let attributedString = NSMutableAttributedString(string: key)
-//                attributedString.addAttribute(.link,
-//                                              value: key,
-//                                              range: NSString(string: key).range(of: key))
-//                self.sankouURL.attributedText = attributedString
-//                // isSelectableをtrue、isEditableをfalseにする必要がある
-//                // （isSelectableはデフォルトtrueだが説明のため記述）
-//                self.sankouURL.isSelectable = true
-//                self.sankouURL.isEditable = false
-//                self.sankouURL.delegate = self as UITextViewDelegate
-//                print("sankouURL")
-//
-//              // ...
-//              }) { (error) in
-//                print(error.localizedDescription)
-//            }
-            ref0.observeSingleEvent(of: .value, with: {(snapshot) in
-                let value = snapshot.value as? NSDictionary
-                let key = value?["goodButton"] as? String ?? ""
-                self.goodButtonValue = key
-                print("\(self.goodButtonValue!)")
-                if self.goodButtonValue == "1"{
-                    print("\(key)")
-                    let picture1 = UIImage(named: "hand.thumbsup.fill")
-                    self.goodButton.setImage(picture1, for: .normal)
-                    let picture0 = UIImage(named: "hand.thumbsdown")
-                    self.badButton.setImage(picture0, for: .normal)
-                }
-            }) { (error) in
-                print(error.localizedDescription)
-            }
-            ref0.observeSingleEvent(of: .value, with: {(snapshot) in
-                let value = snapshot.value as? NSDictionary
-                let key = value?["badButton"] as? String ?? ""
-                self.badButtonValue = key
-                print("\(self.badButtonValue!)")
-                if self.badButtonValue == "1"{
-                    print("badButton == 1")
-                    let picture1 = UIImage(named: "hand.thumbsdown.fill")
-                    self.goodButton.setImage(picture1, for: .normal)
-                    let picture0 = UIImage(named: "hand.thumbsup")
-                    self.badButton.setImage(picture0, for: .normal)
-                }
-            }) { (error) in
-                print(error.localizedDescription)
-            }
+    func userQuestion(){
+        date.text = selectedDate
+        time.text = selectedTime
+        speciality.text = selectedSpeciality
+        userNameQuestion.text = selectedUserNameQuestion
+        
+        //            let good_picture0 = UIImage(named: "hand.thumbsup")
+        //            self.goodButton.setImage(good_picture0, for: .normal)
+        //            let bad_picture0 = UIImage(named: "hand.thumbsdown")
+        //            self.badButton.setImage(bad_picture0, for: .normal)
+        
+        let ref0 = Database.database().reference().child("QA").child("public").child("\(selectedSpeciality!)").child("\(text!)")
+        ref0.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let key = value?["QAContent"] as? String ?? ""
+            self.userQAText.text = key
             
-            print(userQAText.text!)
-            print(trackAnswer.text!)
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        ref0.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let key = value?["trackAnswer"] as? String ?? ""
+            self.trackAnswer.text = key
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        ref0.observeSingleEvent(of: .value, with: {(snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let key = value?["goodButton"] as? String ?? ""
+            self.goodButtonValue = key
+            print("\(self.goodButtonValue!)")
+            if self.goodButtonValue == "1"{
+                print("\(key)")
+                let picture1 = UIImage(named: "hand.thumbsup.fill")
+                self.goodButton.setImage(picture1, for: .normal)
+                let picture0 = UIImage(named: "hand.thumbsdown")
+                self.badButton.setImage(picture0, for: .normal)
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        ref0.observeSingleEvent(of: .value, with: {(snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let key = value?["badButton"] as? String ?? ""
+            self.badButtonValue = key
+            print("\(self.badButtonValue!)")
+            if self.badButtonValue == "1"{
+                print("badButton == 1")
+                let picture1 = UIImage(named: "hand.thumbsdown.fill")
+                self.goodButton.setImage(picture1, for: .normal)
+                let picture0 = UIImage(named: "hand.thumbsup")
+                self.badButton.setImage(picture0, for: .normal)
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        print(userQAText.text!)
+        print(trackAnswer.text!)
     }
     
     func sendAnswerValidate(){
@@ -387,9 +316,7 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
         answerTextView.backgroundColor = UIColor(red: 226/255, green: 225/255, blue: 230/255, alpha: 1)
         sendAnswer.isEnabled = false
         sendAnswer.backgroundColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
-
-        print(selectedUid!)
-        print("あっちゃん")
+        
         if currentUid == selectedUid{
             makeAnswer.backgroundColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
             makeAnswer.isEnabled = false
@@ -410,18 +337,18 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
         }
     }
     func randomString(length: Int) -> String {
-
+        
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         let len = UInt32(letters.length)
-
+        
         var randomString = ""
-
+        
         for _ in 0 ..< length {
             let rand = arc4random_uniform(len)
             var nextChar = letters.character(at: Int(rand))
             randomString += NSString(characters: &nextChar, length: 1) as String
         }
-
+        
         return randomString
     }
     @IBAction func makeAnswerButtonTapped(_ sender: Any) {
@@ -440,99 +367,81 @@ class SelectedQAAllListViewController: UIViewController ,UITextViewDelegate,UITa
     }
     
     @IBAction func sendAnswer(_ sender: Any) {
-        self.pointEaring = "50"
-                let alert: UIAlertController = UIAlertController(title: "確認", message: "この回答を送信していいですか？送信すると\(self.pointEaring!)pt獲得できます。更に質問者から高評価が付くと追加で300pt獲得できます。", preferredStyle:  UIAlertController.Style.alert)
-                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
-                    (action: UIAlertAction!) -> Void in
-                    let ref1 = Database.database().reference().child("QA").child("public")
-                    ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
-                        let value = snapshot.value as? NSDictionary
-                        let key = value?["date"] as? String ?? ""
-                        self.Qdate = key
-                    })
-                    ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
-                        let value = snapshot.value as? NSDictionary
-                        let key = value?["time"] as? String ?? ""
-                        self.Qtime = key
-                    })
-
-                    // 回答数の加算
-                    ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
-                      // Get user value
-                            let value = snapshot.value as? NSDictionary
-                            let key = value?["countAnswer"] as? String ?? ""
-                            if key.isEmpty{
-                            }else{
-                                self.countAnswer = Int(key)! + 1
-                                print(String(self.countAnswer!))
-                                print("\(self.countAnswer!)")
-                                let data = ["countAnswer":String(self.countAnswer!)]
-                                let data_r = ["fcmTrigger":"\(self.answerTextView.text!)"]
-                                ref1.child("\(self.selectedSpeciality!)").child("\(self.text!)").updateChildValues(data)
-                                let ref1_1 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)")
-                                let ref1_2 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)")
-                                let ref1_3 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)").child("fcmTrigger")
-                                ref1_1.updateChildValues(data)
-                                ref1_2.updateChildValues(data_r)
-                                ref1_3.updateChildValues(data_r)
-
-                                ref1.child("全て").child("\(self.text!)").updateChildValues(data)
-                                let ref2 = Database.database().reference().child("QA").child("uuid").child("\(self.currentUid)")
-                                ref2.observeSingleEvent(of: .value, with: { (snapshot) in
-                                // Get user value
-                                    let value = snapshot.value as? NSDictionary
-                                    let key = value?["point"] as? String ?? ""
-                                    self.countPoint = Int(key)! + Int(self.pointEaring!)!
-                                    let data = ["point":String(self.countPoint)]
-                                    ref2.updateChildValues(data)
-                                  }) { (error) in
-                                      print(error.localizedDescription)
-                                  }
-
-                                let date1 = Date()
-                                let formatter1 = DateFormatter()
-                                formatter1.dateStyle = .medium
-                                let date = formatter1.string(from: date1)
-                                print("\(date)")
-                                let date2 = Date()
-                                let formatter2 = DateFormatter()
-                                formatter2.setLocalizedDateFormatFromTemplate("jm")
-                                let time = formatter2.string(from: date2)
-                                print("\(time)")
-                                let data1 = ["answer":"\(self.answerTextView.text!)","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)","fromUid":"\(self.currentUid)","fromUserName":"\(self.nameLabel.text!)","registeredUserName":"\(self.currentUserName)","sankouURL":""]
-                                ref1.child("\(self.selectedSpeciality!)").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)").updateChildValues(data1)
-                                ref1.child("全て").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)").updateChildValues(data1)
-                                print("\(self.answerTextView.text!)")
-                                print("\(self.text!)")
-                                print("\(self.userNameQuestion.text!)")
-                                print("\(self.userQAText.text!)")
-                                print("\(self.selectedSpeciality!)")
-                                print("\(self.selectedUid!)")
-
-                                let data0 = ["answer":"\(self.answerTextView.text!)","QAName":"\(self.text!)","userName":"\(self.userNameQuestion.text!)","QAContent":"\(self.userQAText.text!)","time":"\(time)","date":"\(date)","QASpeciality":"\(self.selectedSpeciality!)","countAnswer":String(self.countAnswer!),"uuid":"\(self.selectedUid!)","sankouURL":"","Qdate":"\(self.Qdate!)","Qtime":"\(self.Qtime!)","warningFlag":"0","goodButton":"0","badButton":"0"]
-
-                                let ref3 = Database.database().reference().child("QA").child("\(self.currentUid)").child("public").child("answer").child("\(self.text!)")
-                                ref3.updateChildValues(data0)
-
-                            }
-                        }) { (error) in
-                            print(error.localizedDescription)
-                        }
+        let alert: UIAlertController = UIAlertController(title: "確認", message: "この回答を送信していいですか？", preferredStyle:  UIAlertController.Style.alert)
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            let ref1 = Database.database().reference().child("QA").child("public")
+            ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                let key = value?["date"] as? String ?? ""
+                self.Qdate = key
+            })
+            ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                let key = value?["time"] as? String ?? ""
+                self.Qtime = key
+            })
+            
+            // 回答数の加算
+            ref1.child("全て").child("\(self.text!)").observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? NSDictionary
+                let key = value?["countAnswer"] as? String ?? ""
+                if key.isEmpty{
+                }else{
+                    self.countAnswer = Int(key)! + 1
+                    print(String(self.countAnswer!))
+                    print("\(self.countAnswer!)")
+                    let data = ["countAnswer":String(self.countAnswer!)]
+                    let data_r = ["fcmTrigger":"\(self.answerTextView.text!)"]
+                    ref1.child("\(self.selectedSpeciality!)").child("\(self.text!)").updateChildValues(data)
+                    let ref1_1 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)")
+                    let ref1_2 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)")
+                    let ref1_3 = Database.database().reference().child("QA").child("\(self.selectedUid!)").child("public").child("\(self.text!)").child("fcmTrigger")
+                    ref1_1.updateChildValues(data)
+                    ref1_2.updateChildValues(data_r)
+                    ref1_3.updateChildValues(data_r)
                     
+                    ref1.child("全て").child("\(self.text!)").updateChildValues(data)
                     
-
-                    self.navigationController?.popViewController(animated: true)
-
+                    let date1 = Date()
+                    let formatter1 = DateFormatter()
+                    formatter1.dateStyle = .medium
+                    let date = formatter1.string(from: date1)
+                    print("\(date)")
+                    let date2 = Date()
+                    let formatter2 = DateFormatter()
+                    formatter2.setLocalizedDateFormatFromTemplate("jm")
+                    let time = formatter2.string(from: date2)
+                    print("\(time)")
+                    let data1 = ["answer":"\(self.answerTextView.text!)","goodButton":"0","badButton":"0","date":"\(date)","time":"\(time)","fromUid":"\(self.currentUid)","fromUserName":"\(self.nameLabel.text!)","registeredUserName":"\(self.currentUserName)","sankouURL":""]
+                    ref1.child("\(self.selectedSpeciality!)").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)").updateChildValues(data1)
+                    ref1.child("全て").child("\(self.text!)").child("trackAnswer").child("\(self.currentUid)").updateChildValues(data1)
+                    
+                    let data0 = ["answer":"\(self.answerTextView.text!)","QAName":"\(self.text!)","userName":"\(self.userNameQuestion.text!)","QAContent":"\(self.userQAText.text!)","time":"\(time)","date":"\(date)","QASpeciality":"\(self.selectedSpeciality!)","countAnswer":String(self.countAnswer!),"uuid":"\(self.selectedUid!)","sankouURL":"","Qdate":"\(self.Qdate!)","Qtime":"\(self.Qtime!)","warningFlag":"0","goodButton":"0","badButton":"0"]
+                    
+                    let ref3 = Database.database().reference().child("QA").child("\(self.currentUid)").child("public").child("answer").child("\(self.text!)")
+                    ref3.updateChildValues(data0)
+                    
                 }
-                )
-                let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-                    // ボタンが押された時の処理を書く（クロージャ実装）
-                    (action: UIAlertAction!) -> Void in
-                    print("Cancel")
-                })
-                alert.addAction(cancelAction)
-                alert.addAction(defaultAction)
-                present(alert, animated: true, completion: nil)
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            
+            
+            
+            self.navigationController?.popViewController(animated: true)
+            
+        }
+        )
+        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+            // ボタンが押された時の処理を書く（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
+        })
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        present(alert, animated: true, completion: nil)
     }
     
 }

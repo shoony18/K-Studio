@@ -36,6 +36,7 @@
 		279E26A72404203200C88144 /* QAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A62404203200C88144 /* QAListViewController.swift */; };
 		279E26A92406C5BB00C88144 /* SelectedQAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E26A82406C5BB00C88144 /* SelectedQAListViewController.swift */; };
 		27AA3F24247FFA180059308F /* SelectedQAAllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */; };
+		27B5556B257107C800105CB4 /* premiumSelectedMyPostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B5556A257107C800105CB4 /* premiumSelectedMyPostEditViewController.swift */; };
 		27C95072231A1EFB0043F968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C95071231A1EFB0043F968 /* AppDelegate.swift */; };
 		27C95077231A1EFB0043F968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C95075231A1EFB0043F968 /* Main.storyboard */; };
 		27C95079231A1EFD0043F968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C95078231A1EFD0043F968 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		279E26A62404203200C88144 /* QAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAListViewController.swift; sourceTree = "<group>"; };
 		279E26A82406C5BB00C88144 /* SelectedQAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAListViewController.swift; sourceTree = "<group>"; };
 		27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedQAAllListViewController.swift; sourceTree = "<group>"; };
+		27B5556A257107C800105CB4 /* premiumSelectedMyPostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = premiumSelectedMyPostEditViewController.swift; sourceTree = "<group>"; };
 		27C9506E231A1EFB0043F968 /* track_online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = track_online.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C95071231A1EFB0043F968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C95076231A1EFB0043F968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,13 +166,14 @@
 				270135EC2569558A0041902C /* MenuViewController.swift */,
 				27AA3F23247FFA180059308F /* SelectedQAAllListViewController.swift */,
 				279E26A4240378BF00C88144 /* QATopViewController.swift */,
-				2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */,
 				27D2798525445395003E71BD /* PopoverViewController.swift */,
 				27D27983254421C2003E71BD /* premiumQAUserRuleViewController.swift */,
 				2791E2632562C6BC0010630B /* premiumQAMovieAlertViewController.swift */,
+				2772C41C24EAC8AE00D504D3 /* premiumQAFormViewController.swift */,
 				2772C41E24EADC9700D504D3 /* premiumQATopViewController.swift */,
 				27EF72592529CDE300820FAA /* premiumMyPostListViewController.swift */,
 				27EF725B2529CE0100820FAA /* premiumSelectedMyPostViewController.swift */,
+				27B5556A257107C800105CB4 /* premiumSelectedMyPostEditViewController.swift */,
 				279E26A62404203200C88144 /* QAListViewController.swift */,
 				2749B2E524928D0A00A4322C /* mypage0ViewController.swift */,
 				2749B2E724928D1E00A4322C /* mypage1ViewController.swift */,
@@ -367,6 +370,7 @@
 				2791E2642562C6BC0010630B /* premiumQAMovieAlertViewController.swift in Sources */,
 				2716C687237813A100712B18 /* PushFadeSegue.swift in Sources */,
 				2749B2EA24928D3200A4322C /* mypage2ViewController.swift in Sources */,
+				27B5556B257107C800105CB4 /* premiumSelectedMyPostEditViewController.swift in Sources */,
 				279A9AFF24645576006BAC80 /* profileEditViewController.swift in Sources */,
 				270ED06124605D350044270C /* profileViewController.swift in Sources */,
 				2772C41F24EADC9700D504D3 /* premiumQATopViewController.swift in Sources */,

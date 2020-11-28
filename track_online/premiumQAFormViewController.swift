@@ -19,9 +19,9 @@ import StoreKit
 
 
 class premiumQAFormViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate, UIScrollViewDelegate, UITextViewDelegate,UIPopoverPresentationControllerDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver {
-
+    
     var myProduct:SKProduct?
-
+    
     let imagePickerController = UIImagePickerController()
     var videoURL: URL?
     var currentAsset: AVAsset?
@@ -49,7 +49,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     let Ref = Database.database().reference()
     var PublicOrPrivate:String?
     var firstLogin:String?
-
+    
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var shadowView0: UIView!
     @IBOutlet weak var shadowView1: UIView!
@@ -70,12 +70,13 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var PlayButton: UIButton!
+    @IBOutlet var closePageButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         loadData()
         fetchProducts()
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -107,50 +108,50 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         shadowView3.layer.shadowRadius = 4
         shadowView4.layer.shadowRadius = 4
     }
-//    func fcmAuth(){
-//        UNUserNotificationCenter.current().getNotificationSettings(completionHandler: {setting in
-//             if setting.authorizationStatus == .authorized {
-//                 let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"1" as AnyObject,"firstLogin":"1" as AnyObject]
-//                 self.postToken(Token: token)
-//                 print("許可")
-//             }
-//             else {
-//                 let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"0" as AnyObject]
-//                 self.postToken(Token: token)
-//                 print("未許可")
-//             }
-//         })
-//    }
-//    func postToken(Token:[String: AnyObject]){
-//        print("FCM Token:\(Token)")
-//        let currentUid:String = Auth.auth().currentUser!.uid
-//        let dbRef = Database.database().reference()
-//        dbRef.child("fcmToken").child(currentUid).setValue(Token)
-//    }
-
-//    @objc func refreshControlValueChanged(sender: UIRefreshControl) {
-//        refreshControl.endRefreshing()
-//        QASpeciality.text = ""
-//        QAContent.text = ""
-//        QAKoukaiRange.text = ""
-//        videoURL = nil
-//        imageView.image = UIImage(named: "斜線re.png")
-//        self.textValidateQASpeciality.isHidden = true
-//        self.textValidateQAContent.isHidden = true
-//        self.textValidateQAVideo.isHidden = true
-//        self.textValidateQANumber.isHidden = true
-//        self.textValidateQAKoukaiRange.isHidden = true
-//    }
-
-//    @IBAction func inputPB(_ sender: Any) {
-//        PB.text = (sender as AnyObject).text
-//    }
-//    @IBAction func inputHeight(_ sender: Any) {
-//        height.text = (sender as AnyObject).text
-//    }
-//    @IBAction func inputWeight(_ sender: Any) {
-//        weight.text = (sender as AnyObject).text
-//    }
+    //    func fcmAuth(){
+    //        UNUserNotificationCenter.current().getNotificationSettings(completionHandler: {setting in
+    //             if setting.authorizationStatus == .authorized {
+    //                 let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"1" as AnyObject,"firstLogin":"1" as AnyObject]
+    //                 self.postToken(Token: token)
+    //                 print("許可")
+    //             }
+    //             else {
+    //                 let token:[String: AnyObject]=["fcmToken":Messaging.messaging().fcmToken as AnyObject,"fcmTokenStatus":"0" as AnyObject]
+    //                 self.postToken(Token: token)
+    //                 print("未許可")
+    //             }
+    //         })
+    //    }
+    //    func postToken(Token:[String: AnyObject]){
+    //        print("FCM Token:\(Token)")
+    //        let currentUid:String = Auth.auth().currentUser!.uid
+    //        let dbRef = Database.database().reference()
+    //        dbRef.child("fcmToken").child(currentUid).setValue(Token)
+    //    }
+    
+    //    @objc func refreshControlValueChanged(sender: UIRefreshControl) {
+    //        refreshControl.endRefreshing()
+    //        QASpeciality.text = ""
+    //        QAContent.text = ""
+    //        QAKoukaiRange.text = ""
+    //        videoURL = nil
+    //        imageView.image = UIImage(named: "斜線re.png")
+    //        self.textValidateQASpeciality.isHidden = true
+    //        self.textValidateQAContent.isHidden = true
+    //        self.textValidateQAVideo.isHidden = true
+    //        self.textValidateQANumber.isHidden = true
+    //        self.textValidateQAKoukaiRange.isHidden = true
+    //    }
+    
+    //    @IBAction func inputPB(_ sender: Any) {
+    //        PB.text = (sender as AnyObject).text
+    //    }
+    //    @IBAction func inputHeight(_ sender: Any) {
+    //        height.text = (sender as AnyObject).text
+    //    }
+    //    @IBAction func inputWeight(_ sender: Any) {
+    //        weight.text = (sender as AnyObject).text
+    //    }
     func loadData(){
         selectedEvent = ["","短距離（100m）","短距離（200m）","短距離（400m）","跳躍（走幅跳）","跳躍（三段跳）"]
         for key in 0...99{
@@ -174,12 +175,12 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
         let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         toolbar.setItems([spacelItem, doneItem], animated: true)
-
+        
         let toolbar0 = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
         let spacelItem0 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
         let doneItem0 = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done0))
         toolbar0.setItems([spacelItem0, doneItem0], animated: true)
-
+        
         event.inputView = pickerview
         event.inputAccessoryView = toolbar
         PB1.inputView = pickerview
@@ -192,11 +193,11 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         weight.inputAccessoryView = toolbar
         
         memo.inputAccessoryView = toolbar0
-
+        
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byWordWrapping
         self.PlayButton.isHidden = true
-
+        
     }
     func textViewDidChange(_ textView: UITextView) {
         let beforeStr: String = memo.text // 文字列をあらかじめ取得しておく
@@ -232,11 +233,11 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         self.view.endEditing(true)
     }
     
-
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if currentTextField == event {
             return selectedEvent.count
@@ -272,11 +273,11 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         self.pickerview.delegate = self
         self.pickerview.dataSource = self
         currentTextField = textField
-//        if currentTextField == event{
-//            currentTextField.inputView = pickerview
-//        }else{
-//            print("nil")
-//        }
+        //        if currentTextField == event{
+        //            currentTextField.inputView = pickerview
+        //        }else{
+        //            print("nil")
+        //        }
         if currentTextField == event {
             currentTextField.inputView = pickerview
         }else if currentTextField == PB1{
@@ -289,9 +290,9 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             currentTextField.inputView = pickerview
         }else{
         }
-
+        
     }
-
+    
     @IBAction func selectedImage(_ sender: Any) {
         imagePickerController.sourceType = .photoLibrary
         //imagePickerController.mediaTypes = ["public.image", "public.movie"]
@@ -310,9 +311,9 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         imageView.image = previewImageFromVideo(videoURL!)!
         imageView.contentMode = .scaleAspectFit
         imagePickerController.dismiss(animated: true, completion: nil)
-
+        
     }
-
+    
     func previewImageFromVideo(_ url:URL) -> UIImage? {
         print("動画からサムネイルを生成する")
         let asset = AVAsset(url:url)
@@ -323,16 +324,16 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         do {
             let imageRef = try imageGenerator.copyCGImage(at: time, actualTime: nil)
             let image = UIImage(cgImage: imageRef)
-
+            
             // PNG形式の画像フォーマットとしてNSDataに変換
             data = image.pngData()
             return UIImage(cgImage: imageRef)
         } catch {
             return nil
         }
-
+        
     }
-
+    
     @IBAction func playMovie(_ sender: Any) {
         if let videoURL = videoURL{
             let player = AVPlayer(url: videoURL)
@@ -350,7 +351,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
         }else{
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
-                    // "popoverVC"はポップアップ用のVCに後ほど設定
+            // "popoverVC"はポップアップ用のVCに後ほど設定
             let vc = storyboard.instantiateViewController(withIdentifier: "popoverVC") as! PopoverViewController
             //        vc.delegate = self
             vc.modalPresentationStyle = UIModalPresentationStyle.popover
@@ -358,16 +359,16 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             popover.delegate = self
             if sender != nil {
                 if let button = sender {
-                            // UIButtonからポップアップが出るように設定
+                    // UIButtonからポップアップが出るように設定
                     popover.sourceRect = (button as! UIButton).bounds
                     popover.sourceView = (sender as! UIView)
                 }
             }
             self.present(vc, animated: true, completion:nil)
         }
-
+        
     }
-
+    
     // 表示スタイルの設定
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         // .noneを設定することで、設定したサイズでポップアップされる
@@ -375,7 +376,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
     }
     
     func fetchProducts(){
-        let productIdentifier:Set = ["com.trackOnline.consumable.1"] // 製品ID
+        let productIdentifier:Set = ["com.trackOnline.consumable.2"] // 製品ID
         let productsRequest: SKProductsRequest = SKProductsRequest.init(productIdentifiers: productIdentifier)
         productsRequest.delegate = self
         productsRequest.start()
@@ -388,10 +389,10 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 queue.finishTransaction(transaction)
                 print("Transaction Failed \(transaction)")
             case .purchased, .restored:
-//                receiptValidation(url: "https://buy.itunes.apple.com/verifyReceipt")
+                //                receiptValidation(url: "https://buy.itunes.apple.com/verifyReceipt")
                 queue.finishTransaction(transaction)
                 print("Transaction purchased or restored: \(transaction)")
-
+                
                 let now = NSDate()
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyy_MM_dd_HH_mm_ss"
@@ -404,34 +405,34 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 let formatter2 = DateFormatter()
                 formatter2.setLocalizedDateFormatFromTemplate("jm")
                 let time = formatter2.string(from: date2)
-
-                            //ここから動画DB格納定義
+                
+                //ここから動画DB格納定義
                 if self.videoURL != nil{
                     self.segueNumber = 1
                     let storageReference = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).mp4")
                     let temporaryDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
-                                    /// create a temporary file for us to copy the video to.
+                    /// create a temporary file for us to copy the video to.
                     let temporaryFileURL = temporaryDirectoryURL.appendingPathComponent(self.videoURL!.lastPathComponent )
-                                    /// Attempt the copy.
+                    /// Attempt the copy.
                     do {
                         try FileManager().copyItem(at: self.videoURL!.absoluteURL, to: temporaryFileURL)
                     } catch {
                         print("There was an error copying the video file to the temporary location.")
                     }
-                                    print("\(temporaryFileURL)")
+                    print("\(temporaryFileURL)")
                     storageReference.putFile(from: temporaryFileURL, metadata: nil) { metadata, error in
                         guard let metadata = metadata else {
-                                        // Uh-oh, an error occurred!
-                                            print("error")
+                            // Uh-oh, an error occurred!
+                            print("error")
                             return
-
+                            
                         }
-                                      // Metadata contains file metadata such as size, content-type.
+                        // Metadata contains file metadata such as size, content-type.
                         _ = metadata.size
-                                      // You can also access to download URL after upload.
+                        // You can also access to download URL after upload.
                         storageReference.downloadURL { (url, error) in
                             guard url != nil else {
-                                          // Uh-oh, an error occurred!
+                                // Uh-oh, an error occurred!
                                 return
                             }
                         }
@@ -439,16 +440,16 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                     let storageReferenceImage = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)").child("\(timenow)"+"_"+"\(self.nameLabel.text!).png")
                     storageReferenceImage.putData(self.data!, metadata: nil) { metadata, error in
                         guard let metadata = metadata else {
-                                        // Uh-oh, an error occurred!
+                            // Uh-oh, an error occurred!
                             print("error")
                             return
                         }
-                                      // Metadata contains file metadata such as size, content-type.
+                        // Metadata contains file metadata such as size, content-type.
                         _ = metadata.size
-                                      // You can also access to download URL after upload.
+                        // You can also access to download URL after upload.
                         storageReference.downloadURL { (url, error) in
                             guard url != nil else {
-                                          // Uh-oh, an error occurred!
+                                // Uh-oh, an error occurred!
                                 return
                             }
                         }
@@ -464,7 +465,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 let ref0 = self.Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
                 let ref1 = self.Ref.child("purchase").child("premium").child("post").child("\(timenow)"+"_"+"\(self.nameLabel.text!)")
                 let ref2 = self.Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
-
+                
                 ref0.setValue(postData)
                 ref1.setValue(postData)
                 ref2.updateChildValues(userData)
@@ -476,10 +477,10 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 //            self.memo.text = ""
                 //            self.videoURL = nil
                 //            self.imageView.image = UIImage(named: "斜線re.png")
-                            print("OK")
+                print("OK")
                 //            self.performSegue(withIdentifier: "ResultView", sender: true)
-                self.dismiss(animated: true, completion: nil)
-//                self.performSegue(withIdentifier: "ResultView", sender: true)
+                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            //                self.performSegue(withIdentifier: "ResultView", sender: true)
             case .deferred, .purchasing:
                 print("Transaction in progress: \(transaction)")
             @unknown default:
@@ -487,7 +488,7 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             }
         }
     }
-
+    
     @IBAction func didTapBuy(_ sender: Any) {
         guard  let myProduct = myProduct else {
             return
@@ -504,10 +505,10 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             print(product)
         }
     }
-
+    
     @IBAction func sendVideo(_ sender: Any) {
         textValidate.isHidden = true
-
+        
         if event.text?.count == 0 {
             textValidate.isHidden = false
             textValidate.text = "専門種目を選択してください"
@@ -533,10 +534,11 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
             textValidate.text = "動画を選択してください"
             return
         }
-
-        let alert: UIAlertController = UIAlertController(title: "確認", message: "この内容で送信します。一度送信すると内容を修正できません。よろしいですか？", preferredStyle:  UIAlertController.Style.alert)
+        
+        let alert: UIAlertController = UIAlertController(title: "確認", message: "この内容で送信します。よろしいですか？", preferredStyle:  UIAlertController.Style.alert)
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
+            self.closePageButton.isEnabled = false
             guard  let myProduct = self.myProduct else {
                 return
             }
@@ -544,22 +546,21 @@ class premiumQAFormViewController: UIViewController,UIImagePickerControllerDeleg
                 let payment = SKPayment(product: myProduct)
                 SKPaymentQueue.default().add(self)
                 SKPaymentQueue.default().add(payment)
-
             }
         })
-
+        
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
             (action: UIAlertAction!) -> Void in
             print("Cancel")
         })
-
-            alert.addAction(cancelAction)
-            alert.addAction(defaultAction)
-            present(alert, animated: true, completion: nil)
-
+        
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        present(alert, animated: true, completion: nil)
+        
     }
     
-    
-    
-    
+    @IBAction func closePage(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
 }

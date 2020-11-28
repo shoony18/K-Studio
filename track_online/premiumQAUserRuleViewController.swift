@@ -27,20 +27,20 @@ class premiumQAUserRuleViewController: UIViewController {
     let Ref = Database.database().reference()
 
     override func viewDidLoad() {
-        loadRuleText()
+//        loadRuleText()
         goToButton.isEnabled = false
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    func loadRuleText(){
-        let ref1 = Ref.child("purchase").child("premium").child("setting").child("userRule")
-        ref1.observeSingleEvent(of: .value, with: { (snapshot) in
-          let value = snapshot.value as? NSDictionary
-            let key = value?["ruleText"] as? String ?? ""
-            self.ruleText.text = key
-        })
-
-    }
+//    func loadRuleText(){
+//        let ref1 = Ref.child("purchase").child("premium").child("setting").child("userRule")
+//        ref1.observeSingleEvent(of: .value, with: { (snapshot) in
+//          let value = snapshot.value as? NSDictionary
+//            let key = value?["ruleText"] as? String ?? ""
+//            self.ruleText.text = key
+//        })
+//
+//    }
     @IBAction func tapApproveFlagButton(_ sender: Any) {
         if approveFlag == 0{
             approveFlag = 1

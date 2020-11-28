@@ -359,7 +359,7 @@
                                                     <constraint firstAttribute="height" constant="140" id="ZEP-Ik-vGw"/>
                                                 </constraints>
                                                 <string key="text">あなたの試合・練習動画を送ると
-track専属コーチから
+K-Studio専属コーチから
 アドバイスが返ってくる
 
 980円/回</string>
@@ -449,8 +449,8 @@ track専属コーチから
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMs-Pa-s2I">
                                                 <rect key="frame" x="30" y="340" width="354" height="190"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-jZ-hLh">
-                                                        <rect key="frame" x="171.33333333333334" y="20" width="11.333333333333343" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-jZ-hLh">
+                                                        <rect key="frame" x="173" y="20" width="8.3333333333333428" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="AYx-Ah-QYl"/>
@@ -465,7 +465,7 @@ track専属コーチから
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スポーツバイオメカニクス専攻大学院卒。神奈川県出身。主に走り幅跳び・短距離を研究。YouTubeチャンネルSPOTECH運営。力学的な観点からの動作分析やビッグデータを活用した統計分析を通じて、多くのアマチュア陸上選手の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsS-Mh-2Mq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsS-Mh-2Mq">
                                                         <rect key="frame" x="20" y="38" width="314" height="130"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
@@ -559,7 +559,7 @@ track専属コーチから
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thv-bp-bou">
                                                 <rect key="frame" x="30" y="550" width="354" height="190"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍専門。茨城県出身。慶應義塾大学卒。インターハイ出場。関東インカレ入賞。指導者のいない希有な環境下において、自らの思考と行動のみで独自の運動理論を作り上げてきた。「再現性のあるアウトプット」をテーマに中高生の指導にあたる。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-Hi-FPQ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-Hi-FPQ">
                                                         <rect key="frame" x="20" y="38" width="314" height="130"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
@@ -575,8 +575,8 @@ track専属コーチから
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しゅうへい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-N1-cWr">
-                                                        <rect key="frame" x="131" y="20" width="92" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-N1-cWr">
+                                                        <rect key="frame" x="173" y="20" width="8.3333333333333428" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="b7A-RJ-gck"/>
@@ -680,6 +680,12 @@ track専属コーチから
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="intro1" destination="PsS-Mh-2Mq" id="HXZ-Ue-grU"/>
+                        <outlet property="intro2" destination="WIW-Hi-FPQ" id="rwd-o0-BDJ"/>
+                        <outlet property="name1" destination="Qif-jZ-hLh" id="NIy-Tj-5vJ"/>
+                        <outlet property="name2" destination="yu8-N1-cWr" id="yah-eE-j7b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFx-jg-NfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="8bd-Jo-kUM" userLabel="Exit" sceneMemberID="exit"/>
@@ -727,7 +733,7 @@ track専属コーチから
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtb-pD-m3m">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtb-pD-m3m">
                                                     <rect key="frame" x="20" y="55" width="374" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1133,7 +1139,13 @@ track専属コーチから
                             <constraint firstItem="BLt-Bt-Dgr" firstAttribute="top" secondItem="bug-F6-FOn" secondAttribute="bottom" id="mbR-Qv-SWx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m91-Jq-sUG"/>
+                    <navigationItem key="navigationItem" id="m91-Jq-sUG">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="aqh-if-Fid">
+                            <connections>
+                                <segue destination="8nX-sU-faA" kind="show" identifier="selectedPostEdit" id="h0B-fs-seq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TableView" destination="bug-F6-FOn" id="Y3o-D0-Sy4"/>
                         <outlet property="comment" destination="Jtb-pD-m3m" id="Ccr-9d-eeV"/>
@@ -1142,7 +1154,7 @@ track専属コーチから
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2f-2S-A9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619.2" y="3325.8620689655172"/>
+            <point key="canvasLocation" x="613" y="4091"/>
         </scene>
         <!--利用規約-->
         <scene sceneID="1wh-nW-dLf">
@@ -1484,7 +1496,7 @@ track専属コーチから
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-CU-hGt">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1093"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akA-hl-vG0">
                                                 <rect key="frame" x="32" y="46" width="350" height="90"/>
@@ -1626,7 +1638,7 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-aD-pUG">
-                                                <rect key="frame" x="32" y="401" width="350" height="180"/>
+                                                <rect key="frame" x="32" y="281" width="350" height="180"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="質問文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-h0-uKD">
                                                         <rect key="frame" x="20" y="20" width="60" height="20"/>
@@ -1698,82 +1710,8 @@ track専属コーチから
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GG4-4I-cry">
-                                                <rect key="frame" x="32" y="601" width="350" height="160"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添付動画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q7-mz-Okv">
-                                                        <rect key="frame" x="20" y="20" width="80" height="20"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="AzC-FQ-SUf"/>
-                                                            <constraint firstAttribute="width" constant="80" id="VnJ-c8-u9k"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-rl-Sfw">
-                                                        <rect key="frame" x="64.666666666666671" y="48" width="21" height="23"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="21" id="kGr-KD-Tca"/>
-                                                            <constraint firstAttribute="height" constant="23" id="mwy-Kf-3dE"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                        <state key="normal" title="動画をライブラリから選択" image="rectangle.and.paperclip" catalog="system"/>
-                                                        <connections>
-                                                            <action selector="selectedImage:" destination="XkS-Vw-CAk" eventType="touchUpInside" id="gSB-3I-okH"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ライブラリから動画を選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ0-BN-gUr">
-                                                        <rect key="frame" x="90" y="52" width="150" height="15"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="15" id="9f2-70-UEC"/>
-                                                            <constraint firstAttribute="width" constant="150" id="dVQ-10-IKc"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3L-Za-f5g">
-                                                        <rect key="frame" x="55" y="76" width="240" height="60"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="60" id="5Eg-jP-CyV"/>
-                                                            <constraint firstAttribute="width" constant="240" id="OWQ-2n-tId"/>
-                                                        </constraints>
-                                                        <string key="text">※trackプレミアムのみ動画を添付できます。
-自分の練習・試合の動画を送ってください。必要に応じて自分のレーンやユニフォームの色なども記載してください。</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="160" id="2KQ-wC-n7P"/>
-                                                    <constraint firstItem="S3L-Za-f5g" firstAttribute="top" secondItem="2a0-rl-Sfw" secondAttribute="bottom" constant="5" id="3QJ-Lg-aAn"/>
-                                                    <constraint firstAttribute="width" constant="350" id="80j-lA-69W"/>
-                                                    <constraint firstItem="2a0-rl-Sfw" firstAttribute="centerX" secondItem="GG4-4I-cry" secondAttribute="centerX" constant="-100" id="9X8-0l-JGI"/>
-                                                    <constraint firstItem="2a0-rl-Sfw" firstAttribute="top" secondItem="6q7-mz-Okv" secondAttribute="bottom" constant="8" id="QCp-gv-fmV"/>
-                                                    <constraint firstItem="6q7-mz-Okv" firstAttribute="leading" secondItem="GG4-4I-cry" secondAttribute="leading" constant="20" id="Xq3-eZ-kqj"/>
-                                                    <constraint firstItem="BQ0-BN-gUr" firstAttribute="top" secondItem="6q7-mz-Okv" secondAttribute="bottom" constant="12" id="cVb-ft-5VU"/>
-                                                    <constraint firstItem="6q7-mz-Okv" firstAttribute="top" secondItem="GG4-4I-cry" secondAttribute="top" constant="20" id="ljt-an-aW8"/>
-                                                    <constraint firstItem="S3L-Za-f5g" firstAttribute="centerX" secondItem="GG4-4I-cry" secondAttribute="centerX" id="rgk-NE-u4A"/>
-                                                    <constraint firstItem="BQ0-BN-gUr" firstAttribute="leading" secondItem="2a0-rl-Sfw" secondAttribute="trailing" constant="4.5" id="xEP-2e-Hye"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZT-Xe-1OK">
-                                                <rect key="frame" x="57" y="901" width="300" height="22.666666666666629"/>
+                                                <rect key="frame" x="57" y="491" width="300" height="22.666666666666629"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="SM7-jq-pIc"/>
                                                     <constraint firstAttribute="height" constant="22.5" id="fRJ-Q5-AzE"/>
@@ -1782,15 +1720,8 @@ track専属コーチから
                                                 <color key="textColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="斜線re" translatesAutoresizingMaskIntoConstraints="NO" id="xOK-tb-ufv">
-                                                <rect key="frame" x="87" y="776" width="240" height="120"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="2Qj-qk-YMO"/>
-                                                    <constraint firstAttribute="height" constant="120" id="ox4-mG-d07"/>
-                                                </constraints>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnz-3K-8YA">
-                                                <rect key="frame" x="82" y="993" width="250" height="50"/>
+                                                <rect key="frame" x="82" y="543" width="250" height="50"/>
                                                 <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="8cB-5m-p0d"/>
@@ -1821,7 +1752,7 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An3-EW-uzL">
-                                                <rect key="frame" x="57" y="928.66666666666663" width="300" height="14.333333333333371"/>
+                                                <rect key="frame" x="57" y="518.66666666666663" width="300" height="14.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="KGj-TM-Qpx"/>
                                                 </constraints>
@@ -1829,118 +1760,24 @@ track専属コーチから
                                                 <color key="textColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-5l-T76">
-                                                <rect key="frame" x="32" y="276" width="350" height="110"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公開範囲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6g-BK-S5y">
-                                                        <rect key="frame" x="20" y="20" width="70" height="20"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="7Bi-Kz-V1V"/>
-                                                            <constraint firstAttribute="width" constant="70" id="bTG-8E-1I7"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QpU-wd-QEF">
-                                                        <rect key="frame" x="20" y="45" width="310" height="30"/>
-                                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="PIc-AF-2O5"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <connections>
-                                                            <outlet property="delegate" destination="XkS-Vw-CAk" id="lcl-S0-hoC"/>
-                                                        </connections>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sw-4m-FO7">
-                                                        <rect key="frame" x="25" y="75" width="300" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="37Q-xI-dve"/>
-                                                            <constraint firstAttribute="width" constant="300" id="jvB-AA-XSq"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-mv-ghY">
-                                                        <rect key="frame" x="100" y="20" width="22" height="22"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="22" id="ZsB-2A-X3o"/>
-                                                            <constraint firstAttribute="height" constant="22" id="Zxj-8U-x4J"/>
-                                                        </constraints>
-                                                        <color key="tintColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <state key="normal" title="Button" image="info.circle" catalog="system"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="QpU-wd-QEF" secondAttribute="trailing" constant="20" id="EAa-de-N8a"/>
-                                                    <constraint firstAttribute="width" constant="350" id="Lee-Ez-nyy"/>
-                                                    <constraint firstItem="8Sw-4m-FO7" firstAttribute="centerX" secondItem="wSa-5l-T76" secondAttribute="centerX" id="NlC-wo-FIr"/>
-                                                    <constraint firstItem="8Sw-4m-FO7" firstAttribute="top" secondItem="QpU-wd-QEF" secondAttribute="bottom" id="WCh-Su-SY1"/>
-                                                    <constraint firstItem="B6g-BK-S5y" firstAttribute="leading" secondItem="wSa-5l-T76" secondAttribute="leading" constant="20" id="Wig-Ol-Qwn"/>
-                                                    <constraint firstItem="QpU-wd-QEF" firstAttribute="top" secondItem="NWI-mv-ghY" secondAttribute="bottom" constant="3" id="Zba-Wm-JR2"/>
-                                                    <constraint firstItem="NWI-mv-ghY" firstAttribute="leading" secondItem="B6g-BK-S5y" secondAttribute="trailing" constant="10" id="aWA-6N-uWE"/>
-                                                    <constraint firstAttribute="height" constant="110" id="bfv-Cm-IX3"/>
-                                                    <constraint firstItem="QpU-wd-QEF" firstAttribute="leading" secondItem="wSa-5l-T76" secondAttribute="leading" constant="20" id="h7t-Yi-y5C"/>
-                                                    <constraint firstItem="B6g-BK-S5y" firstAttribute="top" secondItem="wSa-5l-T76" secondAttribute="top" constant="20" id="jTH-2B-MEo"/>
-                                                    <constraint firstItem="QpU-wd-QEF" firstAttribute="top" secondItem="B6g-BK-S5y" secondAttribute="bottom" constant="5" id="u0D-D6-cDu"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFh-oE-c6O">
-                                                <rect key="frame" x="197" y="826" width="20" height="20"/>
-                                                <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="Z84-bn-rOn"/>
-                                                    <constraint firstAttribute="width" constant="20" id="pWR-Tg-pwG"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="play.rectangle" catalog="system"/>
-                                                <connections>
-                                                    <action selector="playMovie:" destination="XkS-Vw-CAk" eventType="touchUpInside" id="Woc-en-VMe"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="GG4-4I-cry" firstAttribute="top" secondItem="HPs-aD-pUG" secondAttribute="bottom" constant="20" id="2mv-j1-TG9"/>
-                                            <constraint firstItem="GG4-4I-cry" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="5j2-eu-91h"/>
                                             <constraint firstItem="l7R-Ch-or2" firstAttribute="top" secondItem="akA-hl-vG0" secondAttribute="bottom" constant="15" id="93m-nj-1rk"/>
-                                            <constraint firstItem="xOK-tb-ufv" firstAttribute="top" secondItem="GG4-4I-cry" secondAttribute="bottom" constant="15" id="Bds-ZV-SOm"/>
                                             <constraint firstItem="3ZT-Xe-1OK" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="H5w-XX-b1j"/>
-                                            <constraint firstItem="3ZT-Xe-1OK" firstAttribute="top" secondItem="xOK-tb-ufv" secondAttribute="bottom" constant="5" id="JQw-Iv-pBA"/>
+                                            <constraint firstItem="HPs-aD-pUG" firstAttribute="top" secondItem="l7R-Ch-or2" secondAttribute="bottom" constant="20" id="Nn6-nC-fbk"/>
                                             <constraint firstItem="akA-hl-vG0" firstAttribute="top" secondItem="tOj-DC-0dZ" secondAttribute="bottom" constant="5" id="OLP-c2-iQV"/>
                                             <constraint firstAttribute="bottom" secondItem="Vnz-3K-8YA" secondAttribute="bottom" constant="50" id="ScD-4x-DNf"/>
-                                            <constraint firstItem="JFh-oE-c6O" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="UOv-N6-Vxk"/>
                                             <constraint firstItem="tOj-DC-0dZ" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" constant="-120" id="VK5-Mp-wbR"/>
-                                            <constraint firstItem="HPs-aD-pUG" firstAttribute="top" secondItem="wSa-5l-T76" secondAttribute="bottom" constant="15" id="cDO-2d-pby"/>
                                             <constraint firstItem="akA-hl-vG0" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="eLV-ZS-501"/>
-                                            <constraint firstItem="Vnz-3K-8YA" firstAttribute="top" secondItem="An3-EW-uzL" secondAttribute="bottom" constant="50" id="hQ8-Zz-P3O"/>
-                                            <constraint firstItem="xOK-tb-ufv" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="ip2-wr-mCQ"/>
-                                            <constraint firstItem="wSa-5l-T76" firstAttribute="top" secondItem="l7R-Ch-or2" secondAttribute="bottom" constant="15" id="ixG-H5-H2Q"/>
-                                            <constraint firstItem="JFh-oE-c6O" firstAttribute="top" secondItem="GG4-4I-cry" secondAttribute="bottom" constant="65" id="jCy-X3-kbp"/>
+                                            <constraint firstItem="Vnz-3K-8YA" firstAttribute="top" secondItem="An3-EW-uzL" secondAttribute="bottom" constant="10" id="hQ8-Zz-P3O"/>
+                                            <constraint firstItem="3ZT-Xe-1OK" firstAttribute="top" secondItem="HPs-aD-pUG" secondAttribute="bottom" constant="30" id="htN-OX-J2L"/>
                                             <constraint firstItem="An3-EW-uzL" firstAttribute="top" secondItem="3ZT-Xe-1OK" secondAttribute="bottom" constant="5" id="jZR-Cv-ztE"/>
                                             <constraint firstItem="Vnz-3K-8YA" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="l6r-3Y-8uf"/>
                                             <constraint firstItem="l7R-Ch-or2" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="nie-Nk-LWf"/>
                                             <constraint firstItem="An3-EW-uzL" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="oqQ-BE-Be1"/>
                                             <constraint firstItem="HPs-aD-pUG" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="pJ4-2G-pGX"/>
                                             <constraint firstItem="tOj-DC-0dZ" firstAttribute="top" secondItem="FZ3-CU-hGt" secondAttribute="top" constant="20" id="uDD-zZ-cIO"/>
-                                            <constraint firstItem="wSa-5l-T76" firstAttribute="centerX" secondItem="FZ3-CU-hGt" secondAttribute="centerX" id="vUH-e6-ddr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1972,22 +1809,16 @@ track専属コーチから
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="PlayButton" destination="JFh-oE-c6O" id="ciQ-wZ-qOo"/>
                         <outlet property="QAContent" destination="PJr-Wh-bBi" id="Mvh-8L-2Lc"/>
-                        <outlet property="QAKoukaiRange" destination="QpU-wd-QEF" id="Qyg-OR-9ys"/>
                         <outlet property="QASpeciality" destination="N4n-sP-8kC" id="CJI-W2-0ho"/>
                         <outlet property="contentView" destination="FZ3-CU-hGt" id="hxd-uN-7Ax"/>
-                        <outlet property="imageView" destination="xOK-tb-ufv" id="33N-mF-Tmg"/>
                         <outlet property="nameHidden" destination="cZ9-IN-k83" id="aro-Hm-EM6"/>
                         <outlet property="nameLabel" destination="b6e-7Z-0Kj" id="Pk8-c6-AYm"/>
                         <outlet property="scrollView" destination="pxV-CQ-AFL" id="g6I-hL-EmL"/>
                         <outlet property="shadowView0" destination="akA-hl-vG0" id="hfs-bT-inn"/>
                         <outlet property="shadowView1" destination="l7R-Ch-or2" id="2oj-7s-e3H"/>
                         <outlet property="shadowView2" destination="HPs-aD-pUG" id="RU5-qG-LPX"/>
-                        <outlet property="shadowView3" destination="GG4-4I-cry" id="UiO-RT-0la"/>
-                        <outlet property="shadowView4" destination="wSa-5l-T76" id="6oU-eq-78K"/>
                         <outlet property="textValidateQAContent" destination="YzO-I3-Cka" id="W6R-Tg-q4g"/>
-                        <outlet property="textValidateQAKoukaiRange" destination="8Sw-4m-FO7" id="s7t-O2-9mt"/>
                         <outlet property="textValidateQANumber" destination="An3-EW-uzL" id="3jX-R4-Tsm"/>
                         <outlet property="textValidateQASpeciality" destination="eqH-db-hLa" id="xyD-b8-d7V"/>
                         <outlet property="textValidateQAVideo" destination="3ZT-Xe-1OK" id="yE6-cM-z4u"/>
@@ -4529,23 +4360,23 @@ track専属コーチから
         <!--プレミアム質問の編集-->
         <scene sceneID="Vp3-T0-5Wm">
             <objects>
-                <viewController restorationIdentifier="editQA" storyboardIdentifier="editQA2" title="プレミアム質問の編集" id="8nX-sU-faA" customClass="SelectedQAListEdit2ViewController" customModule="track_online" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="editQA" storyboardIdentifier="editQA2" title="プレミアム質問の編集" id="8nX-sU-faA" customClass="premiumSelectedMyPostEditViewController" customModule="track_online" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Oo-RX-gok"/>
                         <viewControllerLayoutGuide type="bottom" id="3mH-XH-88c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="22G-F5-3dr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wy8-9v-DwP" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="922"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="807"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-HV-lHh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="565"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="質問文：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi5-bY-gpz">
-                                                <rect key="frame" x="40" y="50" width="120" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi5-bY-gpz">
+                                                <rect key="frame" x="40" y="20" width="120" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="d1B-Va-Ggw"/>
@@ -4565,7 +4396,7 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動画：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-aj-gI3">
-                                                <rect key="frame" x="40" y="195" width="55" height="30"/>
+                                                <rect key="frame" x="40" y="165" width="55" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="JJ3-Bu-bdj"/>
@@ -4584,18 +4415,8 @@ track専属コーチから
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="種目　：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riq-bd-tsR">
-                                                <rect key="frame" x="40" y="10" width="82" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="4iA-mj-D49"/>
-                                                    <constraint firstAttribute="width" constant="82" id="kWx-JM-qvp"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="-" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-jB-Tws">
-                                                <rect key="frame" x="40" y="85" width="334" height="100"/>
+                                                <rect key="frame" x="40" y="55" width="334" height="100"/>
                                                 <color key="backgroundColor" red="0.90588235294117647" green="0.96078431372549022" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="2Kr-wV-q9C"/>
@@ -4613,7 +4434,7 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP3-Gc-Gfq">
-                                                <rect key="frame" x="132" y="485" width="150" height="30"/>
+                                                <rect key="frame" x="132" y="455" width="150" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="Edy-Vl-Wa0"/>
@@ -4636,27 +4457,18 @@ track専属コーチから
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="resendQA:" destination="8nX-sU-faA" eventType="touchUpInside" id="evL-Y8-kPP"/>
+                                                    <action selector="resendQA:" destination="8nX-sU-faA" eventType="touchUpInside" id="WK6-ru-1nh"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5h-Mi-1X0">
-                                                <rect key="frame" x="127" y="10" width="287" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="kuU-pE-TME"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="斜線re" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-BC-Y3v">
-                                                <rect key="frame" x="40" y="235" width="334" height="200"/>
+                                                <rect key="frame" x="40" y="205" width="334" height="200"/>
                                                 <accessibility key="accessibilityConfiguration" label="ここに表示"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="TD4-Jl-7zu"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdk-3Y-2ur">
-                                                <rect key="frame" x="329" y="199" width="25" height="25"/>
+                                                <rect key="frame" x="329" y="169" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="1Ru-Vy-BtU"/>
                                                     <constraint firstAttribute="height" constant="25" id="QeB-Kj-gQ5"/>
@@ -4664,11 +4476,11 @@ track専属コーチから
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <state key="normal" title="動画をライブラリから選択" image="rectangle.and.paperclip" catalog="system"/>
                                                 <connections>
-                                                    <action selector="selectedImage:" destination="8nX-sU-faA" eventType="touchUpInside" id="pdh-id-sJP"/>
+                                                    <action selector="selectedImage:" destination="8nX-sU-faA" eventType="touchUpInside" id="I1e-Wm-mdY"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ライブラリから動画を選択" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agD-UX-mC3">
-                                                <rect key="frame" x="95" y="205" width="234" height="15"/>
+                                                <rect key="frame" x="95" y="175" width="234" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="5is-fs-uYM"/>
                                                 </constraints>
@@ -4677,7 +4489,7 @@ track専属コーチから
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-en-DhB">
-                                                <rect key="frame" x="197" y="320" width="20" height="20"/>
+                                                <rect key="frame" x="197" y="290" width="20" height="20"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="HSz-1O-kud"/>
@@ -4685,30 +4497,22 @@ track専属コーチから
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="play.rectangle" catalog="system"/>
-                                                <connections>
-                                                    <action selector="PlayButton:" destination="8nX-sU-faA" eventType="touchUpInside" id="GIa-W0-4Wp"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="cZQ-aj-gI3" firstAttribute="top" secondItem="A6x-jB-Tws" secondAttribute="bottom" constant="10" id="2A5-aR-EHh"/>
-                                            <constraint firstItem="f5h-Mi-1X0" firstAttribute="top" secondItem="bZi-HV-lHh" secondAttribute="top" constant="10" id="2E0-wX-Zqv"/>
-                                            <constraint firstItem="riq-bd-tsR" firstAttribute="leading" secondItem="bZi-HV-lHh" secondAttribute="leading" constant="40" id="5d4-XY-oEN"/>
-                                            <constraint firstItem="f5h-Mi-1X0" firstAttribute="leading" secondItem="riq-bd-tsR" secondAttribute="trailing" constant="5" id="7Za-76-srC"/>
                                             <constraint firstAttribute="trailing" secondItem="A6x-jB-Tws" secondAttribute="trailing" constant="40" id="9Ur-bd-a9Q"/>
                                             <constraint firstItem="VP3-Gc-Gfq" firstAttribute="centerX" secondItem="bZi-HV-lHh" secondAttribute="centerX" id="9hs-sJ-YgS"/>
                                             <constraint firstItem="Zdk-3Y-2ur" firstAttribute="top" secondItem="A6x-jB-Tws" secondAttribute="bottom" constant="14" id="CY2-7T-eSe"/>
                                             <constraint firstItem="A6x-jB-Tws" firstAttribute="leading" secondItem="bZi-HV-lHh" secondAttribute="leading" constant="40" id="CtN-Oq-PX4"/>
                                             <constraint firstAttribute="trailing" secondItem="Zdk-3Y-2ur" secondAttribute="trailing" constant="60" id="Gpx-Sb-lkz"/>
                                             <constraint firstItem="fmc-en-DhB" firstAttribute="top" secondItem="agD-UX-mC3" secondAttribute="bottom" constant="100" id="IbD-Ak-tgJ"/>
-                                            <constraint firstItem="riq-bd-tsR" firstAttribute="top" secondItem="bZi-HV-lHh" secondAttribute="top" constant="10" id="JzX-34-sdC"/>
                                             <constraint firstAttribute="trailing" secondItem="Wcw-BC-Y3v" secondAttribute="trailing" constant="40" id="Kyh-If-7kB"/>
                                             <constraint firstItem="Wcw-BC-Y3v" firstAttribute="leading" secondItem="bZi-HV-lHh" secondAttribute="leading" constant="40" id="T30-Iy-UDh"/>
                                             <constraint firstItem="A6x-jB-Tws" firstAttribute="top" secondItem="Fi5-bY-gpz" secondAttribute="bottom" constant="5" id="Wsd-JQ-Kjr"/>
-                                            <constraint firstItem="Fi5-bY-gpz" firstAttribute="top" secondItem="riq-bd-tsR" secondAttribute="bottom" constant="10" id="ac4-7U-GeC"/>
+                                            <constraint firstItem="Fi5-bY-gpz" firstAttribute="top" secondItem="bZi-HV-lHh" secondAttribute="top" constant="20" id="XTD-D1-Msf"/>
                                             <constraint firstItem="agD-UX-mC3" firstAttribute="leading" secondItem="cZQ-aj-gI3" secondAttribute="trailing" id="bZn-7W-oeh"/>
-                                            <constraint firstAttribute="trailing" secondItem="f5h-Mi-1X0" secondAttribute="trailing" id="cdL-EE-wTa"/>
                                             <constraint firstItem="cZQ-aj-gI3" firstAttribute="leading" secondItem="bZi-HV-lHh" secondAttribute="leading" constant="40" id="dYi-Uw-InW"/>
                                             <constraint firstItem="VP3-Gc-Gfq" firstAttribute="top" secondItem="Wcw-BC-Y3v" secondAttribute="bottom" constant="50" id="e0F-O2-Ve0"/>
                                             <constraint firstItem="Fi5-bY-gpz" firstAttribute="leading" secondItem="bZi-HV-lHh" secondAttribute="leading" constant="40" id="hF6-GI-B9J"/>
@@ -4741,17 +4545,15 @@ track専属コーチから
                     <navigationItem key="navigationItem" title="編集" id="2tL-ua-HEt"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
-                        <outlet property="QAContent" destination="A6x-jB-Tws" id="NqP-So-sFq"/>
-                        <outlet property="QASpeciality" destination="f5h-Mi-1X0" id="Pvm-RT-Uvc"/>
+                        <outlet property="ImageView" destination="Wcw-BC-Y3v" id="TOC-vJ-ib2"/>
                         <outlet property="contentView" destination="bZi-HV-lHh" id="sgD-uh-yV0"/>
-                        <outlet property="imageView" destination="Wcw-BC-Y3v" id="8zn-vU-IVg"/>
-                        <outlet property="playVideo" destination="fmc-en-DhB" id="7xX-Ph-Wb9"/>
-                        <outlet property="sc" destination="wy8-9v-DwP" id="yo0-me-5mJ"/>
+                        <outlet property="memo" destination="A6x-jB-Tws" id="5tP-7a-M7j"/>
+                        <outlet property="playVideo" destination="fmc-en-DhB" id="Yry-cS-ZbK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5n-qh-3IF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6697.6000000000004" y="1015.2709359605911"/>
+            <point key="canvasLocation" x="1608" y="4091"/>
         </scene>
         <!--旧バージョンの質問リスト-->
         <scene sceneID="kuZ-G2-Fda">
@@ -5819,13 +5621,18 @@ track専属コーチから
                     </view>
                     <tabBarItem key="tabBarItem" title="プレミアム質問" image="q.circle" catalog="system" id="kzX-n4-Sgp"/>
                     <navigationItem key="navigationItem" title="プレミアム質問" id="kGl-SL-tnx">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="9l6-P1-sHs"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="ksF-Ey-GuN">
+                            <connections>
+                                <action selector="closePage:" destination="xi7-AB-ryV" id="3fF-NG-H9F"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="PB1" destination="rgm-9L-9aN" id="eu5-vJ-cVQ"/>
                         <outlet property="PB2" destination="Nlf-m5-1px" id="zc4-i4-RUJ"/>
                         <outlet property="PlayButton" destination="b9p-dh-Kcy" id="xIc-LL-Mlh"/>
+                        <outlet property="closePageButton" destination="ksF-Ey-GuN" id="DUR-OC-gQN"/>
                         <outlet property="contentView" destination="5F7-qf-mgz" id="cjP-aw-QpY"/>
                         <outlet property="event" destination="bap-4G-rrr" id="MNM-oU-LQW"/>
                         <outlet property="height" destination="jyW-TJ-Sj4" id="DqA-SS-bVf"/>
@@ -5844,7 +5651,7 @@ track専属コーチから
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9Y-3j-2Qb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3965" y="1782"/>
+            <point key="canvasLocation" x="3977" y="1731"/>
         </scene>
         <!--プレミアム質問リスト-->
         <scene sceneID="UVs-hK-PV2">
@@ -5975,7 +5782,7 @@ track専属コーチから
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07S-nj-4Hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649.5999999999999" y="2600.9852216748768"/>
+            <point key="canvasLocation" x="613" y="3349"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="gr9-lo-98e">
@@ -6013,7 +5820,7 @@ track専属コーチから
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動画の注意事項" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHS-dx-yAc">
                                                 <rect key="frame" x="50" y="30" width="300" height="30"/>
-                                                <color key="backgroundColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.36470588235294116" green="0.6875440330014414" blue="0.68983978426395942" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="sp0-UX-60o"/>
                                                 </constraints>
@@ -6194,7 +6001,7 @@ track専属コーチから
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emt-cb-mEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="2468"/>
+            <point key="canvasLocation" x="-171" y="2846"/>
         </scene>
         <!--メニュー-->
         <scene sceneID="UCc-a4-htO">
@@ -6218,7 +6025,7 @@ track専属コーチから
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-PS-aUL">
-                                        <rect key="frame" x="0.0" y="71" width="414" height="632"/>
+                                        <rect key="frame" x="0.0" y="112" width="414" height="591"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="S6Z-Ru-gPS" customClass="menuTableViewCell" customModule="track_online" customModuleProvider="target">
@@ -6257,14 +6064,22 @@ track専属コーチから
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在の保有ポイントは　400pt　です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5s-KB-3Bh">
+                                        <rect key="frame" x="10" y="61" width="290" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="zut-oA-oqZ" firstAttribute="leading" secondItem="X4h-LT-U1j" secondAttribute="leading" constant="10" id="7Z4-v9-MPI"/>
                                     <constraint firstItem="XVM-PS-aUL" firstAttribute="leading" secondItem="X4h-LT-U1j" secondAttribute="leading" id="SKk-hu-7cY"/>
                                     <constraint firstAttribute="trailing" secondItem="XVM-PS-aUL" secondAttribute="trailing" id="WTH-uC-Xa9"/>
+                                    <constraint firstItem="d5s-KB-3Bh" firstAttribute="leading" secondItem="X4h-LT-U1j" secondAttribute="leading" constant="10" id="gRh-Yz-zFc"/>
+                                    <constraint firstItem="d5s-KB-3Bh" firstAttribute="top" secondItem="zut-oA-oqZ" secondAttribute="bottom" constant="20" id="hJZ-zN-BW5"/>
+                                    <constraint firstItem="XVM-PS-aUL" firstAttribute="top" secondItem="d5s-KB-3Bh" secondAttribute="bottom" constant="30" id="lGb-N2-LUa"/>
                                     <constraint firstItem="zut-oA-oqZ" firstAttribute="top" secondItem="X4h-LT-U1j" secondAttribute="top" constant="20" id="ocx-55-XJb"/>
-                                    <constraint firstItem="XVM-PS-aUL" firstAttribute="top" secondItem="zut-oA-oqZ" secondAttribute="bottom" constant="30" id="qTr-Gm-zX3"/>
                                     <constraint firstAttribute="bottom" secondItem="XVM-PS-aUL" secondAttribute="bottom" id="sYc-UF-1H0"/>
                                 </constraints>
                             </view>
@@ -6281,6 +6096,7 @@ track専属コーチから
                     <connections>
                         <outlet property="TableView" destination="XVM-PS-aUL" id="Eh9-si-yXF"/>
                         <outlet property="menuView" destination="X4h-LT-U1j" id="uLA-ax-Ryb"/>
+                        <outlet property="pointText" destination="d5s-KB-3Bh" id="Ifx-jO-PXl"/>
                         <outlet property="userName" destination="zut-oA-oqZ" id="WAy-O8-Z5o"/>
                         <segue destination="ecF-L4-47I" kind="show" identifier="myProfile" id="Hrh-4l-24e"/>
                         <segue destination="tuS-8P-4cL" kind="show" identifier="mypage1" id="gFS-HF-DRJ"/>
@@ -6309,19 +6125,111 @@ track専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFi-hf-XSL">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3697.6666666666665"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE9-V4-bUK">
-                                                <rect key="frame" x="32" y="20" width="350" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE9-V4-bUK">
+                                                <rect key="frame" x="20" y="20" width="374" height="3526.6666666666665"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.9790933034" green="1" blue="0.97209443849999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES"/>
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="350" id="c5F-L8-tuc"/>
-                                                </constraints>
+                                                <mutableString key="text">この利用規約（以下「本規約」と言います。）は、Kスタ（以下、当社または本アプリ）のコーチングサービス「プレミアム質問」（以下、本サービス）の利用条件を定めるものです。本サービスをご利用いただくためには、本規約に同意いただくことが必要です。
+
+第１条（適用）
+本規約は、本サービスの利用に関する、利用者と当社との間のあらゆる関係に適用されるものとし、利用者は、本サービスを利用するにあたり、自己の責任において本規約を誠実に遵守するものとします。
+
+第2条（本サービスの内容及び利用上の注意）
+1. 本サービスは、登録コーチが会員からの送信される動画及びそれに付随する会員情報をもとにアドバイスを提供することを目的とするサービスです。本サービスを利用して当社のアドバイスを受ける者（以下、利用者）のパフォーマンス記録の向上およびその他一切の問題解決について保証をするものではありません。
+2. 利用者は、本サービスを利用するにあたり、所定の条件（角度、サイズ、輝度、時間など）を満たした動画を当社に送信するものとし、また動画に付随する利用者の情報についてはその時点で正しい情報であることを表明し、保証します。
+3. 当社は、利用者からの送信情報が本条第２項に違反していると判明した場合、アドバイスを提供する義務を負いません。またその場合において当社が利用者にアドバイスを提供した場合でも、当該アドバイスの品質（アドバイスが送信されるまでの所要時間を含む）について、当社は一切責任を負いません。
+4. 利用者は、当社が本条第２項に基づき利用者に提供したアドバイスの品質（アドバイスが送信されるまでの所要時間を含む）について、当社の故意及び重過失がない限りにおいて、一切、異議を申立てることができず、第3条で定める利用料金の返金を求めることができません。
+5. 当社は、理由の如何を問わず、会員に事前の通知・催告をすることなく、本サービスに関して、内容の全部または一部の変更、休止、廃止をすることができるものとします。
+
+第3条（利用料金・決済方法）
+1. 本サービスの利用料金は、別途当社が定め、本アプリに表示する価格とします。
+2. 会員は、前項の会員サービスの利用料金を本アプリ内の課金機能により支払うものとする。
+
+第4条（同意事項）
+1. 利用者は、本サービスの利用に際し、下記の事項について同意します。
+1) 当社が推奨するOS環境、端末で本アプリを使用すること
+2) 利用者のOS環境、端末によって、会員サービスの一部を閲覧または利用できない可能性があること
+3) 会員サービスはすべて日本語で提供されるということ
+4) 会員サービスの利用料金と決済方法を理解し支払うこと
+
+第5条（表明保証および申込拒否事由）
+1. 利用者は、下記の本サービス申込拒否事由各号に該当しないことを表明し、保証します。
+1) 成年被後見人、被保佐人または被補助人のいずれかであり、法定代理人、後見人、補佐人または補助人の同意等を得ていなかい者
+2) 反社会的勢力等（暴力団、暴力団員、右翼団体、反社会的勢力、その他これに準ずる者を意味します。以下同じ。）である、または資金提供その他を通じて反社会的勢力等を維持、運営もしくは経営に協力もしくは関与する等反社会的勢力等との何らかの交流もしくは関与を行っていると当社が判断した者
+3) 過去に当社との契約に違反した者またはその関係者であると当社が判断した場合
+4) その他、本サービスを提供するに当社が不適切と判断する者
+2. 本条第1項に該当することが判明した場合、当社は事前の通知なく利用者からの本サービスの申込を拒否することがあります。
+3. 本条第2項に基づき、当社が申込を拒否した場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+
+ 第6条（申請内容の変更・キャンセルおよび返金ルール等）
+1. 利用者は、申込完了後であっても、当社からのアドバイスが提供されていない間においては、申請情報を変更することができます。
+2. 利用者は、申込完了後において、いかなる理由があっても、キャンセルすることができません。ただし、当社に重過失があった場合を除きます。キャンセル等、苦情受付窓口は以下の通りです。
+
+宛先：Kスタお客様窓口
+メール：ksta.online.app@gmail.com
+
+第7条（除名等）
+1. 当社は、利用者が以下のいずれかの事由に該当する場合、またはその恐れがあると当社が判断した場合、事前に通告・催告することなく、かつ承諾を得ることなく、当社の裁量により直ちに、本サービスの全部または一部の利用停止、除名処分、その他当社が適切と判断する措置を執ることができるものとします。
+1) 本規約に違反した場合
+2)第１０条（登録拒否事由に関する表明保証および会員登録拒否事由）に反する事実が判明した場合または反する可能性がある場合
+3) 登録情報に虚偽または過誤がある場合
+4) 本サービスに関する情報を改ざんする行為
+5) 登録された電子メールアドレスが機能していないと判断される場合
+6) 第三者になりすまして本サービスを利用した場合
+7) 第三者に本サービスを利用させる行為
+8) 他の利用者、第三者または当社に迷惑、不利益、もしくは損害を与える行為、またはそれらのおそれのある行為
+9) 当社を誹謗中傷する行為
+10) 本サービスの運営を妨げ、その他本サービスに支障をきたすおそれのある行為
+11) 会員が死亡した場合
+12) 公序良俗に反する行為その他法令に違反する行為、またはそれらのおそれのある行為
+13) その他、当社が会員として不適切と判断した場合
+2. 除名の場合に、その理由について問い合わせがあった場合でも、当社は一切開示義務を負いません。
+3. 本条の場合において、当社が何らかの損害を被った場合、利用者は当社に対して当該損害を賠償するものとします。
+
+ 第8条（損害賠償）
+1. 当社は、利用者が本サービスをご利用になれなかったことにより発生した一切の損害について、当社の故意または重過失の場合は除き、いかなる責任も負わないものとします。
+2. 当社が損害賠償義務を負う場合、損害賠償額は、当社が利用者から受領した金額を上限とします。
+
+ 第9条（本サービスの一時的な中断）
+1. 当社は､本サービスの稼動状況を良好に保つために、以下各号の場合利用者に事前に通知を行うことなく本サービスの提供の全部あるいは一部を中止、もしくは一時中断できるものとします｡
+1) 本サービスの提供に必要な設備の故障等により緊急保守を行う場合
+2) 火災、停電、第三者による妨害行為等不可抗力により本サービスを提供できない場合
+3) その他､運用上または技術上の理由でやむを得ない場合
+2.  当社は､前項の他､本サービスの提供に必要な設備の定期保守を行うため､利用者に事前通知のうえ､本サービスを一時的に中断できるものとします｡
+
+ 第10条（サービスの廃止）
+1. 当社は､次のいずれかに該当する場合、本サービスを廃止するものとし､すべての利用者へのサービスを終了するものとします｡
+1) 30日前までに利用者に通知した場合
+2) 不可抗力により本サービスの提供が不可能となった場合
+
+ 第11条（権利譲渡の禁止）
+1. 利用者は､あらかじめ当社の書面による承諾がない限り､本規約上の権利もしくは義務の全部または一部を他に譲渡してはならないものとします。
+
+ 第12条（個人情報・プライバシーの保護）
+1. 本サービスの利用に関連して当社が知り得た利用者の個人情報について、当社が別途定める｢プライバシーポリシー｣に基づき､適切に取り扱うものとします｡
+
+ 第13条（本規約の改訂）
+1. 当社は、利用者の一般の利益に適合する場合、または、契約の目的に反せず、かつ合理的な改訂である場合、あらかじめ利用者の承諾を得ることなく、本規約を改訂することができるものとします。
+2. 前項にかかわらず、法令等により、本規約の改訂につき、利用者の承諾が必要な場合、当社は利用者の個別に承諾を得るものとします。
+
+ 第14条（協議解決）
+1. 本サービスのご利用に関して、本規約または当社の指導により解決できない問題が生じた場合、当社と利用者との間で双方誠意をもって協議し、解決を図るものとします。
+
+第15条（管轄裁判所）
+1. 本規約に関する一切の訴訟その他の紛争については、東京地方裁判所または東京簡易裁判所を第１審の専属的合意管轄裁判所とするものとします。
+
+第16条（準拠法）
+1. 本規約は、日本法に準拠し、日本法に従って解釈されるものとします。
+
+2020年12月1日施行
+
+</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -6338,7 +6246,7 @@ track専属コーチから
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fer-Sh-VwO">
-                                                <rect key="frame" x="20" y="119" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="3627.6666666666665" width="374" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Gwn-ER-JJ4"/>
@@ -6360,13 +6268,13 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上記につき全て同意します" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-Jx-CZy">
-                                                <rect key="frame" x="103" y="68" width="208" height="21"/>
+                                                <rect key="frame" x="103" y="3576.6666666666665" width="208" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KA-qB-7CP">
-                                                <rect key="frame" x="73" y="66" width="25" height="25"/>
+                                                <rect key="frame" x="73" y="3574.6666666666665" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="NS0-Kk-OEb"/>
                                                     <constraint firstAttribute="width" constant="25" id="qSh-aX-7of"/>
@@ -6379,7 +6287,7 @@ track専属コーチから
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="iE9-V4-bUK" firstAttribute="centerX" secondItem="fFi-hf-XSL" secondAttribute="centerX" id="1BD-0L-5Sh"/>
+                                            <constraint firstAttribute="trailing" secondItem="iE9-V4-bUK" secondAttribute="trailing" constant="20" id="7Ns-GZ-O9J"/>
                                             <constraint firstItem="fer-Sh-VwO" firstAttribute="top" secondItem="f2J-Jx-CZy" secondAttribute="bottom" constant="30" id="9ib-7B-D6I"/>
                                             <constraint firstItem="f2J-Jx-CZy" firstAttribute="top" secondItem="iE9-V4-bUK" secondAttribute="bottom" constant="30" id="FRF-77-W4X"/>
                                             <constraint firstItem="f2J-Jx-CZy" firstAttribute="centerX" secondItem="fFi-hf-XSL" secondAttribute="centerX" id="JKx-xf-5eT"/>
@@ -6388,6 +6296,7 @@ track専属コーチから
                                             <constraint firstAttribute="trailing" secondItem="fer-Sh-VwO" secondAttribute="trailing" constant="20" id="Sn7-sN-Cq3"/>
                                             <constraint firstItem="fer-Sh-VwO" firstAttribute="leading" secondItem="fFi-hf-XSL" secondAttribute="leading" constant="20" id="j2B-fn-x9z"/>
                                             <constraint firstItem="f2J-Jx-CZy" firstAttribute="leading" secondItem="3KA-qB-7CP" secondAttribute="trailing" constant="5" id="oNO-E4-W6z"/>
+                                            <constraint firstItem="iE9-V4-bUK" firstAttribute="leading" secondItem="fFi-hf-XSL" secondAttribute="leading" constant="20" id="r6M-gx-dYE"/>
                                             <constraint firstAttribute="bottom" secondItem="fer-Sh-VwO" secondAttribute="bottom" constant="30" id="xDX-OZ-TjN"/>
                                         </constraints>
                                     </view>
@@ -6422,13 +6331,12 @@ track専属コーチから
                     <connections>
                         <outlet property="approveFlagButton" destination="3KA-qB-7CP" id="RbU-vD-O7N"/>
                         <outlet property="goToButton" destination="fer-Sh-VwO" id="Laf-qM-SIl"/>
-                        <outlet property="ruleText" destination="iE9-V4-bUK" id="xEp-Hs-aZg"/>
                         <segue destination="zri-pw-a1w" kind="show" identifier="goToMovieAlert" id="gtu-3k-yaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggQ-Rf-ged" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="1783"/>
+            <point key="canvasLocation" x="1608" y="1731"/>
         </scene>
         <!--動画の注意点-->
         <scene sceneID="Eox-tr-mAE">
@@ -6446,10 +6354,10 @@ track専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-bp-Cof">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="563"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-DR-KEI">
-                                                <rect key="frame" x="20" y="493" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="633" width="374" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="YgH-O2-idx"/>
@@ -6471,13 +6379,13 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上記、確認いたしました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCN-Xx-Pt4">
-                                                <rect key="frame" x="111.66666666666667" y="442" width="190.66666666666663" height="21"/>
+                                                <rect key="frame" x="111.66666666666667" y="582" width="190.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-AN-Yux">
-                                                <rect key="frame" x="81.666666666666671" y="440" width="25" height="25"/>
+                                                <rect key="frame" x="81.666666666666671" y="580" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="8SV-gC-mfI"/>
                                                     <constraint firstAttribute="height" constant="25" id="E6h-N3-bIN"/>
@@ -6488,31 +6396,35 @@ track専属コーチから
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-i9-OIF">
-                                                <rect key="frame" x="20" y="30" width="374" height="380"/>
+                                                <rect key="frame" x="20" y="30" width="374" height="520"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLF-iC-hFd">
-                                                        <rect key="frame" x="20" y="20.000000000000007" width="334" height="107.66666666666669"/>
-                                                        <string key="text">必ずあなた（アドバイスをもらいたい人）を横から撮影している動画をあげてください。
+                                                        <rect key="frame" x="20" y="19.999999999999986" width="334" height="250.66666666666663"/>
+                                                        <string key="text">必ずあなた（アドバイスをもらいたい人）を横から撮影している動画を送信してください。
 
-正面や斜めからの角度で撮影された動画を送信すると、的確なアドバイスができませんのでご留意ください。</string>
+またなるべく明るい場所で撮影された動画を送信してください。
+
+正面や斜めからの角度で撮影された動画や暗い場所で撮影された動画を送信すると、的確なアドバイスができない可能性があります。
+
+また動画の時間は最長で30秒とし、それを超える動画については利用規約に則り、申込を拒否させていただく場合がありますのでご留意ください。</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【参考動画】" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0Q-2F-JTR">
-                                                        <rect key="frame" x="20" y="141" width="92" height="18"/>
+                                                        <rect key="frame" x="20" y="284" width="92" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="斜線re" translatesAutoresizingMaskIntoConstraints="NO" id="0j8-k4-wLu">
-                                                        <rect key="frame" x="32.666666666666657" y="167" width="309" height="180"/>
+                                                        <rect key="frame" x="32.666666666666657" y="310" width="309" height="180"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="180" id="3OT-Lj-0dG"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-C5-eUm">
-                                                        <rect key="frame" x="175.33333333333334" y="247" width="23.666666666666657" height="20"/>
+                                                        <rect key="frame" x="175.33333333333334" y="390" width="23.666666666666657" height="20"/>
                                                         <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6528,7 +6440,7 @@ track専属コーチから
                                                     <constraint firstItem="mLF-iC-hFd" firstAttribute="centerX" secondItem="Frg-i9-OIF" secondAttribute="centerX" id="Ddn-2i-JSW"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="centerX" secondItem="mLF-iC-hFd" secondAttribute="centerX" id="IsZ-Q0-88v"/>
                                                     <constraint firstItem="Z0Q-2F-JTR" firstAttribute="top" secondItem="mLF-iC-hFd" secondAttribute="bottom" constant="13.333333333333314" id="Sdz-8j-xlU"/>
-                                                    <constraint firstAttribute="height" constant="380" id="T1U-J3-IaY"/>
+                                                    <constraint firstAttribute="height" constant="520" id="T1U-J3-IaY"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="top" secondItem="Z0Q-2F-JTR" secondAttribute="bottom" constant="8" id="XYK-N2-V2d"/>
                                                     <constraint firstItem="mLF-iC-hFd" firstAttribute="top" secondItem="Frg-i9-OIF" secondAttribute="top" constant="20" id="Yxm-VA-kai"/>
                                                     <constraint firstItem="0j8-k4-wLu" firstAttribute="width" secondItem="mLF-iC-hFd" secondAttribute="width" multiplier="0.92515" id="cHN-Mm-BHM"/>
@@ -6537,6 +6449,11 @@ track専属コーチから
                                                     <constraint firstItem="mLF-iC-hFd" firstAttribute="leading" secondItem="Frg-i9-OIF" secondAttribute="leading" constant="20" id="xYG-7e-947"/>
                                                     <constraint firstAttribute="trailing" secondItem="mLF-iC-hFd" secondAttribute="trailing" constant="20" id="zYR-mn-8yU"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
@@ -6581,12 +6498,12 @@ track専属コーチから
                         <outlet property="approveFlagButton" destination="VOA-AN-Yux" id="LB9-U3-SUd"/>
                         <outlet property="goToButton" destination="XNL-DR-KEI" id="Btb-PY-9S0"/>
                         <outlet property="playVideo" destination="f1d-C5-eUm" id="sBa-SM-JxQ"/>
-                        <segue destination="xi7-AB-ryV" kind="show" identifier="goToPremiumQAForm" id="1Dw-Gm-GXh"/>
+                        <segue destination="wRe-fd-QGA" kind="show" identifier="goToPremiumQAForm" id="Okz-HH-ThK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Kd-ah-bB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2792" y="1807"/>
+            <point key="canvasLocation" x="2450" y="1731"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ySO-J1-7iP">
@@ -6604,6 +6521,23 @@ track専属コーチから
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5S-Nm-1lo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="720" y="1731"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="efy-8I-XaP">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="wRe-fd-QGA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ojf-lH-uFp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ubu-vU-ETw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xi7-AB-ryV" kind="relationship" relationship="rootViewController" id="9Xu-6p-Aa2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPT-nO-BAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3236" y="1730"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

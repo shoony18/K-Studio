@@ -15,6 +15,7 @@ import FirebaseMessaging
 import Photos
 import MobileCoreServices
 import AssetsLibrary
+import SDWebImage
 
 class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -33,7 +34,8 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
     var event: String?
     var PB1: String = ""
     var PB2: String = ""
-
+    var answerFlag: String?
+    
     var goodTagNameArray = [String]()
     var badTagNameArray = [String]()
     var practiceArray = [String]()
@@ -62,10 +64,10 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
     let Ref = Database.database().reference()
     
     override func viewDidLoad() {
-        download()
         loadDataPost()
+        download()
         loadDataAnswer()
-//        loadDataComment()
+        //        loadDataComment()
         super.viewDidLoad()
         TableView.dataSource = self
         TableView.delegate = self
@@ -74,6 +76,8 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
         }
     }
     func loadDataPost(){
+        
+        
         let ref1 = Ref.child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(self.selectedPostID!)")
         ref1.observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
@@ -128,7 +132,12 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
             let key = value?["PB2"] as? String ?? ""
             self.PB2 = String(key)
         })
-
+        ref1.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let key = value?["answerFlag"] as? String ?? ""
+            self.answerFlag = key
+        })
+        
     }
     func loadDataAnswer(){
         goodTagNameArray.removeAll()
@@ -249,7 +258,7 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
             }else{
                 cell!.adviseText.text = "アドバイスはまだ届いておりません"
             }
-
+            
             return cell!
         }else if indexPath.row == 1{
             let cell = self.TableView.dequeueReusableCell(withIdentifier: "cellLabel1", for: indexPath as IndexPath) as? premiumSelectedMyPostTableViewCell
@@ -304,13 +313,41 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
                 print("download success!! URL:", url!)
             }
         }
-        //        if self.cache == "1"{
-        //            SDImageCache.shared.clearMemory()
-        //            SDImageCache.shared.clearDisk()
-        //            let ref0 = Database.database().reference().child("QA").child("\(currentUid)").child("private").child("\(text!)")
-        //            let data = ["cache":"0" as Any] as [String : Any]
-        //            ref0.updateChildValues(data)
-        //        }
+        let ref0 = Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
+        ref0.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let key = value?["cache"] as? String ?? ""
+            self.cache = key
+            if self.cache == "1"{
+                SDImageCache.shared.clearMemory()
+                SDImageCache.shared.clearDisk()
+                let ref1 = self.Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
+                let data = ["cache":"0" as Any] as [String : Any]
+                ref1.updateChildValues(data)
+            }
+        })
+        
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if answerFlag == "0"{
+            if (segue.identifier == "selectedPostEdit") {
+                if #available(iOS 13.0, *) {
+                    let nextData: premiumSelectedMyPostEditViewController = segue.destination as! premiumSelectedMyPostEditViewController
+                    nextData.selectedPostID = self.selectedPostID!
+                } else {
+                    // Fallback on earlier versions
+                }
+            }
+            
+        }else{
+            let alert: UIAlertController = UIAlertController(title: "確認", message: "動画分析中または回答受領済みのため申請内容を編集できません", preferredStyle:  UIAlertController.Style.alert)
+            
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+                (action: UIAlertAction!) -> Void in
+            })
+            alert.addAction(defaultAction)
+            present(alert, animated: true, completion: nil)
+            
+        }
+    }
 }

@@ -16,20 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SPOTECHロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="crk-L5-rmh">
-                                <rect key="frame" x="30" y="378" width="354" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K-STUDIO_ロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="no6-mG-Ff2">
+                                <rect key="frame" x="32" y="348" width="350" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="if5-yr-BeS"/>
+                                    <constraint firstAttribute="width" constant="350" id="UZp-rZ-v1K"/>
+                                    <constraint firstAttribute="height" constant="200" id="b1x-AK-FWu"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KoN-1o-9KQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="crk-L5-rmh" firstAttribute="leading" secondItem="KoN-1o-9KQ" secondAttribute="leading" constant="30" id="12a-gV-uPL"/>
-                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerX" secondItem="KoN-1o-9KQ" secondAttribute="centerX" id="TTV-zV-Uz6"/>
-                            <constraint firstItem="KoN-1o-9KQ" firstAttribute="trailing" secondItem="crk-L5-rmh" secondAttribute="trailing" constant="30" id="Umq-FL-1UY"/>
-                            <constraint firstItem="crk-L5-rmh" firstAttribute="centerY" secondItem="KoN-1o-9KQ" secondAttribute="centerY" id="tC4-Er-a5c"/>
+                            <constraint firstItem="no6-mG-Ff2" firstAttribute="centerX" secondItem="eok-w3-vVm" secondAttribute="centerX" id="mZC-M0-cQL"/>
+                            <constraint firstItem="no6-mG-Ff2" firstAttribute="centerY" secondItem="eok-w3-vVm" secondAttribute="centerY" id="q7c-km-46m"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SPOTECHロゴ" width="1333" height="500"/>
+        <image name="K-STUDIO_ロゴ" width="640" height="360"/>
     </resources>
 </document>

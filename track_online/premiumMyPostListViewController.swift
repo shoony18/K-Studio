@@ -15,6 +15,7 @@ import FirebaseMessaging
 import Photos
 import MobileCoreServices
 import AssetsLibrary
+import SDWebImage
 
 class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -59,6 +60,13 @@ class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITa
         self.TableView.reloadData()
     }
     func loadData(){
+        let ref0 = Ref.child("purchase").child("premium").child("userList").child("\(self.currentUid)")
+        ref0.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let key = value?["cache"] as? String ?? ""
+            self.cache = key
+        })
+
         postIDArray.removeAll()
         dateArray.removeAll()
         timeArray.removeAll()
@@ -138,20 +146,28 @@ class premiumMyPostListViewController: UIViewController,UITableViewDelegate,UITa
     
     func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(postIDArray_re)
-        
+
+        if self.cache == "1"{
+            SDImageCache.shared.clearMemory()
+            SDImageCache.shared.clearDisk()
+        }
+
         let cell = self.TableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as? premiumMyPostListTableViewCell
         cell!.title.text = self.memoArray_re[indexPath.row]
         cell!.date.text = self.dateArray_re[indexPath.row]
         cell!.time.text = self.timeArray_re[indexPath.row]
         cell!.event.text = self.eventArray_re[indexPath.row]
         if self.answerFlagArray_re[indexPath.row] == "1"{
+            cell!.status.text = "分析中"
+            cell!.status.backgroundColor = UIColor(red: 25/255, green: 86/255, blue: 154/255, alpha: 1)
+        }else if self.answerFlagArray_re[indexPath.row] == "2"{
             cell!.status.text = "回答あり"
             cell!.status.backgroundColor = UIColor(red: 235/255, green: 109/255, blue: 113/255, alpha: 1)
         }else{
             cell!.status.text = "回答待ち"
-            cell!.status.backgroundColor = UIColor(red: 25/255, green: 86/255, blue: 154/255, alpha: 1)
+            cell!.status.backgroundColor = UIColor(red: 93/255, green: 175/255, blue: 175/255, alpha: 1)
         }
-        
+
         let textImage:String = self.postIDArray_re[indexPath.row]+".png"
         let refImage = Storage.storage().reference().child("purchase").child("premium").child("uuid").child("\(self.currentUid)").child("post").child("\(self.postIDArray_re[indexPath.row])").child("\(textImage)")
         cell!.ImageView.sd_setImage(with: refImage, placeholderImage: nil)

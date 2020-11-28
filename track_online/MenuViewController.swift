@@ -24,6 +24,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet var menuView: UIView!
     @IBOutlet var TableView: UITableView!
     @IBOutlet var userName: UILabel!
+    @IBOutlet var pointText: UILabel!
     
     let currentUid:String = Auth.auth().currentUser!.uid
     let currentUserName:String = Auth.auth().currentUser!.displayName!
@@ -60,6 +61,18 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func loadData(){
         userName.text = "ようこそ、 "+"\(currentUserName)"+" さん"
+        Ref.child("QA").child("uuid").child("\(currentUid)").observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          let value = snapshot.value as? NSDictionary
+          let key = value?["point"] as? String ?? ""
+            if key.isEmpty{
+                self.pointText.text = "-"
+            }else{
+                self.pointText.text = "現在の保有ポイントは　" + key + "　ptです"
+            }
+          }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     func numberOfSections(in myTableView: UITableView) -> Int {

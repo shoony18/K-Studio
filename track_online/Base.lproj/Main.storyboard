@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -692,7 +692,7 @@ K-Studio専属コーチから
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zO8-4h-iCv" customClass="TPKeyboardAvoidingScrollView">
-                                    <rect key="frame" x="0.0" y="685" width="414" height="122"/>
+                                    <rect key="frame" x="0.0" y="674.66666793823242" width="414" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-vD-7NR">
@@ -1034,14 +1034,14 @@ K-Studio専属コーチから
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnswer1" id="F24-cP-Mef" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="563" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="563" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F24-cP-Mef" id="lZb-nt-usr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-1J-F1W">
-                                                    <rect key="frame" x="20" y="11" width="378" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-1J-F1W">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="378" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1058,14 +1058,14 @@ K-Studio専属コーチから
                                             <outlet property="answerLabel" destination="ghs-1J-F1W" id="rqD-x5-Vn8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPractice" rowHeight="50" id="eSu-de-1S3" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="607" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPractice" id="eSu-de-1S3" customClass="premiumSelectedMyPostTableViewCell" customModule="track_online" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="606.66666793823242" width="414" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eSu-de-1S3" id="G6d-Qg-ND8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-4Y-fJG">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-4Y-fJG">
                                                     <rect key="frame" x="195" y="11" width="203" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1097,8 +1097,9 @@ K-Studio専属コーチから
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TAh-4Y-fJG" firstAttribute="centerY" secondItem="mHT-HY-6dE" secondAttribute="centerY" id="Kxs-Bh-n2D"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TAh-4Y-fJG" secondAttribute="bottom" id="SOx-rT-qwc"/>
                                                 <constraint firstItem="TAh-4Y-fJG" firstAttribute="trailing" secondItem="G6d-Qg-ND8" secondAttribute="trailingMargin" id="UWn-7V-Oy6"/>
+                                                <constraint firstItem="TAh-4Y-fJG" firstAttribute="top" secondItem="G6d-Qg-ND8" secondAttribute="topMargin" id="Xuq-cI-ugV"/>
                                                 <constraint firstItem="rxz-dT-TSl" firstAttribute="centerY" secondItem="mHT-HY-6dE" secondAttribute="centerY" id="Z0h-be-EPG"/>
                                                 <constraint firstItem="mHT-HY-6dE" firstAttribute="top" secondItem="G6d-Qg-ND8" secondAttribute="top" constant="10" id="eqK-iI-aQh"/>
                                                 <constraint firstItem="mHT-HY-6dE" firstAttribute="leading" secondItem="G6d-Qg-ND8" secondAttribute="leading" constant="40" id="hXU-Eg-M8a"/>
@@ -5980,6 +5981,12 @@ K-Studio専属コーチから
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="斜線re" width="424" height="275"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

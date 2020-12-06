@@ -341,7 +341,7 @@ class premiumSelectedMyPostViewController: UIViewController,UITableViewDelegate,
             }
             
         }else{
-            let alert: UIAlertController = UIAlertController(title: "確認", message: "動画分析中または回答受領済みのため申請内容を編集できません", preferredStyle:  UIAlertController.Style.alert)
+            let alert: UIAlertController = UIAlertController(title: "確認", message: "動画分析中またはアドバイスを既にもらっているため申請内容を編集できません", preferredStyle:  UIAlertController.Style.alert)
             
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
                 (action: UIAlertAction!) -> Void in

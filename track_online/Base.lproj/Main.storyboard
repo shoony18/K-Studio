@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="aWK-Z3-BJo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cm6-j2-9Zz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-Y2-qL6">
-                                <rect key="frame" x="36" y="698" width="303" height="50"/>
+                                <rect key="frame" x="40" y="812" width="348" height="50"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WeD-R5-TBX"/>
@@ -47,14 +47,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-NI-mvG">
-                                <rect key="frame" x="67.666666666666686" y="302" width="240" height="128"/>
+                                <rect key="frame" x="94" y="359" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Jyq-Xy-je5"/>
                                     <constraint firstAttribute="width" constant="240" id="bCH-vD-8Ya"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-FO-X6y">
-                                <rect key="frame" x="75.333333333333329" y="162" width="224.33333333333337" height="48"/>
+                                <rect key="frame" x="102" y="219" width="224.33333333333337" height="48"/>
                                 <string key="text">最先端のアプローチで
 パフォーマンスをあげる</string>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfZ-hR-8R3">
-                                <rect key="frame" x="95.666666666666671" y="502.33333333333331" width="183.66666666666663" height="95.666666666666686"/>
+                                <rect key="frame" x="122.33333333333331" y="616.33333333333337" width="183.66666666666669" height="95.666666666666629"/>
                                 <string key="text">陸上選手のための
 オンラインスクール
 
@@ -125,19 +125,19 @@ K-Studio</string>
             <objects>
                 <viewController id="Xv8-Bc-aoP" customClass="QAAllListViewController" customModule="track_online" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kEh-9u-Xty">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell1" id="Pky-st-YQ7" customClass="QATableViewCell" customModule="track_online" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="48.333332061767578"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="48.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pky-st-YQ7" id="I0f-7i-HhB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48.333332061767578"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qh-fu-FY0">
-                                            <rect key="frame" x="20.000000000000004" y="28.333333333333329" width="58.333333333333343" height="20"/>
+                                            <rect key="frame" x="20" y="28.5" width="58" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="88v-EV-EDN"/>
                                             </constraints>
@@ -146,13 +146,13 @@ K-Studio</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-Yt-ndZ">
-                                            <rect key="frame" x="20" y="9.9999999999999982" width="322" height="18.333333333333329"/>
+                                            <rect key="frame" x="20" y="10" width="322" height="18.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoN-zB-66y">
-                                            <rect key="frame" x="124.66666666666667" y="28.333333333333329" width="24.666666666666671" height="20"/>
+                                            <rect key="frame" x="124.5" y="28.5" width="25" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="SPR-8m-7mq"/>
                                             </constraints>
@@ -161,7 +161,7 @@ K-Studio</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zg-4M-k6w">
-                                            <rect key="frame" x="178" y="28.333333333333329" width="24.666666666666657" height="20"/>
+                                            <rect key="frame" x="178.5" y="28.5" width="24.5" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="dR5-hs-USi"/>
                                             </constraints>
@@ -170,7 +170,7 @@ K-Studio</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-mJ-gB8">
-                                            <rect key="frame" x="88.333333333333329" y="28.333333333333329" width="26.333333333333329" height="20"/>
+                                            <rect key="frame" x="88" y="28.5" width="26.5" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="D9Q-Ng-YKu"/>
                                             </constraints>
@@ -179,7 +179,7 @@ K-Studio</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLE-cq-xgW">
-                                            <rect key="frame" x="159.33333333333334" y="28.333333333333329" width="13.666666666666657" height="20"/>
+                                            <rect key="frame" x="159.5" y="28.5" width="14" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="5dJ-Ga-xg6"/>
                                             </constraints>
@@ -321,7 +321,7 @@ K-Studio</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-6p-fyb">
-                                <rect key="frame" x="0.0" y="56" width="414" height="695"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do9-Z5-1Iv">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -393,7 +393,7 @@ K-Studio専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="980円/回" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b40-eO-mzR">
-                                                <rect key="frame" x="170.66666666666666" y="840" width="72.666666666666657" height="21"/>
+                                                <rect key="frame" x="170.66666666666666" y="840" width="73" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" red="0.32549019610000002" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -434,7 +434,7 @@ K-Studio専属コーチから
                                                 <rect key="frame" x="30" y="340" width="354" height="190"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-jZ-hLh">
-                                                        <rect key="frame" x="173" y="20" width="8.3333333333333428" height="18"/>
+                                                        <rect key="frame" x="173" y="20" width="8" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="AYx-Ah-QYl"/>
@@ -560,7 +560,7 @@ K-Studio専属コーチから
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-N1-cWr">
-                                                        <rect key="frame" x="173" y="20" width="8.3333333333333428" height="18"/>
+                                                        <rect key="frame" x="173" y="20" width="8" height="18"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="b7A-RJ-gck"/>
@@ -689,7 +689,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bug-F6-FOn">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zO8-4h-iCv" customClass="TPKeyboardAvoidingScrollView">
                                     <rect key="frame" x="0.0" y="674.66666793823242" width="414" height="122"/>
@@ -785,7 +785,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-tD-fA4">
-                                                    <rect key="frame" x="26" y="108" width="66" height="17"/>
+                                                    <rect key="frame" x="30" y="108" width="66" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="mXb-d9-Wsc"/>
                                                     </constraints>
@@ -794,19 +794,19 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w04-8x-9hZ">
-                                                    <rect key="frame" x="26" y="80" width="362" height="18"/>
+                                                    <rect key="frame" x="30" y="80" width="354" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqz-Ba-LsT">
-                                                    <rect key="frame" x="102" y="103" width="30.333333333333343" height="27"/>
+                                                    <rect key="frame" x="106" y="103" width="30.666666666666657" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8h-Ti-X7Z">
-                                                    <rect key="frame" x="36" y="234" width="342" height="180"/>
+                                                    <rect key="frame" x="40" y="234" width="334" height="180"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="180" id="xtr-VT-ovB"/>
                                                     </constraints>
@@ -826,13 +826,13 @@ K-Studio専属コーチから
                                                     <state key="normal" title="Button" image="play.rectangle" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwt-4Z-FAD">
-                                                    <rect key="frame" x="61" y="48.666666666666664" width="37.666666666666657" height="17.999999999999993"/>
+                                                    <rect key="frame" x="65" y="48.666666666666664" width="37.666666666666657" height="17.999999999999993"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bOZ-XK-z4e">
-                                                    <rect key="frame" x="16" y="41" width="35" height="33.666666666666671"/>
+                                                    <rect key="frame" x="20" y="41" width="35" height="33.666666666666671"/>
                                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="Kti-w2-hOx"/>
@@ -840,13 +840,13 @@ K-Studio専属コーチから
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-ed-2hZ">
-                                                    <rect key="frame" x="69" y="157" width="28.666666666666671" height="17"/>
+                                                    <rect key="frame" x="73" y="157" width="29" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身長：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qc-VT-0CT">
-                                                    <rect key="frame" x="26" y="135" width="43" height="17"/>
+                                                    <rect key="frame" x="30" y="135" width="43" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="htz-5G-O5g"/>
                                                     </constraints>
@@ -855,50 +855,50 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-dg-v7Y">
-                                                    <rect key="frame" x="69" y="135" width="43.666666666666657" height="17"/>
+                                                    <rect key="frame" x="73" y="135" width="43.666666666666657" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-nz-cVO">
-                                                    <rect key="frame" x="122.66666666666669" y="135" width="43" height="17"/>
+                                                    <rect key="frame" x="126.66666666666669" y="135" width="43" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-Dz-n35">
-                                                    <rect key="frame" x="165.66666666666666" y="135" width="32.666666666666657" height="17"/>
+                                                    <rect key="frame" x="169.66666666666666" y="135" width="33" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己ベスト：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-wX-rRX">
-                                                    <rect key="frame" x="120.66666666666669" y="157" width="86" height="17"/>
+                                                    <rect key="frame" x="125" y="157" width="86" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="種目：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8t-nZ-jg8">
-                                                    <rect key="frame" x="26" y="157" width="43" height="17"/>
+                                                    <rect key="frame" x="30" y="157" width="43" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6m00cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB4-p4-hEQ">
-                                                    <rect key="frame" x="206.66666666666666" y="157" width="57.999999999999972" height="17"/>
+                                                    <rect key="frame" x="211" y="157" width="58" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-6b-vNI">
-                                                    <rect key="frame" x="26" y="464" width="362" height="1"/>
+                                                    <rect key="frame" x="30" y="464" width="354" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="yjt-lt-DGc"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-dQ-MIS">
-                                                    <rect key="frame" x="203" y="453.66666666666669" width="8.3333333333333428" height="22"/>
+                                                    <rect key="frame" x="203" y="453.66666666666669" width="8" height="22"/>
                                                     <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1041,7 +1041,7 @@ K-Studio専属コーチから
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-1J-F1W">
-                                                    <rect key="frame" x="20" y="11.000000000000002" width="378" height="21.666666666666671"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="374" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1066,7 +1066,7 @@ K-Studio専属コーチから
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-4Y-fJG">
-                                                    <rect key="frame" x="195" y="11" width="203" height="18"/>
+                                                    <rect key="frame" x="195" y="11" width="199" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1440,7 +1440,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-CQ-AFL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="789"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-CU-hGt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
@@ -1785,11 +1785,11 @@ K-Studio専属コーチから
                         <viewControllerLayoutGuide type="bottom" id="VF0-kc-eGs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OrA-G9-hDV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rne-rF-dMY">
-                                <rect key="frame" x="0.0" y="189" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="189" width="428" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="darkTextColor"/>
                                 <constraints>
@@ -1802,7 +1802,7 @@ K-Studio専属コーチから
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done_mark" translatesAutoresizingMaskIntoConstraints="NO" id="UEc-8M-U9i">
-                                <rect key="frame" x="129" y="109" width="117" height="93"/>
+                                <rect key="frame" x="155.66666666666663" y="109" width="116.99999999999997" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="63t-U4-uVd"/>
                                     <constraint firstAttribute="width" constant="117" id="Mdk-of-LeU"/>
@@ -1908,7 +1908,7 @@ K-Studio専属コーチから
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4J-rn-ucY">
-                                                                    <rect key="frame" x="17" y="56" width="381" height="18"/>
+                                                                    <rect key="frame" x="21" y="56" width="373" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1920,7 +1920,7 @@ K-Studio専属コーチから
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoI-2y-6wD">
-                                                                    <rect key="frame" x="16" y="84" width="382" height="0.0"/>
+                                                                    <rect key="frame" x="20" y="84" width="374" height="0.0"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1932,7 +1932,7 @@ K-Studio専属コーチから
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0WG-1Y-It0">
-                                                                    <rect key="frame" x="21" y="12" width="35" height="33.666666666666671"/>
+                                                                    <rect key="frame" x="25" y="12" width="35" height="33.666666666666671"/>
                                                                     <color key="tintColor" red="0.84398794420000001" green="0.55621934559999997" blue="0.64621719509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="35" id="69n-HY-ygc"/>
@@ -1940,7 +1940,7 @@ K-Studio専属コーチから
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKP-5I-Cpc">
-                                                                    <rect key="frame" x="61" y="11" width="337" height="35"/>
+                                                                    <rect key="frame" x="65" y="11" width="329" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="wPq-zf-VFH"/>
                                                                     </constraints>
@@ -1949,7 +1949,7 @@ K-Studio専属コーチから
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/10/10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqq-R1-hzI">
-                                                                    <rect key="frame" x="16" y="94" width="64" height="20"/>
+                                                                    <rect key="frame" x="20" y="94" width="64" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="SWJ-t6-60L"/>
                                                                     </constraints>
@@ -1958,7 +1958,7 @@ K-Studio専属コーチから
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-Sh-uXl">
-                                                                    <rect key="frame" x="90" y="94" width="31.666666666666671" height="20"/>
+                                                                    <rect key="frame" x="94" y="94" width="31.666666666666671" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="V1C-ro-GaJ"/>
                                                                     </constraints>
@@ -1967,7 +1967,7 @@ K-Studio専属コーチから
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OES-71-90o">
-                                                                    <rect key="frame" x="141.66666666666666" y="89" width="25" height="25"/>
+                                                                    <rect key="frame" x="145.66666666666666" y="89" width="25" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="25" id="89s-OF-bHr"/>
                                                                         <constraint firstAttribute="width" constant="25" id="WJ0-Sp-RWh"/>
@@ -2729,7 +2729,7 @@ K-Studio専属コーチから
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-oo-Das">
-                                                                    <rect key="frame" x="51" y="11" width="347" height="35"/>
+                                                                    <rect key="frame" x="55" y="11" width="339" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="AQj-1i-OJf"/>
                                                                     </constraints>
@@ -2747,7 +2747,7 @@ K-Studio専属コーチから
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gCV-A3-RJQ">
-                                                                    <rect key="frame" x="16" y="12" width="35" height="33.666666666666671"/>
+                                                                    <rect key="frame" x="20" y="12" width="35" height="33.666666666666671"/>
                                                                     <color key="tintColor" red="0.84398794420000001" green="0.55621934559999997" blue="0.64621719509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="bKp-Xn-T0n"/>
@@ -3060,7 +3060,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-1z-hId">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mypage1" id="bIX-Q7-FPa" customClass="QATableViewCell" customModule="track_online" customModuleProvider="target">
@@ -3071,7 +3071,7 @@ K-Studio専属コーチから
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17S-1Z-fbh">
-                                                    <rect key="frame" x="20.000000000000004" y="28" width="58.333333333333343" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="58" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="rr1-Lj-cwa"/>
                                                     </constraints>
@@ -3086,7 +3086,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5X-e5-5UB">
-                                                    <rect key="frame" x="124.66666666666667" y="28" width="24.666666666666671" height="20"/>
+                                                    <rect key="frame" x="124.66666666666669" y="28" width="25" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="mSf-Vd-Myr"/>
                                                     </constraints>
@@ -3095,7 +3095,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-ld-vff">
-                                                    <rect key="frame" x="88.333333333333329" y="28" width="26.333333333333329" height="20"/>
+                                                    <rect key="frame" x="88" y="28" width="26.666666666666671" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="GGR-bl-ZQX"/>
                                                     </constraints>
@@ -3201,22 +3201,22 @@ K-Studio専属コーチから
                         <viewControllerLayoutGuide type="bottom" id="2kh-yc-Kpr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NuE-uF-za5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-ra-zwg">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1301"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mypage2" id="Aa0-ex-exA" customClass="QATableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aa0-ex-exA" id="p0z-vH-cHf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN7-gB-T1b">
-                                                    <rect key="frame" x="20.000000000000004" y="28" width="58.333333333333343" height="20"/>
+                                                    <rect key="frame" x="20" y="28" width="58" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="UCK-9V-SeC"/>
                                                     </constraints>
@@ -3225,13 +3225,13 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rx-A2-vyZ">
-                                                    <rect key="frame" x="21" y="10" width="264" height="18"/>
+                                                    <rect key="frame" x="21" y="10" width="913" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loj-cU-rFm">
-                                                    <rect key="frame" x="134.66666666666666" y="28" width="24.666666666666657" height="20"/>
+                                                    <rect key="frame" x="134.5" y="28" width="25" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="yB7-1k-2Tu"/>
                                                     </constraints>
@@ -3240,7 +3240,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5m-wp-ikM">
-                                                    <rect key="frame" x="93.333333333333329" y="28" width="26.333333333333329" height="20"/>
+                                                    <rect key="frame" x="93" y="28" width="26.5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="GnH-N6-CSG"/>
                                                     </constraints>
@@ -3249,7 +3249,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回答数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-IW-pFN">
-                                                    <rect key="frame" x="315" y="5" width="50" height="15"/>
+                                                    <rect key="frame" x="964" y="5" width="50" height="15"/>
                                                     <color key="backgroundColor" red="0.32549019607843138" green="0.65098039215686276" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="cAU-Gj-vOH"/>
@@ -3265,7 +3265,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT6-9k-6eV">
-                                                    <rect key="frame" x="325" y="25" width="30" height="20"/>
+                                                    <rect key="frame" x="974" y="25" width="30" height="20"/>
                                                     <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="P9h-6Q-BBk"/>
@@ -3354,7 +3354,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nK6-iZ-EH1">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mypage3" id="9G1-1Z-FeG" customClass="QATableViewCell" customModule="track_online" customModuleProvider="target">
@@ -3365,7 +3365,7 @@ K-Studio専属コーチから
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-Go-NPo">
-                                                    <rect key="frame" x="20.000000000000004" y="52" width="58.333333333333343" height="15"/>
+                                                    <rect key="frame" x="20" y="52" width="58" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="8mZ-qa-cBu"/>
                                                     </constraints>
@@ -3383,7 +3383,7 @@ K-Studio専属コーチから
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-zU-ATF">
-                                                    <rect key="frame" x="88.333333333333329" y="52" width="26.333333333333329" height="15"/>
+                                                    <rect key="frame" x="88" y="52" width="26.666666666666671" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="leK-HM-tpq"/>
                                                     </constraints>
@@ -3425,7 +3425,7 @@ K-Studio専属コーチから
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUd-A1-tlb">
-                                                    <rect key="frame" x="124.66666666666667" y="52" width="24.666666666666671" height="15"/>
+                                                    <rect key="frame" x="124.66666666666669" y="52" width="25" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="9R2-3t-sHG"/>
                                                     </constraints>
@@ -3704,7 +3704,7 @@ K-Studio専属コーチから
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EZj-0m-Cbp">
-                                                                    <rect key="frame" x="21" y="12" width="35" height="33.666666666666671"/>
+                                                                    <rect key="frame" x="25" y="12" width="35" height="33.666666666666671"/>
                                                                     <color key="tintColor" red="0.87260072970000002" green="0.50829221790000001" blue="0.34506615099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="35" id="RqT-b1-Vn4"/>
@@ -3712,7 +3712,7 @@ K-Studio専属コーチから
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-Lg-gYW">
-                                                                    <rect key="frame" x="61" y="11" width="337" height="35"/>
+                                                                    <rect key="frame" x="65" y="11" width="329" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="wxo-mj-yZN"/>
                                                                     </constraints>
@@ -3881,11 +3881,11 @@ K-Studio専属コーチから
                         <viewControllerLayoutGuide type="bottom" id="3mH-XH-88c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="22G-F5-3dr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wy8-9v-DwP" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="807"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="874"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-HV-lHh">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
@@ -4104,7 +4104,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Th-Hgm" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F7-qf-mgz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
@@ -4435,6 +4435,7 @@ K-Studio専属コーチから
                                                     <constraint firstItem="ecb-Rm-G70" firstAttribute="top" secondItem="Ojx-Dv-WNz" secondAttribute="bottom" constant="10" id="AxK-T4-QV1"/>
                                                     <constraint firstItem="xiR-hh-A5w" firstAttribute="leading" secondItem="xr4-XU-3av" secondAttribute="leading" constant="20" id="Kj9-K1-3jI"/>
                                                     <constraint firstItem="3hy-9w-M7Y" firstAttribute="centerX" secondItem="xr4-XU-3av" secondAttribute="centerX" id="M4t-XT-4cu"/>
+                                                    <constraint firstAttribute="width" constant="350" id="PWx-hq-oW3"/>
                                                     <constraint firstItem="xiR-hh-A5w" firstAttribute="top" secondItem="xr4-XU-3av" secondAttribute="top" constant="20" id="QAk-Go-sSZ"/>
                                                     <constraint firstItem="b9p-dh-Kcy" firstAttribute="centerX" secondItem="xr4-XU-3av" secondAttribute="centerX" id="RCQ-Ss-0T9"/>
                                                     <constraint firstItem="vTe-GY-Nco" firstAttribute="leading" secondItem="xr4-XU-3av" secondAttribute="leading" id="WzO-Bt-lxw"/>
@@ -4574,7 +4575,7 @@ K-Studio専属コーチから
                                                         </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8I-0Y-9OH">
-                                                        <rect key="frame" x="122.99999999999999" y="59" width="17.333333333333329" height="15"/>
+                                                        <rect key="frame" x="123.00000000000001" y="59" width="17.666666666666671" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="Qyd-Hd-7Eg"/>
                                                         </constraints>
@@ -4583,7 +4584,7 @@ K-Studio専属コーチから
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNY-QH-DpU">
-                                                        <rect key="frame" x="273" y="59" width="13.666666666666686" height="15"/>
+                                                        <rect key="frame" x="273" y="59" width="14" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="TR3-mO-Wi1"/>
                                                         </constraints>
@@ -4632,20 +4633,19 @@ K-Studio専属コーチから
                                             <constraint firstItem="aUK-eo-XgQ" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" constant="-120" id="TSX-ov-CAG"/>
                                             <constraint firstItem="05D-3e-ncB" firstAttribute="top" secondItem="aUK-eo-XgQ" secondAttribute="bottom" constant="5" id="UyX-y0-jk4"/>
                                             <constraint firstItem="fWF-4c-u1U" firstAttribute="top" secondItem="xr4-XU-3av" secondAttribute="bottom" constant="15" id="VeJ-5f-Mah"/>
+                                            <constraint firstItem="xr4-XU-3av" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="VrX-F2-aV2"/>
                                             <constraint firstItem="26s-u9-VxM" firstAttribute="top" secondItem="fWF-4c-u1U" secondAttribute="bottom" constant="15" id="WlH-wb-VHg"/>
                                             <constraint firstItem="PgP-AU-r1n" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="aSz-Tg-enD"/>
                                             <constraint firstItem="fWF-4c-u1U" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="dIc-2Y-bbY"/>
                                             <constraint firstItem="uwB-fh-V9Q" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="ed9-SU-dAT"/>
                                             <constraint firstItem="uwB-fh-V9Q" firstAttribute="top" secondItem="26s-u9-VxM" secondAttribute="bottom" constant="15" id="gD0-y8-EaH"/>
                                             <constraint firstItem="05D-3e-ncB" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="i4x-nW-fHl"/>
-                                            <constraint firstAttribute="trailing" secondItem="xr4-XU-3av" secondAttribute="trailing" constant="32" id="lVS-pr-Ueb"/>
                                             <constraint firstItem="PgP-AU-r1n" firstAttribute="top" secondItem="uwB-fh-V9Q" secondAttribute="bottom" constant="20" id="nIO-be-eVu"/>
                                             <constraint firstItem="26s-u9-VxM" firstAttribute="centerX" secondItem="5F7-qf-mgz" secondAttribute="centerX" id="rHD-tm-rff"/>
                                             <constraint firstItem="4g9-ke-q8s" firstAttribute="top" secondItem="5F7-qf-mgz" secondAttribute="top" constant="20" id="sFR-jL-b73"/>
                                             <constraint firstAttribute="bottom" secondItem="pzw-HV-q51" secondAttribute="bottom" constant="50" id="srU-3P-haI"/>
                                             <constraint firstItem="aUK-eo-XgQ" firstAttribute="top" secondItem="4g9-ke-q8s" secondAttribute="bottom" constant="20" id="tPm-i3-Tjx"/>
                                             <constraint firstItem="xr4-XU-3av" firstAttribute="top" secondItem="05D-3e-ncB" secondAttribute="bottom" constant="15" id="tQK-Yd-fx8"/>
-                                            <constraint firstItem="xr4-XU-3av" firstAttribute="leading" secondItem="5F7-qf-mgz" secondAttribute="leading" constant="32" id="uzc-Su-lmK"/>
                                             <constraint firstAttribute="height" constant="1100" id="vOG-NM-t22"/>
                                         </constraints>
                                     </view>
@@ -4715,24 +4715,27 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-nt-78n">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0jW-n9-R5u" customClass="premiumMyPostListTableViewCell" customModule="track_online" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="110.33333587646484"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0jW-n9-R5u" id="Nnp-4b-ngN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110.33333587646484"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/5/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gx-5l-i6R">
-                                                    <rect key="frame" x="15.999999999999996" y="66" width="61.666666666666657" height="15.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/12/16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gx-5l-i6R">
+                                                    <rect key="frame" x="20" y="66" width="70" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="Gey-hW-22z"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cell" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sN-uW-dAj">
-                                                    <rect key="frame" x="16" y="11" width="223" height="50"/>
+                                                    <rect key="frame" x="20" y="11" width="199" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="2aw-eU-kUH"/>
                                                     </constraints>
@@ -4740,23 +4743,26 @@ K-Studio専属コーチから
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-QD-XxP">
-                                                    <rect key="frame" x="126.00000000000001" y="66" width="26.666666666666671" height="15.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跳躍" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-QD-XxP">
+                                                    <rect key="frame" x="140" y="66" width="79" height="15.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkT-FK-dq8">
-                                                    <rect key="frame" x="87.666666666666671" y="66" width="28.333333333333329" height="15.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkT-FK-dq8">
+                                                    <rect key="frame" x="95" y="66" width="35" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="0RD-ER-lvU"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y5e-bP-Ci6">
-                                                    <rect key="frame" x="249" y="5" width="160" height="100.33333333333333"/>
+                                                    <rect key="frame" x="229" y="4.9999999999999929" width="180" height="120.33333333333331"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="cD5-w0-avj"/>
-                                                        <constraint firstAttribute="width" constant="160" id="hmn-eN-4Ge"/>
+                                                        <constraint firstAttribute="height" constant="120" id="cD5-w0-avj"/>
+                                                        <constraint firstAttribute="width" constant="180" id="hmn-eN-4Ge"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -4765,7 +4771,7 @@ K-Studio専属コーチから
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-5R-YoS">
-                                                    <rect key="frame" x="20" y="86.666666666666671" width="60" height="18"/>
+                                                    <rect key="frame" x="20" y="92" width="60" height="18"/>
                                                     <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="egh-sS-UYm"/>
@@ -4785,18 +4791,18 @@ K-Studio専属コーチから
                                                 <constraint firstItem="pkT-FK-dq8" firstAttribute="top" secondItem="8sN-uW-dAj" secondAttribute="bottom" constant="5" id="1R1-VF-0Vg"/>
                                                 <constraint firstItem="8sN-uW-dAj" firstAttribute="top" secondItem="Nnp-4b-ngN" secondAttribute="topMargin" id="6ZE-UB-MH4"/>
                                                 <constraint firstItem="Y5e-bP-Ci6" firstAttribute="leading" secondItem="8sN-uW-dAj" secondAttribute="trailing" constant="10" id="GjV-Vn-HXw"/>
-                                                <constraint firstItem="pkT-FK-dq8" firstAttribute="leading" secondItem="0gx-5l-i6R" secondAttribute="trailing" constant="10" id="L4v-DJ-LdE"/>
+                                                <constraint firstItem="ze8-QD-XxP" firstAttribute="top" secondItem="8sN-uW-dAj" secondAttribute="bottom" constant="5" id="Kh3-lF-SnX"/>
+                                                <constraint firstItem="pkT-FK-dq8" firstAttribute="leading" secondItem="0gx-5l-i6R" secondAttribute="trailing" constant="5" id="L4v-DJ-LdE"/>
                                                 <constraint firstItem="0gx-5l-i6R" firstAttribute="top" secondItem="8sN-uW-dAj" secondAttribute="bottom" constant="5" id="M8S-Zl-W0Y"/>
                                                 <constraint firstItem="Y5e-bP-Ci6" firstAttribute="top" secondItem="Nnp-4b-ngN" secondAttribute="top" constant="5" id="Qqo-BL-nNq"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y5e-bP-Ci6" secondAttribute="trailing" constant="5" id="UDw-AM-Wk6"/>
                                                 <constraint firstItem="8sN-uW-dAj" firstAttribute="leading" secondItem="Nnp-4b-ngN" secondAttribute="leadingMargin" id="UEI-hJ-pg9"/>
+                                                <constraint firstItem="Y5e-bP-Ci6" firstAttribute="leading" secondItem="ze8-QD-XxP" secondAttribute="trailing" constant="10" id="aZn-wS-tZt"/>
                                                 <constraint firstItem="lfa-5R-YoS" firstAttribute="leading" secondItem="Nnp-4b-ngN" secondAttribute="leading" constant="20" id="gV3-7R-YbK"/>
                                                 <constraint firstItem="0gx-5l-i6R" firstAttribute="leading" secondItem="Nnp-4b-ngN" secondAttribute="leadingMargin" id="hyQ-tf-Cet"/>
                                                 <constraint firstItem="ze8-QD-XxP" firstAttribute="leading" secondItem="pkT-FK-dq8" secondAttribute="trailing" constant="10" id="mzc-xa-52Z"/>
-                                                <constraint firstItem="pkT-FK-dq8" firstAttribute="centerY" secondItem="0gx-5l-i6R" secondAttribute="centerY" id="r3N-lD-XhI"/>
-                                                <constraint firstItem="lfa-5R-YoS" firstAttribute="top" secondItem="0gx-5l-i6R" secondAttribute="bottom" constant="5" id="rCJ-sj-kr9"/>
+                                                <constraint firstItem="lfa-5R-YoS" firstAttribute="top" secondItem="0gx-5l-i6R" secondAttribute="bottom" constant="10" id="rCJ-sj-kr9"/>
                                                 <constraint firstAttribute="bottom" secondItem="Y5e-bP-Ci6" secondAttribute="bottom" constant="5" id="sQE-kv-hG4"/>
-                                                <constraint firstItem="ze8-QD-XxP" firstAttribute="centerY" secondItem="pkT-FK-dq8" secondAttribute="centerY" id="vvz-rp-Spj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -4846,7 +4852,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pta-EI-FKn">
-                                <rect key="frame" x="0.0" y="44" width="400" height="556"/>
+                                <rect key="frame" x="0.0" y="44" width="400" height="590"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwG-0x-U5e">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="798.66666666666663"/>
@@ -4858,7 +4864,7 @@ K-Studio専属コーチから
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsb-nb-VPu">
-                                                <rect key="frame" x="188" y="328.33333333333331" width="23.666666666666657" height="20"/>
+                                                <rect key="frame" x="187.66666666666666" y="328.33333333333331" width="24" height="20"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5065,7 +5071,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-LT-U1j">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しゅーにーさん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zut-oA-oqZ">
                                         <rect key="frame" x="10" y="20" width="122" height="21"/>
@@ -5074,24 +5080,24 @@ K-Studio専属コーチから
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-PS-aUL">
-                                        <rect key="frame" x="0.0" y="71" width="414" height="632"/>
+                                        <rect key="frame" x="0.0" y="71" width="414" height="662"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="S6Z-Ru-gPS" customClass="menuTableViewCell" customModule="track_online" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="62.333332061767578"/>
+                                                <rect key="frame" x="0.0" y="28" width="414" height="62.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S6Z-Ru-gPS" id="Ko3-3S-VYz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="62.333332061767578"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="62.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84A-0i-cyi">
-                                                            <rect key="frame" x="346" y="21" width="42" height="20.333333333333329"/>
+                                                            <rect key="frame" x="342" y="21" width="42" height="20.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-sN-sXP">
-                                                            <rect key="frame" x="50" y="61.333333333333336" width="364" height="1"/>
+                                                            <rect key="frame" x="50" y="61.666666666666664" width="364" height="1"/>
                                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="fMr-nP-FLZ"/>
@@ -5162,7 +5168,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-Pz-Ulc" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFi-hf-XSL">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="3697.6666666666665"/>
@@ -5387,11 +5393,11 @@ K-Studio専属コーチから
                         <viewControllerLayoutGuide type="bottom" id="K8e-Hb-JhN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MZA-1V-hq8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMQ-V9-SQS" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-bp-Cof">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
@@ -5419,13 +5425,13 @@ K-Studio専属コーチから
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上記、確認いたしました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCN-Xx-Pt4">
-                                                <rect key="frame" x="111.66666666666667" y="582" width="190.66666666666663" height="21"/>
+                                                <rect key="frame" x="111.5" y="582" width="191" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-AN-Yux">
-                                                <rect key="frame" x="81.666666666666671" y="580" width="25" height="25"/>
+                                                <rect key="frame" x="81.5" y="580" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="8SV-gC-mfI"/>
                                                     <constraint firstAttribute="height" constant="25" id="E6h-N3-bIN"/>
@@ -5439,7 +5445,7 @@ K-Studio専属コーチから
                                                 <rect key="frame" x="20" y="30" width="374" height="520"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLF-iC-hFd">
-                                                        <rect key="frame" x="20" y="19.999999999999986" width="334" height="250.66666666666663"/>
+                                                        <rect key="frame" x="20" y="20" width="334" height="251"/>
                                                         <string key="text">必ずあなた（アドバイスをもらいたい人）を横から撮影している動画を送信してください。
 
 またなるべく明るい場所で撮影された動画を送信してください。
@@ -5452,19 +5458,19 @@ K-Studio専属コーチから
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【参考動画】" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0Q-2F-JTR">
-                                                        <rect key="frame" x="20" y="284" width="92" height="18"/>
+                                                        <rect key="frame" x="20" y="284.5" width="92" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="斜線re" translatesAutoresizingMaskIntoConstraints="NO" id="0j8-k4-wLu">
-                                                        <rect key="frame" x="32.666666666666657" y="310" width="309" height="180"/>
+                                                        <rect key="frame" x="32.5" y="310.5" width="309" height="180"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="180" id="3OT-Lj-0dG"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-C5-eUm">
-                                                        <rect key="frame" x="175.33333333333334" y="390" width="23.666666666666657" height="20"/>
+                                                        <rect key="frame" x="175" y="390.5" width="24" height="20"/>
                                                         <color key="backgroundColor" red="0.3294117647" green="0.34509803919999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5592,7 +5598,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uko-iw-wbN" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmB-64-U8x">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="3594.3333333333335"/>
@@ -5763,7 +5769,7 @@ K-Studio専属コーチから
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-Nf-rhK" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-Ty-4TH">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="3010"/>
